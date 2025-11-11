@@ -1,0 +1,24 @@
+{
+  "name": "playwright_gotphoto",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "Playwright project for GotPhoto API and order flow",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
+  },
+  "author": "Rakhhi",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.2",
+    "dotenv": "^17.2.3"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.0.5"
+  }
+}

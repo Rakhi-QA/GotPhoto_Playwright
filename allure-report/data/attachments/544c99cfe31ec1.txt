@@ -1,0 +1,12 @@
+✅ Using NextGen Job ID: 2415
+➡️ Calling Confirm API: https://staging.production.nextgenphotosolutions.com/Gpservices/confirmimagetransferred
+📦 Body: {
+  api_key: 'GP=Ha2xc0Rcc2less2=NG',
+  job_id: '2415',
+  img_transferred: 'Y'
+}
+✅ Confirm API Response: {
+  code: 201,
+  nextgen_job_id: '2415',
+  message: 'Info! Checkout process not done yet from Next Gen.'
+}

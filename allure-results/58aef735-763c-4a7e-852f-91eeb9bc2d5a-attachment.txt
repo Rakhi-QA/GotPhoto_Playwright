@@ -1,0 +1,21 @@
+➡️ Sending POST request to create job: Test_Staging_1762443857191
+✅ API Response: {
+  code: 200,
+  nextgen_job_id: '2404',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2404&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11918812117&beta-value11945450342',
+  message: 'Congratulations! The order has been created successfully.'
+}
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2404&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11918812117&beta-value11945450342
+🆔 NextGen Job ID: 2404
+💾 Saved job link, job name, and job ID to .env
+💾 Saved job and link for next test: Test_Staging_1762443857191
+➡️ Connecting to FTP server...
+📁 Remote folder ready: /gotphoto/input/Test_Staging_1762443857191/photos
+⬆️ Uploading A.jpg...
+⬆️ Uploading B.jpg...
+⬆️ Uploading C.jpg...
+⬆️ Uploading D.jpg...
+⬆️ Uploading E.jpg...
+🎉 All images uploaded successfully to FTP!
+💾 Saved job link, job name, and job ID to .env
+💾 Saved job link, job name, and job ID to .env

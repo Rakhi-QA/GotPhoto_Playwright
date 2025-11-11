@@ -1,0 +1,46 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e6]: Please back up and remove all 2021 jobs from the production server. We will be removing these files from the server on June 17th. . Please back up and remove all 2021 jobs from the production server. We will be removing these files from the server on June 17th. . Please back up and remove all 2021 jobs from the production server. We will be removing these files from the server on June 17th. . Please back up and remove all 2021 jobs from the production server. We will be removing these files from the server on June 17th. . Please back up and remove all 2021 jobs from the production server. We will be removing these files from the server on June 17th.
+    - generic [ref=e7]:
+      - link [ref=e10]:
+        - /url: /Gpservices/payforimages/2/3619/2025/251107/Full%20Composite/G/17098/2415/338/Test_Staging_1762490692192/17191/944375214
+      - generic [ref=e12]: (17098) GotPhoto - Test_Staging_1762490692192
+  - generic [ref=e15]:
+    - dialog [active] [ref=e16]:
+      - document [ref=e17]:
+        - generic:
+          - generic:
+            - button "Close"
+            - generic: You are logged in!
+    - generic [ref=e19]:
+      - generic:
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - generic:
+              - checkbox [checked]
+          - generic [ref=e23]:
+            - text: Full Composite
+            - superscript [ref=e24]:
+              - generic [ref=e25]: 
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic:
+              - checkbox
+          - generic [ref=e29]:
+            - text: Traditional
+            - superscript [ref=e30]:
+              - generic [ref=e31]: 
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic:
+              - checkbox
+          - generic [ref=e35]:
+            - text: Traditional+
+            - superscript [ref=e36]:
+              - generic [ref=e37]: 
+      - generic [ref=e38]:
+        - img "bundlepriceing"
+```

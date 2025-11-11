@@ -1,0 +1,30 @@
+🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2419&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11608595556&beta-value1261426962
+✅ Page opened successfully
+✅ Clicked on Traditional image
+🎯 Traditional option successfully selected
+🔎 Traditional option selected: true
+   ➡️ alt1_45V: Enabled
+   ➡️ alt2_45V: Enabled
+   ➡️ alt3_45V: Disabled
+   ➡️ alt4_45V: Disabled
+   ➡️ alt5_45V: Disabled
+   ➡️ alt1_45TV: Enabled
+   ➡️ alt2_45TV: Enabled
+   ➡️ alt3_45TV: Disabled
+   ➡️ alt4_45TV: Disabled
+   ➡️ alt5_45TV: Disabled
+   ➡️ alt1_MM: Enabled
+   ➡️ alt2_MM: Enabled
+   ➡️ alt3_MM: Disabled
+   ➡️ alt4_MM: Disabled
+   ➡️ alt5_MM: Disabled
+   ➡️ alt1_12TV: Enabled
+   ➡️ alt2_12TV: Enabled
+   ➡️ alt3_12TV: Disabled
+   ➡️ alt4_12TV: Disabled
+   ➡️ alt5_12TV: Disabled
+✅ Clicked on #alt1_MM
+✅ Clicked on alt2_12TV
+📤 Starting image upload process...
+✅ Clicked final active upload button (#upload_tp_filesBtn)
+🟢 Found 2 team dropdown(s)

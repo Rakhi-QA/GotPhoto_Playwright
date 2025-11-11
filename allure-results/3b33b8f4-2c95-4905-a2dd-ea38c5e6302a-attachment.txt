@@ -1,0 +1,6 @@
+✅ Connected to FTP
+----------------------------------------
+GotPhoto (JPG/JPEG)      : 0
+GotPhoto_PNG (PNG)       : 0
+Total images for job     : 0
+----------------------------------------

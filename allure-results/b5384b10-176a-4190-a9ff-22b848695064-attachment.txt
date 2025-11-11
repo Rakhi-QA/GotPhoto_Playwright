@@ -1,0 +1,35 @@
+❌ Error in Step 1: page.waitForTimeout: Target page, context or browser has been closed
+    at E:\Playwright_GotPhoto\tests\tpreport.spec.js:27:20 {
+  [Symbol(step)]: {
+    location: {
+      file: 'E:\\Playwright_GotPhoto\\tests\\tpreport.spec.js',
+      line: 27,
+      column: 20
+    },
+    category: 'pw:api',
+    title: 'Wait for timeout',
+    apiName: 'page.waitForTimeout',
+    params: { waitTimeout: 2000 },
+    group: undefined,
+    stepId: 'pw:api@40',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@40',
+      _title: 'Wait for timeout',
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1762490686829,
+    error: {
+      message: 'Error: page.waitForTimeout: Target page, context or browser has been closed',
+      stack: 'Error: page.waitForTimeout: Target page, context or browser has been closed\n' +
+        '    at E:\\Playwright_GotPhoto\\tests\\tpreport.spec.js:27:20',
+      cause: undefined
+    }
+  }
+}
