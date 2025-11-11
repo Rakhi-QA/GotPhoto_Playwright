@@ -1,0 +1,8 @@
+✅ API Response: {
+  code: 200,
+  nextgen_job_id: '2425',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2425&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11801978975&beta-value1280342759',
+  message: 'Congratulations! The order has been created successfully.'
+}
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2425&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11801978975&beta-value1280342759
+💾 Saved job link, job name, and job ID to .env

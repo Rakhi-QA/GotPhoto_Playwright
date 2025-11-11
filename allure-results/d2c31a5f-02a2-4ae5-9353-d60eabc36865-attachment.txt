@@ -1,0 +1,179 @@
+➡️ Sending POST request to create job...
+✅ API Response: {
+  code: 200,
+  nextgen_job_id: '2431',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147',
+  message: 'Congratulations! The order has been created successfully.'
+}
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147
+💾 Saved job link, job name, and job ID to .env
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147
+✅ Order page opened successfully — Title: Next Generation | Photographers
+➡️ Connecting to FTP server...
+Connected to 13.58.91.210:21 (No encryption)
+< 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 21 of 500 allowed.
+220-Local time is now 07:58. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 15 minutes of inactivity.
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+Login security: No encryption
+> USER imageprocessing@staging.production.nextgenphotosolutions.com
+< 331 User imageprocessing@staging.production.nextgenphotosolutions.com OK. Password required
+
+> PASS ###
+< 230 OK. Current restricted directory is /
+
+> FEAT
+< 211-Extensions supported:
+ UTF8
+ EPRT
+ IDLE
+ MDTM
+ SIZE
+ MFMT
+ REST STREAM
+ MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+ MLSD
+ PRET
+ AUTH TLS
+ PBSZ
+ PROT
+ TVFS
+ ESTA
+ PASV
+ EPSV
+211 End.
+
+> TYPE I
+< 200 TYPE is now 8-bit binary
+
+> STRU F
+< 200 F OK
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+> OPTS MLST type;size;modify;unique;unix.mode;unix.owner;unix.group;unix.ownername;unix.groupname;
+< 200  MLST OPTS type;size;sizd;modify;UNIX.mode;UNIX.uid;UNIX.gid;unique;
+
+📁 Ensuring remote folders exist: /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147/photos
+> CWD /
+< 250 OK. Current directory is /
+
+> MKD gotphoto
+< 550 Can't create directory: File exists
+
+> CWD gotphoto
+< 250 OK. Current directory is /gotphoto
+
+> MKD input
+< 550 Can't create directory: File exists
+
+> CWD input
+< 250 OK. Current directory is /gotphoto/input
+
+> MKD login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147
+< 257 "login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147" : The directory was successfully created
+
+> CWD login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147
+< 250 OK. Current directory is /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147
+
+> MKD photos
+< 257 "photos" : The directory was successfully created
+
+> CWD photos
+< 250 OK. Current directory is /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147/photos
+
+> CWD /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147/photos
+< 250 OK. Current directory is /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147/photos
+
+📂 Remote folder ready: /gotphoto/input/login?back_url=checkout&jobno=2431&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value198564647&beta-value11744884147/photos
+⬆️ Uploading A.jpg...
+Trying to find optimal transfer strategy...
+> EPSV
+< 229 Extended Passive mode OK (|||58871|)
+
+Optimal transfer strategy found.
+> STOR A.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58871 (No encryption)
+< 226-File successfully transferred
+226 2.202 seconds (measured here), 1.04 Mbytes per second
+
+⬆️ Uploading B.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||54864|)
+
+> STOR B.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:54864 (No encryption)
+< 226-File successfully transferred
+226 1.362 seconds (measured here), 204.24 Kbytes per second
+
+⬆️ Uploading C.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||60811|)
+
+> STOR C.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:60811 (No encryption)
+< 226-File successfully transferred
+226 1.349 seconds (measured here), 206.20 Kbytes per second
+
+⬆️ Uploading D.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||51990|)
+
+> STOR D.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:51990 (No encryption)
+< 226-File successfully transferred
+226 1.388 seconds (measured here), 200.37 Kbytes per second
+
+⬆️ Uploading E.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||49643|)
+
+> STOR E.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:49643 (No encryption)
+< 226-File successfully transferred
+226 1.351 seconds (measured here), 205.95 Kbytes per second
+
+⬆️ Uploading F.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||53001|)
+
+> STOR F.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:53001 (No encryption)
+< 226-File successfully transferred
+226 1.367 seconds (measured here), 203.47 Kbytes per second
+
+⬆️ Uploading G.jpg...
+> EPSV
+< 229 Extended Passive mode OK (|||58578|)
+
+> STOR G.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58578 (No encryption)
+< 226-File successfully transferred
+226 1.927 seconds (measured here), 0.57 Mbytes per second
+
+🎉 All images uploaded successfully!
+> QUIT
+🔒 FTP connection closed
+🔍 Waiting for upload confirmation...
+✅ Upload validation step completed
