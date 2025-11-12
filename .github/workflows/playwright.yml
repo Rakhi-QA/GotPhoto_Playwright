@@ -1,27 +1,64 @@
-name: Playwright Tests
+name: Playwright Chromium GotPhoto
+
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
-  test:
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
+  test-and-push:
+    runs-on: windows-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test tests/Test_Suite.spec.js --project=chromium --headless
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright and browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Test_Suite using Chromium
+        run: npx playwright test tests/Test_Suite.spec.js --project=chromium --headed
+
+      - name: Configure Git
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Append timestamp to test file
+        if: success()
+        run: |
+          echo "// Auto-update on $(Get-Date -Format u)" >> tests/Test_Suite.spec.js
+          echo "✅ Timestamp appended to tests/Test_Suite.spec.js"
+          Get-Content tests/Test_Suite.spec.js -Tail 5
+
+      - name: Commit changes
+        if: success()
+        run: |
+          git add tests/Test_Suite.spec.js
+          git commit -m "Auto-push: append timestamp to test file" || echo "🟡 No changes to commit"
+
+      - name: Push to main
+        if: success()
+        env:
+          TOKEN: ${{ secrets.API_KEY }}
+        run: |
+          $TOKEN_CLEAN = $env:TOKEN.Trim()
+          git remote set-url origin "https://x-access-token:$TOKEN_CLEAN@github.com/${{ github.repository }}.git"
+          git push origin HEAD:main
+
+      - name: Debug Git remotes (optional)
+        if: success()
+        run: git remote -v
