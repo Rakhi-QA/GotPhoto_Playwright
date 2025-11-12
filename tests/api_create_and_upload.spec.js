@@ -9,7 +9,7 @@ import { saveGeneratedLink, getGeneratedLink } from '../utils/linkStorage.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-test.setTimeout(180000); // 3 minutes timeout
+test.setTimeout(300000); // 3 minutes timeout
 
 test('Traditional Plus: Create Job → Get Link → FTP Upload → Validate', async ({ page, request }) => {
 

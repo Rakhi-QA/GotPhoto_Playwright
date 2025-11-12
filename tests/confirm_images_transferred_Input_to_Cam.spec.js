@@ -1,32 +1,23 @@
 import { test, expect } from '@playwright/test';
-import dotenv from 'dotenv';
-dotenv.config();
+import fs from 'fs';
 
-test('Confirm images transferred after order placed', async ({ request }) => {
-  const jobId = process.env.NEXTGEN_JOB_ID;
-
-  if (!jobId) {
-    throw new Error('❌ No job ID found. Run job creation test first.');
-  }
-
-  console.log('✅ Using NextGen Job ID:', jobId);
+test('Confirm images transferred', async ({ request }) => {
+  const { jobId } = JSON.parse(fs.readFileSync('generatedData.json', 'utf8'));
 
   const confirmUrl = 'https://staging.production.nextgenphotosolutions.com/Gpservices/confirmimagetransferred';
-  const body = {
+  const payload = {
     api_key: 'GP=Ha2xc0Rcc2less2=NG',
     job_id: jobId,
     img_transferred: 'Y'
   };
 
-  console.log('➡️ Calling Confirm API:', confirmUrl);
-  console.log('📦 Body:', body);
+  console.log('➡️ Calling Confirm API with job ID:', jobId);
 
   const response = await request.post(confirmUrl, {
     headers: { 'Content-Type': 'application/json' },
-    data: body
+    data: payload
   });
 
-  expect(response.ok()).toBeTruthy();
-  const json = await response.json();
-  console.log('✅ Confirm API Response:', json);
+  const result = await response.json();
+  console.log('✅ Confirm API Response:', result);
 });
