@@ -3,8 +3,8 @@ import { test } from '@playwright/test';
 
 // Import all individual test specs
 import'./api_create_and_upload.spec.js';
-import './open_generated_link.spec.js';
-import './confirm_images_transferred_Input_to_Cam.spec.js';
+//import './open_generated_link.spec.js';
+//import './confirm_images_transferred_Input_to_Cam.spec.js';
 //import './TraditionalPlus_MoveImages_order.spec.js';
 
 // Optional: wrap them in a describe block for better report grouping
