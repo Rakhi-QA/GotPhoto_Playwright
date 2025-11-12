@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test tests/api_create_and_upload.spec.js --headed --project=chromium
+      run: npx playwright test tests/Test_Suite.spec.js --headed --project=chromium
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
