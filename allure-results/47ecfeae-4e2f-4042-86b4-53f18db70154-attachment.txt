@@ -1,0 +1,45 @@
+✅ Found file at: E:\Playwright_GotPhoto\generatedData.json
+
+📌 Job ID: 2442
+📌 Job Name: Test_Staging_1763379108013
+🌐 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2442&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11920835951&beta-value1147291657
+
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2442&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11920835951&beta-value1147291657
+✅ Page opened - Title: Next Generation | Photographers
+✅ Clicked "Standard Team Build"
+✅ Clicked "Single Template for Organization"
+✅ Selected template "487"
+✅ Clicked "Attach extracted images"
+✅ Clicked extracted images checkbox
+✅ Selected "Full Length Centering"
+✅ Selected "PNG Team Add On"
+✅ Selected "Team Color" (Y)
+✅ Selected "Color Correction"
+✅ Entered discount code: 100OFF
+✅ Clicked Redeem
+✅ Clicked "Pay Now"
+⏳ Waiting for confirmation page...
+📍 Current URL: https://www.gotphoto.com/
+✅ Confirmation indicators found on page
+🔍 Searching for jobno in URL: https://www.gotphoto.com/
+✅ Updated generatedData.json with nextgen_job_id: 2442
+📡 Calling Confirm API with Job ID: 2442
+Request Body: {
+  "api_key": "GP=Ha2xc0Rcc2less2=NG",
+  "job_id": "2442",
+  "img_transferred": "Y"
+}
+✅ Confirm API Response: {
+  "code": 200,
+  "nextgen_job_id": "2442",
+  "message": "Success! Input image processing status updated successfully in Next Gen ."
+}
+✅ API returned code 200 (Success)
+
+✅ ========== FULL COMPOSITE ORDER TEST COMPLETED ==========
+📌 Original Job ID: 2442
+📌 NextGen Job ID: 2442
+📌 Job Name: Test_Staging_1763379108013
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2442&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11920835951&beta-value1147291657
+✅ ===========================================================
+

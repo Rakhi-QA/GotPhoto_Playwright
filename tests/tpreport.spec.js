@@ -181,5 +181,6 @@ test('Validate Traditional Plus flow after generated link (Allure)', async ({ pa
       console.error('❌ Error in Step 6:', error);
       throw error;
     }
+    
   });
 });

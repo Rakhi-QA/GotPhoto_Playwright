@@ -1,0 +1,159 @@
+➡️ Creating Job: Test_Staging_1763469191047
+💾 Saved job link, job name, and job ID to .env
+📸 Team Image Count: 2
+📸 Player Images Count: 0
+📸 Total Images: 2
+Connected to 13.58.91.210:21 (No encryption)
+< 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 25 of 500 allowed.
+220-Local time is now 08:32. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 15 minutes of inactivity.
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+Login security: No encryption
+> USER imageprocessing@staging.production.nextgenphotosolutions.com
+< 331 User imageprocessing@staging.production.nextgenphotosolutions.com OK. Password required
+
+> PASS ###
+< 230 OK. Current restricted directory is /
+
+> FEAT
+< 211-Extensions supported:
+ UTF8
+ EPRT
+ IDLE
+ MDTM
+ SIZE
+ MFMT
+ REST STREAM
+ MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+ MLSD
+ PRET
+ AUTH TLS
+ PBSZ
+ PROT
+ TVFS
+ ESTA
+ PASV
+ EPSV
+211 End.
+
+> TYPE I
+< 200 TYPE is now 8-bit binary
+
+> STRU F
+< 200 F OK
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+> OPTS MLST type;size;modify;unique;unix.mode;unix.owner;unix.group;unix.ownername;unix.groupname;
+< 200  MLST OPTS type;size;sizd;modify;UNIX.mode;UNIX.uid;UNIX.gid;unique;
+
+> CWD /
+< 250 OK. Current directory is /
+
+> MKD gotphoto
+< 550 Can't create directory: File exists
+
+> CWD gotphoto
+< 250 OK. Current directory is /gotphoto
+
+> MKD input
+< 550 Can't create directory: File exists
+
+> CWD input
+< 250 OK. Current directory is /gotphoto/input
+
+> MKD Test_Staging_1763469191047
+< 550 Can't create directory: File exists
+
+> CWD Test_Staging_1763469191047
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763469191047
+
+> MKD photos
+< 257 "photos" : The directory was successfully created
+
+> CWD photos
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763469191047/photos
+
+> CWD /gotphoto/input/Test_Staging_1763469191047/photos
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763469191047/photos
+
+Trying to find optimal transfer strategy...
+> EPSV
+< 229 Extended Passive mode OK (|||59340|)
+
+Optimal transfer strategy found.
+> STOR A.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:59340 (No encryption)
+< 226-File successfully transferred
+226 2.527 seconds (measured here), 0.91 Mbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||56624|)
+
+> STOR B.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:56624 (No encryption)
+< 226-File successfully transferred
+226 1.365 seconds (measured here), 203.84 Kbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||58843|)
+
+> STOR C.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58843 (No encryption)
+< 226-File successfully transferred
+226 1.369 seconds (measured here), 203.23 Kbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||49811|)
+
+> STOR D.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:49811 (No encryption)
+< 226-File successfully transferred
+226 1.431 seconds (measured here), 194.44 Kbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||49334|)
+
+> STOR E.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:49334 (No encryption)
+< 226-File successfully transferred
+226 1.385 seconds (measured here), 200.93 Kbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||61419|)
+
+> STOR F.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:61419 (No encryption)
+< 226-File successfully transferred
+226 1.374 seconds (measured here), 202.45 Kbytes per second
+
+> EPSV
+< 229 Extended Passive mode OK (|||63243|)
+
+> STOR G.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63243 (No encryption)
+< 226-File successfully transferred
+226 2.048 seconds (measured here), 0.54 Mbytes per second
+
+> QUIT

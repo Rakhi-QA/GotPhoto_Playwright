@@ -1,0 +1,21 @@
+🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2439&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11362670585&beta-value11854379268
+✅ Clicked on "Standard Team Build"
+✅ Clicked on "Single Template for Organization"
+✅ Selected "487" from dropdown
+✅ Clicked on "Attach extracted images"
+✅ Clicked on extractedimagesI
+✅ Clicked on "Full Length Centering"
+✅ Clicked on "PNG Team Add On"
+✅ Clicked on Team Color Y
+✅ Clicked on "Color Correction"
+✅ Entered discount code 100OFF
+✅ Clicked Redeem
+✅ Clicked Pay Now
+🎉 Order placement flow completed successfully!
+📡 Calling Confirm Image Transferred API...
+✅ Using Job ID from previous test: undefined
+✅ Confirm API Success: {
+  code: 201,
+  nextgen_job_id: null,
+  message: 'Info! Checkout process not done yet from Next Gen.'
+}

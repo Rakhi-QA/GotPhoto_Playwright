@@ -1,0 +1,2 @@
+✅ Connected to FTP
+📅 Enter date (format: yyyy-MM-dd): 

@@ -1,0 +1,4 @@
+🔌 Connecting to FTP...
+> QUIT
+
+🔒 FTP connection closed.

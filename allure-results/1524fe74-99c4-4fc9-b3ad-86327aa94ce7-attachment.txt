@@ -1,0 +1,7 @@
+➡️ Creating Job: Test_Staging_1763378851728
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2441",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2441&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value12106262110&beta-value1364388117",
+  "message": "Congratulations! The order has been created successfully."
+}
