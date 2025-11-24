@@ -1,0 +1,223 @@
+➡️ Creating Job: Test_Staging_1763550912351
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2459",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2459&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1964207245&beta-value12075225573",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2459
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2459&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1964207245&beta-value12075225573
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2459&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1964207245&beta-value12075225573
+✅ Page Title: Next Generation | Photographers
+📸 Screenshot saved: order-page-loaded.png
+📂 Found 10 images to upload: A.jpg, B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg
+➡️ Connecting to FTP: staging.production.nextgenphotosolutions.com
+Connected to 13.58.91.210:21 (No encryption)
+< 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 52 of 500 allowed.
+220-Local time is now 07:14. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 15 minutes of inactivity.
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+Login security: No encryption
+> USER imageprocessing@staging.production.nextgenphotosolutions.com
+< 331 User imageprocessing@staging.production.nextgenphotosolutions.com OK. Password required
+
+> PASS ###
+< 230 OK. Current restricted directory is /
+
+> FEAT
+< 211-Extensions supported:
+ UTF8
+ EPRT
+ IDLE
+ MDTM
+ SIZE
+ MFMT
+ REST STREAM
+ MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+ MLSD
+ PRET
+ AUTH TLS
+ PBSZ
+ PROT
+ TVFS
+ ESTA
+ PASV
+ EPSV
+211 End.
+
+> TYPE I
+< 200 TYPE is now 8-bit binary
+
+> STRU F
+< 200 F OK
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+> OPTS MLST type;size;modify;unique;unix.mode;unix.owner;unix.group;unix.ownername;unix.groupname;
+< 200  MLST OPTS type;size;sizd;modify;UNIX.mode;UNIX.uid;UNIX.gid;unique;
+
+📁 Creating remote directory: /gotphoto/input/Test_Staging_1763550912351/photos
+> CWD /
+< 250 OK. Current directory is /
+
+> MKD gotphoto
+< 550 Can't create directory: File exists
+
+> CWD gotphoto
+< 250 OK. Current directory is /gotphoto
+
+> MKD input
+< 550 Can't create directory: File exists
+
+> CWD input
+< 250 OK. Current directory is /gotphoto/input
+
+> MKD Test_Staging_1763550912351
+< 550 Can't create directory: File exists
+
+> CWD Test_Staging_1763550912351
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763550912351
+
+> MKD photos
+< 257 "photos" : The directory was successfully created
+
+> CWD photos
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763550912351/photos
+
+> CWD /gotphoto/input/Test_Staging_1763550912351/photos
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1763550912351/photos
+
+⬆️ Uploading: A.jpg
+Trying to find optimal transfer strategy...
+> EPSV
+< 229 Extended Passive mode OK (|||63238|)
+
+Optimal transfer strategy found.
+> STOR A.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63238 (No encryption)
+< 226-File successfully transferred
+226 2.233 seconds (measured here), 1.03 Mbytes per second
+
+⬆️ Uploading: B.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||63300|)
+
+> STOR B.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63300 (No encryption)
+< 226-File successfully transferred
+226 1.369 seconds (measured here), 203.22 Kbytes per second
+
+⬆️ Uploading: C.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||56966|)
+
+> STOR C.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:56966 (No encryption)
+< 226-File successfully transferred
+226 1.417 seconds (measured here), 196.37 Kbytes per second
+
+⬆️ Uploading: D.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||51239|)
+
+> STOR D.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:51239 (No encryption)
+< 226-File successfully transferred
+226 1.368 seconds (measured here), 203.29 Kbytes per second
+
+⬆️ Uploading: E.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||62319|)
+
+> STOR E.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:62319 (No encryption)
+< 226-File successfully transferred
+226 1.368 seconds (measured here), 203.35 Kbytes per second
+
+⬆️ Uploading: F.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||63405|)
+
+> STOR F.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63405 (No encryption)
+< 226-File successfully transferred
+226 1.328 seconds (measured here), 209.44 Kbytes per second
+
+⬆️ Uploading: G.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||58252|)
+
+> STOR G.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58252 (No encryption)
+< 226-File successfully transferred
+226 1.905 seconds (measured here), 0.58 Mbytes per second
+
+⬆️ Uploading: H.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||52760|)
+
+> STOR H.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:52760 (No encryption)
+< 226-File successfully transferred
+226 1.345 seconds (measured here), 206.89 Kbytes per second
+
+⬆️ Uploading: I.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||50719|)
+
+> STOR I.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:50719 (No encryption)
+< 226-File successfully transferred
+226 1.345 seconds (measured here), 206.85 Kbytes per second
+
+⬆️ Uploading: J.jpg
+> EPSV
+< 229 Extended Passive mode OK (|||61324|)
+
+> STOR J.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:61324 (No encryption)
+< 226-File successfully transferred
+226 1.907 seconds (measured here), 0.58 Mbytes per second
+
+🎉 FTP upload complete! Uploaded 10 files.
+> QUIT
+🔒 FTP connection closed
+⏳ Waiting for upload confirmation...
+✅ Upload success message detected on page
+✅ Validation step completed
+
+✅ ========== TEST COMPLETED SUCCESSFULLY ==========
+📌 Job ID: 2459
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2459&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1964207245&beta-value12075225573
+📁 Job Name: Test_Staging_1763550912351
+✅ ==============================================
+

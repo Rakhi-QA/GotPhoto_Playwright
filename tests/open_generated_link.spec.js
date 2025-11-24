@@ -8,6 +8,9 @@ test.setTimeout(180000); // 3 minutes total timeout
 
 test('Complete GotPhoto order placement + FTP upload', async ({ page }) => {
   // ✅ 1️⃣ Get generated link and job name
+  if (!fs.existsSync('generatedData.json')) {
+    throw new Error('generatedData.json not found — run create-job test first');
+  }
   const generatedLink = getGeneratedLink();
   const jobName = getJobName();
 

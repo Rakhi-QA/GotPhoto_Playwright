@@ -1,0 +1,61 @@
+➡️ Creating Job: Test_Staging_1763531745000
+Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2454&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11723030082&beta-value11605748521
+💾 Saved job link, job name, and job ID to .env
+
+========== GRAPHICS SELECTION DETAILS ==========
+
+
+Graphic: _45V
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+
+Graphic: _45TV
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+
+Graphic: _55
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+
+Graphic: _55T
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+
+Graphic: _MM
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+
+Graphic: _SV
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+
+Graphic: _12TV
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+
+=================================================
+
+
+===== PLAYER IMAGE DETAILS (3 players) =====
+
+-----------------------------------------------------
+Player: Ana A
+Team Image: C.jpg
+Images (2): D.jpg, E.jpg
+Bundle Symbol (Calculated): R
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: rakesh pat
+Team Image: A.jpg
+Images (1): B.jpg
+Bundle Symbol (Calculated): S
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: Tom D
+Team Image: F.jpg
+Images (4): G.jpg, H.jpg, I.jpg, J.jpg
+Bundle Symbol (Calculated): L
+-----------------------------------------------------
+

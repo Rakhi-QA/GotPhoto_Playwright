@@ -1,0 +1,91 @@
+➡️ Creating Job: Test_Staging_1763544742337
+Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2456&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11064328883&beta-value1741309856
+💾 Saved job link, job name, and job ID to .env
+
+========== GRAPHICS SELECTION DETAILS ==========
+
+
+Graphic: _45V
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+🚫 Disabled: Image5
+
+Graphic: _45TV
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+🚫 Disabled: Image5
+
+Graphic: _55
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+🚫 Disabled: Image5
+
+Graphic: _55T
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+🚫 Disabled: Image5
+
+Graphic: _MM
+✔ Selected For: Image1, Image2, Image3, Image4
+✖ Not Selected For: None
+🚫 Disabled: Image5
+
+Graphic: _SV
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+🚫 Disabled: Image5
+
+Graphic: _12TV
+✔ Selected For: None
+✖ Not Selected For: Image1, Image2, Image3, Image4
+🚫 Disabled: Image5
+
+=================================================
+
+
+===== PLAYER IMAGE DETAILS (3 players) =====
+
+-----------------------------------------------------
+Player: Ana A
+Team Image: C.jpg
+Images (2): D.jpg, E.jpg
+Bundle Symbol (Calculated): R
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: rakesh pat
+Team Image: A.jpg
+Images (1): B.jpg
+Bundle Symbol (Calculated): S
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: Tom D
+Team Image: F.jpg
+Images (4): G.jpg, H.jpg, I.jpg, J.jpg
+Bundle Symbol (Calculated): L
+-----------------------------------------------------
+
+
+============================================================
+💰 CALCULATING TOTALS
+============================================================
+
+📋 PRICE BREAKDOWN:
+------------------------------------------------------------
+  PNG Crop Image Price        : $0.00
+  PNG Team Add On             : $2.00
+  Unique Color for Each Team  : $0.00
+  Total Number of Team Images : $4.95
+  Bundle Subtotal             : $6.30
+  Additional Graphics        : $0.00
+  Color Correction            : $2.00
+------------------------------------------------------------
+  Calculated Subtotal         : $15.25
+  Page Subtotal               : $11.25
+------------------------------------------------------------
+  Discount                    : $0.00
+------------------------------------------------------------
+  Calculated Final Total      : $15.25
+  Page Final Total            : $11.25
+⚠️ Final totals do NOT match!
