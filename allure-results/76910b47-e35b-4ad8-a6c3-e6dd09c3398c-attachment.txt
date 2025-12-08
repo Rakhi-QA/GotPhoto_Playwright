@@ -1,0 +1,82 @@
+➡️ Creating Job: Test_Staging_1764242165308
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2507",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2507&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11603801380&beta-value11521907985",
+  "message": "Congratulations! The order has been created successfully."
+}
+💾 Saved job link, job name, and job ID to .env
+🌐 Opening URL: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2507&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11603801380&beta-value11521907985
+📄 Page Loaded: Next Generation | Photographers
+-----------------------------------------------------
+Player: Ana A
+Team Image: C.jpg
+Images (2): D.jpg, E.jpg
+Bundle Symbol: R
+Bundle Amount: $1.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: HENRY H
+Team Image: Q2.jpg
+Images (1): Q3.jpg
+Bundle Symbol: S
+Bundle Amount: $1.00
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: IRA S
+Team Image: Q7.jpg
+Images (3): Q8.jpg, Q9.jpg, Q10.jpg
+Bundle Symbol: L
+Bundle Amount: $3.50
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: JACK KOA
+Team Image: Q22.jpg
+Images (7): Q23.jpg, Q24.jpg, Q25.jpg, Q26.jpg, Q27.jpg, Q28.jpg, Q29.jpg
+Bundle Symbol: XL
+Bundle Amount: $5.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: OM S
+Team Image: Q4.jpg
+Images (2): Q5.jpg, Q6.jpg
+Bundle Symbol: R
+Bundle Amount: $1.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: PARTH G
+Team Image: Q11.jpg
+Images (4): Q12.jpg, Q13.jpg, Q14.jpg, Q15.jpg
+Bundle Symbol: L
+Bundle Amount: $3.50
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: rakesh pat
+Team Image: A.jpg
+Images (13): B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg, K.jpg, L.jpg, M.jpg, N.jpg
+Bundle Symbol: UL
+Bundle Amount: $8.10
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: TOM D
+Team Image: Q1.jpg
+Images (0): None
+Bundle Symbol: No Images
+Bundle Amount: $0.00
+-----------------------------------------------------
+
+Success message detected.
+
+  ========== TEST COMPLETED ==========
+  Job ID: 2507
+  Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2507&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11603801380&beta-value11521907985
+  Job Name: Test_Staging_1764242165308
+  ====================================
+  

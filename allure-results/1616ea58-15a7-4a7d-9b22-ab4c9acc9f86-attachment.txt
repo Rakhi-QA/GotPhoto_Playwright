@@ -1,0 +1,7 @@
+📌 Using Job ID from file: 2534
+➡️ Sending Confirm Image Transferred API request...
+✅ Confirm API Response: {
+  code: 201,
+  nextgen_job_id: '2534',
+  message: 'Info! Images uploaded in Input folder, status already updated.'
+}

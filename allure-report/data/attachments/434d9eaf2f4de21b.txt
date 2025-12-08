@@ -1,0 +1,15 @@
+➡️ Creating Job: Test_Staging_1764568636351
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2528",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2528&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1675860044&beta-value1750131468",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2528
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2528&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1675860044&beta-value1750131468
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2528&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1675860044&beta-value1750131468
+✅ Page Title: Next Generation | Photographers
+✔ Clicked Traditional Plus via selector: img[src*="Traditional Plus Memorymate.jpg"]
+✔ Clicked Confirm on first popup

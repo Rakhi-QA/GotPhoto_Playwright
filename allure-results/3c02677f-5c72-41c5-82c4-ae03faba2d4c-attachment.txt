@@ -1,2 +1,0 @@
-❌ Error in Step 1: TypeError: allure.addAttachment is not a function
-    at file:///E:/Playwright_GotPhoto/tests/tpreport.spec.js:45:20

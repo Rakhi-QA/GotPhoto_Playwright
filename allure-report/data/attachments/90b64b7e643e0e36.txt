@@ -1,0 +1,318 @@
+➡️ Creating Job: Test_Staging_1764509895524
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2524",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2524&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11379560681&beta-value11683108180",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2524
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2524&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11379560681&beta-value11683108180
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2524&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11379560681&beta-value11683108180
+✅ Page Title: Next Generation | Photographers
+✔ Clicked Traditional Plus via selector: img[src*="Traditional Plus Memorymate.jpg"]
+✔ Clicked Confirm on first popup
+✔ Clicked Ignore Team Images
+✔ Clicked Single Check background (#bgsinglecheck_s)
+✔ Selected template 611 (3rd Creative - Softball/Baseball)
+📤 Starting image upload process...
+✅ Clicked final active upload button (#upload_tp_filesBtn)
+🟢 Found 2 team dropdown(s)
+✅ Selected team "Winners" in first dropdown
+✅ Selected team "YANKEES" in second dropdown
+💾 Clicked on Save button
+📨 Upload message: 
+✔ Clicked Extracted Images (#extractedimages)
+✔ Selected 3/4 Crop (#cropimageshalf)
+✔ Selected Team Color (#teamcolorY)
+✔ Clicked Color Correction (#ccservices)
+📂 Found 17 images for FTP upload: A.jpg, B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg, K.jpg, L.jpg, M.jpg, N.jpg, O.jpg, P.jpg, Q.jpg
+➡️ Connecting to FTP...
+Connected to 13.58.91.210:21 (No encryption)
+< 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 1 of 500 allowed.
+220-Local time is now 09:37. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 15 minutes of inactivity.
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+Login security: No encryption
+> USER imageprocessing@staging.production.nextgenphotosolutions.com
+< 331 User imageprocessing@staging.production.nextgenphotosolutions.com OK. Password required
+
+> PASS ###
+< 230 OK. Current restricted directory is /
+
+> FEAT
+< 211-Extensions supported:
+ UTF8
+ EPRT
+ IDLE
+ MDTM
+ SIZE
+ MFMT
+ REST STREAM
+ MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+ MLSD
+ PRET
+ PBSZ
+ PROT
+ TVFS
+ ESTA
+ PASV
+ EPSV
+211 End.
+
+> TYPE I
+< 200 TYPE is now 8-bit binary
+
+> STRU F
+< 200 F OK
+
+> OPTS UTF8 ON
+< 504 Unknown command
+
+> OPTS MLST type;size;modify;unique;unix.mode;unix.owner;unix.group;unix.ownername;unix.groupname;
+< 200  MLST OPTS type;size;sizd;modify;UNIX.mode;UNIX.uid;UNIX.gid;unique;
+
+📁 Creating directory: /gotphoto/input/Test_Staging_1764509895524/photos
+> CWD /
+< 250 OK. Current directory is /
+
+> MKD gotphoto
+< 550 Can't create directory: File exists
+
+> CWD gotphoto
+< 250 OK. Current directory is /gotphoto
+
+> MKD input
+< 550 Can't create directory: File exists
+
+> CWD input
+< 250 OK. Current directory is /gotphoto/input
+
+> MKD Test_Staging_1764509895524
+< 550 Can't create directory: File exists
+
+> CWD Test_Staging_1764509895524
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1764509895524
+
+> MKD photos
+< 257 "photos" : The directory was successfully created
+
+> CWD photos
+< 250 OK. Current directory is /gotphoto/input/Test_Staging_1764509895524/photos
+
+⬆️ Uploading images...
+Trying to find optimal transfer strategy...
+> EPSV
+< 229 Entering Extended Passive Mode (|||53362|)
+
+Optimal transfer strategy found.
+> STOR A.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:53362 (No encryption)
+< 226-File successfully transferred
+226 5.818 seconds (measured here), 403.34 Kbytes per second
+
+✔ Uploaded: A.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||56385|)
+
+> STOR B.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:56385 (No encryption)
+< 226-File successfully transferred
+226 1.791 seconds (measured here), 155.33 Kbytes per second
+
+✔ Uploaded: B.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||63292|)
+
+> STOR C.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63292 (No encryption)
+< 226-File successfully transferred
+226 0.951 seconds (measured here), 292.41 Kbytes per second
+
+✔ Uploaded: C.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||58189|)
+
+> STOR D.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58189 (No encryption)
+< 226-File successfully transferred
+226 0.914 seconds (measured here), 304.23 Kbytes per second
+
+✔ Uploaded: D.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||57869|)
+
+> STOR E.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:57869 (No encryption)
+< 226-File successfully transferred
+226 0.937 seconds (measured here), 297.00 Kbytes per second
+
+✔ Uploaded: E.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||58330|)
+
+> STOR F.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:58330 (No encryption)
+< 226-File successfully transferred
+226 0.901 seconds (measured here), 308.75 Kbytes per second
+
+✔ Uploaded: F.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||65527|)
+
+> STOR G.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:65527 (No encryption)
+< 226-File successfully transferred
+226 2.554 seconds (measured here), 440.39 Kbytes per second
+
+✔ Uploaded: G.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||61133|)
+
+> STOR H.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:61133 (No encryption)
+< 226-File successfully transferred
+226 0.944 seconds (measured here), 294.72 Kbytes per second
+
+✔ Uploaded: H.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||60693|)
+
+> STOR I.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:60693 (No encryption)
+< 226-File successfully transferred
+226 0.935 seconds (measured here), 297.65 Kbytes per second
+
+✔ Uploaded: I.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||54526|)
+
+> STOR J.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:54526 (No encryption)
+< 226-File successfully transferred
+226 2.523 seconds (measured here), 445.81 Kbytes per second
+
+✔ Uploaded: J.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||63009|)
+
+> STOR K.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:63009 (No encryption)
+< 226-File successfully transferred
+226 4.515 seconds (measured here), 0.51 Mbytes per second
+
+✔ Uploaded: K.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||50715|)
+
+> STOR L.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:50715 (No encryption)
+< 226-File successfully transferred
+226 0.903 seconds (measured here), 308.13 Kbytes per second
+
+✔ Uploaded: L.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||64575|)
+
+> STOR M.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:64575 (No encryption)
+< 226-File successfully transferred
+226 0.911 seconds (measured here), 305.35 Kbytes per second
+
+✔ Uploaded: M.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||52900|)
+
+> STOR N.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:52900 (No encryption)
+< 226-File successfully transferred
+226 0.988 seconds (measured here), 281.58 Kbytes per second
+
+✔ Uploaded: N.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||55651|)
+
+> STOR O.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:55651 (No encryption)
+< 226-File successfully transferred
+226 1.056 seconds (measured here), 263.34 Kbytes per second
+
+✔ Uploaded: O.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||61443|)
+
+> STOR P.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:61443 (No encryption)
+< 226-File successfully transferred
+226 0.963 seconds (measured here), 288.83 Kbytes per second
+
+✔ Uploaded: P.jpg
+> EPSV
+< 229 Entering Extended Passive Mode (|||65451|)
+
+> STOR Q.jpg
+< 150 Accepted data connection
+
+Uploading to 13.58.91.210:65451 (No encryption)
+< 226-File successfully transferred
+226 2.413 seconds (measured here), 466.03 Kbytes per second
+
+✔ Uploaded: Q.jpg
+🎉 Upload complete! Total uploaded: 17
+> QUIT
+🔒 FTP connection closed
+⏳ Waiting for upload confirmation...
+✅ Upload success message detected on page
+✔ Clicked 'Enter Card Information Below' (#cardinfo)
+✔ Entered card number
+✔ Selected expiry month 04
+✔ Selected expiry year 2026
+✔ Entered CVV
+✔ Entered cardholder name
+✔ Clicked Pay Now / Checkout (#btnpaynow)
+
+✅ ========== TEST COMPLETED SUCCESSFULLY ==========
+📌 Job ID: 2524
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2524&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11379560681&beta-value11683108180
+📁 Job Name: Test_Staging_1764509895524
+===================================================
+

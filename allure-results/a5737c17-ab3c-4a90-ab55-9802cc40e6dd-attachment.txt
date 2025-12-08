@@ -1,0 +1,35 @@
+API Response: {
+  code: 200,
+  nextgen_job_id: '2544',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2544&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1235293816&beta-value11970128727',
+  message: 'Congratulations! The order has been created successfully.'
+}
+💾 Saved job link, job name, and job ID to .env
+✔ Uploaded: A.jpg
+✔ Uploaded: B.jpg
+✔ Uploaded: C.jpg
+✔ Uploaded: D.jpg
+✔ Uploaded: E.jpg
+✔ Uploaded: F.jpg
+✔ Uploaded: G.jpg
+✔ Uploaded: H.jpg
+✔ Uploaded: I.jpg
+✔ Uploaded: J.jpg
+✔ Uploaded: K.jpg
+✔ Uploaded: L.jpg
+✔ Uploaded: M.jpg
+✔ Uploaded: N.jpg
+✔ Uploaded: O.jpg
+✔ Uploaded: P.jpg
+✔ Uploaded: Q.jpg
+🎉 FTP Upload Completed
+✔ Popup detected: Clicking Move Team Images
+Extracted NextGen Job No: 2544
+Confirm API Response: {
+  code: 200,
+  nextgen_job_id: '2544',
+  message: 'Success! Input image processing status updated successfully in Next Gen .'
+}
+
+🎉 FULL FLOW COMPLETED SUCCESSFULLY 🎉
+

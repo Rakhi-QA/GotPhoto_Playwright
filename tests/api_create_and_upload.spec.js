@@ -41,26 +41,141 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
       editing_request_id: "407",
       redirect_success_url: "https://gotphoto.com",
       players_detail: {
-        0: { 
-          first_name: "rakesh", 
-          last_name: "pat", 
-          team_name: "YANKEES", 
-          jersey_number: "11", 
-          team_image: "A.jpg", 
-          individual_image1: "B.jpg", 
-          access_code: "12A1" 
-        },
-        1: { 
-          first_name: "Ana", 
-          last_name: "A", 
-          team_name: "YANKEES", 
-          jersey_number: "11", 
-          team_image: "C.jpg", 
-          individual_image1: "D.jpg", 
-          individual_image2: "E.jpg", 
-          access_code: "12A1" 
-        }
-      }
+  0: {
+    first_name: "rakesh",
+    last_name: "pat",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "A.jpg",
+    individual_image1: "B.jpg",
+    individual_image2: "C.jpg",
+    individual_image3: "D.jpg",
+    individual_image4: "E.jpg",
+    individual_image5: "F.jpg",
+    individual_image6: "G.jpg",
+    individual_image7: "H.jpg",
+    individual_image8: "I.jpg",
+    individual_image9: "J.jpg",
+    individual_image10: "K.jpg",
+    individual_image11: "L.jpg",
+    individual_image12: "M.jpg",
+    individual_image13: "N.jpg",
+    individual_image14: "O.jpg",
+    individual_image15: "P.jpg",
+    access_code: "12A1"
+  },
+
+  1: {
+    first_name: "Ana",
+    last_name: "A",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "C.jpg",
+    individual_image1: "D.jpg",
+    individual_image2: "E.jpg",
+    access_code: "12A1"
+  },
+
+  2: {
+    first_name: "TOM",
+    last_name: "D",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "Q1.jpg",
+    individual_image1: "",
+    individual_image2: "",
+    individual_image3: "",
+    individual_image4: "",
+    individual_image5: "",
+    access_code: "12A7"
+  },
+
+  3: {
+    first_name: "HENRY",
+    last_name: "H",
+    team_name: "GOLD",
+    jersey_number: "11",
+    team_image: "Q2.jpg",
+    individual_image1: "Q3.jpg",
+    individual_image2: "",
+    individual_image3: "",
+    individual_image4: "",
+    individual_image5: "",
+    access_code: "12A6"
+  },
+
+  4: {
+    first_name: "OM",
+    last_name: "S",
+    team_name: "GOLD",
+    jersey_number: "11",
+    team_image: "Q4.jpg",
+    individual_image1: "Q5.jpg",
+    individual_image2: "Q6.jpg",
+    individual_image3: "",
+    individual_image4: "",
+    individual_image5: "",
+    access_code: "12A5"
+  },
+
+  5: {
+    first_name: "IRA",
+    last_name: "S",
+    team_name: "SILVER",
+    jersey_number: "11",
+    team_image: "Q7.jpg",
+    individual_image1: "Q8.jpg",
+    individual_image2: "Q9.jpg",
+    individual_image3: "Q10.jpg",
+    individual_image4: "",
+    individual_image5: "",
+    access_code: "12A4"
+  },
+
+  6: {
+    first_name: "PARTH",
+    last_name: "G",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "Q11.jpg",
+    individual_image1: "Q12.jpg",
+    individual_image2: "Q13.jpg",
+    individual_image3: "Q14.jpg",
+    individual_image4: "Q15.jpg",
+    individual_image5: "",
+    access_code: "12A3"
+  },
+
+  7: {
+    first_name: "UVI",
+    last_name: "SD",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "Q16.jpg",
+    individual_image1: "Q17.jpg",
+    individual_image2: "Q18.jpg",
+    individual_image3: "Q19.jpg",
+    individual_image4: "Q20.jpg",
+    individual_image5: "Q21.jpg",
+    access_code: "12A2"
+  },
+
+  8: {
+    first_name: "JACK",
+    last_name: "KOA",
+    team_name: "YANKEES",
+    jersey_number: "11",
+    team_image: "Q22.jpg",
+    individual_image1: "Q23.jpg",
+    individual_image2: "Q24.jpg",
+    individual_image3: "Q25.jpg",
+    individual_image4: "Q26.jpg",
+    individual_image5: "Q27.jpg",
+    individual_image6: "Q28.jpg",
+    individual_image7: "Q29.jpg",
+    access_code: "12A2"
+  }
+}
     };
 
     console.log(`➡️ Creating Job: ${jobName}`);
@@ -120,66 +235,66 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
     console.log('📸 Screenshot saved: order-page-loaded.png');
   });
 
-  // ====== STEP 3: FTP Upload ======
-  await allure.step('Upload images to FTP folder', async () => {
-    const client = new ftp.Client();
-    client.ftp.verbose = true;
+  // ====== STEP 3: FTP Upload (Simplified) ======
+await allure.step('Upload images to FTP folder', async () => {
+  const client = new ftp.Client();
+  client.ftp.verbose = false;   // 🔹 Change 1: Disable noisy FTP logs → only our logs
 
-    const FTP_HOST = 'staging.production.nextgenphotosolutions.com';
-    const FTP_USER = 'imageprocessing@staging.production.nextgenphotosolutions.com';
-    const FTP_PASSWORD = '5Z6$7I*L7Z-k';
-    const FTP_SECURE = false;
+  const FTP_HOST = 'staging.production.nextgenphotosolutions.com';
+  const FTP_USER = 'imageprocessing@staging.production.nextgenphotosolutions.com';
+  const FTP_PASSWORD = '5Z6$7I*L7Z-k';
 
-    const remotePhotosDir = `/gotphoto/input/${jobName}/photos`;
-    const localDir = path.resolve(__dirname, '../test-images');
+  const remotePhotosDir = `/gotphoto/input/${jobName}/photos`;
+  const localDir = path.resolve(__dirname, '../test-images');
 
-    // ✅ Validate local directory exists
-    if (!fs.existsSync(localDir)) {
-      throw new Error(`❌ Local image folder not found: ${localDir}`);
+  // Validate folder exists
+  if (!fs.existsSync(localDir)) {
+    throw new Error(`❌ Local image folder not found: ${localDir}`);
+  }
+
+  // Collect images
+  const files = fs.readdirSync(localDir).filter(f =>
+    /\.(jpg|jpeg|png)$/i.test(f)
+  );
+
+  if (files.length === 0) {
+    throw new Error(`❌ No image files found in: ${localDir}`);
+  }
+
+  console.log(`📂 Found ${files.length} images:`);
+  console.log(files.join(", "));   // 🔹 Change 2: Clean printing, no long sentence
+
+  try {
+    console.log(`➡️ Connecting to FTP...`);
+    await client.access({
+      host: FTP_HOST,
+      user: FTP_USER,
+      password: FTP_PASSWORD,
+      secure: false
+    });
+
+    console.log(`📁 Creating directory: ${remotePhotosDir}`);
+    await client.ensureDir(remotePhotosDir);
+
+    console.log(`⬆️ Uploading images...`);
+
+    for (const file of files) {
+      await client.uploadFrom(path.join(localDir, file), file);
+      console.log(`✔ Uploaded: ${file}`);   // 🔹 Change 3: Simple success log
     }
 
-    // ✅ Get list of image files
-    const files = fs.readdirSync(localDir).filter(f => /\.(jpg|png)$/i.test(f));
-    if (files.length === 0) {
-      throw new Error(`❌ No image files (.jpg, .png) found in: ${localDir}`);
-    }
+    console.log(`🎉 Upload complete! Total uploaded: ${files.length}`);
+    allure.attachment('Uploaded Files', JSON.stringify(files, null, 2), 'application/json');
 
-    console.log(`📂 Found ${files.length} images to upload: ${files.join(', ')}`);
+  } catch (err) {
+    console.error(`❌ FTP Error: ${err.message}`);
+    throw err;
 
-    try {
-      console.log(`➡️ Connecting to FTP: ${FTP_HOST}`);
-      
-      await client.access({
-        host: FTP_HOST,
-        user: FTP_USER,
-        password: FTP_PASSWORD,
-        secure: FTP_SECURE
-      });
-
-      console.log(`📁 Creating remote directory: ${remotePhotosDir}`);
-      await client.ensureDir(remotePhotosDir);
-      await client.cd(remotePhotosDir);
-
-      // ✅ Upload each file
-      for (const file of files) {
-        const localPath = path.join(localDir, file);
-        console.log(`⬆️ Uploading: ${file}`);
-        
-        await client.uploadFrom(localPath, file);
-        await new Promise(r => setTimeout(r, 300)); // Delay between uploads
-      }
-
-      console.log(`🎉 FTP upload complete! Uploaded ${files.length} files.`);
-      allure.attachment('Uploaded Files', JSON.stringify(files, null, 2), 'application/json');
-
-    } catch (err) {
-      console.error(`❌ FTP Error: ${err.message}`);
-      throw err;
-    } finally {
-      client.close();
-      console.log('🔒 FTP connection closed');
-    }
-  });
+  } finally {
+    client.close();
+    console.log('🔒 FTP connection closed');
+  }
+});
 
   // ====== STEP 4: Validate ======
   await allure.step('Validate upload and wait for processing', async () => {

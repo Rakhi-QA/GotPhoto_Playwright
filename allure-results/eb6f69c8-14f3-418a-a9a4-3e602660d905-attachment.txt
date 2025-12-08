@@ -1,6 +1,0 @@
-🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2405&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11921923446&beta-value1557655999
-⏳ Redirect attempt 1: still on login page...
-⏳ Redirect attempt 2: still on login page...
-📄 Page title: Next Generation | Photographers
-🔗 Current URL: https://staging.production.nextgenphotosolutions.com/Gpservices/payforimages/2/3619/2025/251106/Full%20Composite/G/17088/2405/338/Test_Staging_1762444188405/17181/1016630160
-✅ Page verified and ready for next step.

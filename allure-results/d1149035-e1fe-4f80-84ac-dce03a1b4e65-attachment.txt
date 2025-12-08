@@ -1,0 +1,16 @@
+API Response: {
+  code: 200,
+  nextgen_job_id: '2536',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2536&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1672595750&beta-value11054834822',
+  message: 'Congratulations! The order has been created successfully.'
+}
+💾 Saved job link, job name, and job ID to .env
+Extracted NextGen Job No: 2536
+Confirm API Response: {
+  code: 200,
+  nextgen_job_id: '2536',
+  message: 'Success! Input image processing status updated successfully in Next Gen .'
+}
+
+🎉 FULL COMPOSITE ORDER + CONFIRM API COMPLETED SUCCESSFULLY 🎉
+

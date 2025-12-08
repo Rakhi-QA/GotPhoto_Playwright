@@ -1,0 +1,5 @@
+🔌 Connecting to FTP...
+Connected to 103.224.182.250:21 (No encryption)
+> QUIT
+
+🔒 FTP connection closed.

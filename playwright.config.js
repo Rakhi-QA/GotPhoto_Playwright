@@ -1,9 +1,11 @@
-// playwright.config.js
+// @ts-check
+import { defineConfig, devices } from '@playwright/test';
 
-import { defineConfig } from '@playwright/test';
-
+/**
+ * @see https://playwright.dev/docs/test-configuration
+ */
 export default defineConfig({
-   testDir: './tests',
+  testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -11,10 +13,15 @@ export default defineConfig({
   timeout: 999000,
 
     reporter: [
-      ['list'], // console reporter
-      ['html'], // Playwright default HTML report
-      ['allure-playwright'] // Allure report
-    ],
+  ['line'],
+  ['list'],
+  ['html'],
+  ['allure-playwright', {
+    outputFolder: 'allure-results',
+    detail: true,
+    suiteTitle: false
+  }],
+],
     
 
   use: {
@@ -46,4 +53,5 @@ export default defineConfig({
       },
     },
   ],
+
 });

@@ -1,7 +1,0 @@
-✅ Found file at: E:\Playwright_GotPhoto\generatedData.json
-
-📌 Job ID: 2442
-📌 Job Name: Test_Staging_1763379108013
-🌐 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2442&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11920835951&beta-value1147291657
-
-🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2442&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11920835951&beta-value1147291657

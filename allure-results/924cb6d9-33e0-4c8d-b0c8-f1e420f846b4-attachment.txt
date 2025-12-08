@@ -1,2 +1,0 @@
-⚠️ Network idle timeout - continuing anyway
-⚠️ NextGen job number not found. Using original jobId for confirmation.

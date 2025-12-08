@@ -1,0 +1,5 @@
+⚠ Popup (Move Team Images) not found or not clickable: page.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('text=Move Team Images')
+    - waiting for" https://staging.production.nextgenphotosolutions.com/Gpservices/payforimages/3/3619/2025/251130/Full%20Composite/G/17208/2526/338/Test_Staging_1764511215884/17301/176545189" navigation to finish...
+

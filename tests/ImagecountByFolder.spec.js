@@ -24,7 +24,7 @@ test('📅 Count JPG/PNG images by job for a specific date', async () => {
     }
 
     // Step 2: Choose date folder manually (or latest one)
-    const dateFolder = "2025-11-10"; // 🔁 change this date manually
+    const dateFolder = "2025-12-07"; // 🔁 change this date manually
     console.log(`\n🗓 Checking jobs under date folder: ${dateFolder}`);
 
     // Step 3: List all job folders under selected date

@@ -5,7 +5,7 @@ import fs from 'fs';
 import { allure } from 'allure-playwright';
 import { fileURLToPath } from 'url';
 import { saveGeneratedLink } from '../utils/linkStorage.js';
-
+test.describe.configure({ mode: 'parallel' });
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -122,54 +122,107 @@ test('GotPhoto: Create Job → Get Link → Count Images → Print Graphics → 
 
     console.log("\n=================================================\n");
   });
+// ========================================================================
+// STEP 3B: LIST IMAGE NAMES + BUNDLE LOGIC + AMOUNTS
+// ========================================================================
+await allure.step('List image names + bundle calculation', async () => {
 
-  // ========================================================================
-  // STEP 3B: LIST IMAGE NAMES + BUNDLE LOGIC
-  // ========================================================================
-  await allure.step('List image names + bundle calculation', async () => {
+  const rows = await page.$$('#playerinfo_fc tr');
 
-    const rows = await page.$$('#playerinfo_fc tr');
+  console.log(`\n===== PLAYER IMAGE DETAILS (${rows.length} players) =====\n`);
 
-    console.log(`\n===== PLAYER IMAGE DETAILS (${rows.length} players) =====\n`);
+  // For Allure: store complete results
+  let allureData = [];
 
-    for (let i = 0; i < rows.length; i++) {
+  for (let i = 0; i < rows.length; i++) {
 
-      const row = rows[i];
+    const row = rows[i];
 
-      const firstName = await row.$eval('td:nth-child(1)', el => el.innerText.trim());
-      const lastName = await row.$eval('td:nth-child(2)', el => el.innerText.trim());
+    const firstName = await row.$eval('td:nth-child(1)', el => el.innerText.trim());
+    const lastName = await row.$eval('td:nth-child(2)', el => el.innerText.trim());
 
-      let teamImage = "";
-      const teamBtn = await row.$('td:nth-child(5) button');
-      if (teamBtn) teamImage = await teamBtn.innerText();
+    // TEAM IMAGE
+    let teamImage = "";
+    const teamBtn = await row.$('td:nth-child(5) button');
+    if (teamBtn) teamImage = await teamBtn.innerText();
 
-      const imageColumns = [8, 9, 10, 11, 12];
-      let imageNames = [];
+    // PLAYER IMAGES
+    const imageColumns = [8, 9, 10, 11, 12];
+    let imageNames = [];
 
-      for (let col of imageColumns) {
-        const imgBtn = await row.$(`td:nth-child(${col}) button`);
-        if (imgBtn) {
-          const imgText = await imgBtn.innerText();
-          if (imgText.trim() !== "") imageNames.push(imgText.trim());
-        }
+    for (let col of imageColumns) {
+      const imgBtn = await row.$(`td:nth-child(${col}) button`);
+      if (imgBtn) {
+        const imgText = await imgBtn.innerText();
+        if (imgText.trim() !== "") imageNames.push(imgText.trim());
       }
-
-      const imageCount = imageNames.length;
-
-      let bundleSymbol = "";
-      if (imageCount === 1) bundleSymbol = "S";
-      else if (imageCount === 2) bundleSymbol = "R";
-      else if (imageCount >= 3) bundleSymbol = "L";
-      else bundleSymbol = "No Images";
-
-      console.log("-----------------------------------------------------");
-      console.log(`Player: ${firstName} ${lastName}`);
-      console.log(`Team Image: ${teamImage || "None"}`);
-      console.log(`Images (${imageCount}): ${imageNames.join(", ") || "None"}`);
-      console.log(`Bundle Symbol (Calculated): ${bundleSymbol}`);
-      console.log("-----------------------------------------------------\n");
     }
-  });
+
+    const imageCount = imageNames.length;
+
+    // =======================================================
+    // NEW BUNDLE + PRICE LOGIC
+    // =======================================================
+    let bundleSymbol = "";
+    let bundleAmount = "";
+
+    if (imageCount === 1) {
+      bundleSymbol = "S";
+      bundleAmount = "$1.00";
+    }
+    else if (imageCount === 2) {
+      bundleSymbol = "R";
+      bundleAmount = "$1.80";
+    }
+    else if (imageCount >= 3 && imageCount <= 5) {
+      bundleSymbol = "L";
+      bundleAmount = "$3.50";
+    }
+    else if (imageCount >= 6 && imageCount <= 10) {
+      bundleSymbol = "XL";
+      bundleAmount = "$5.80";
+    }
+    else if (imageCount >= 11 && imageCount <= 15) {
+      bundleSymbol = "UL";
+      bundleAmount = "$8.10";
+    }
+    else {
+      bundleSymbol = "No Images";
+      bundleAmount = "$0.00";
+    }
+
+    // =======================================================
+    // PRINT TO CONSOLE
+    // =======================================================
+    console.log("-----------------------------------------------------");
+    console.log(`Player: ${firstName} ${lastName}`);
+    console.log(`Team Image: ${teamImage || "None"}`);
+    console.log(`Images (${imageCount}): ${imageNames.join(", ") || "None"}`);
+    console.log(`Bundle Symbol: ${bundleSymbol}`);
+    console.log(`Bundle Amount: ${bundleAmount}`);
+    console.log("-----------------------------------------------------\n");
+
+    // =======================================================
+    // PUSH TO ALLURE REPORT DATA
+    // =======================================================
+    allureData.push({
+      player: `${firstName} ${lastName}`,
+      teamImage: teamImage || "None",
+      imageCount,
+      images: imageNames,
+      bundleSymbol,
+      bundleAmount
+    });
+  }
+
+  // Attach complete bundle report to Allure
+  allure.attachment(
+    'Player Bundle Summary',
+    JSON.stringify(allureData, null, 2),
+    'application/json'
+  );
+});
+
 
   // ========================================================================
   // STEP 4: FINAL VALIDATION
