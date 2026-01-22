@@ -12,6 +12,7 @@
   "author": "Rakhhi",
   "license": "ISC",
   "devDependencies": {
+    "@applitools/eyes-playwright": "^1.42.4",
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.9.2",
     "allure-commandline": "^2.34.1",

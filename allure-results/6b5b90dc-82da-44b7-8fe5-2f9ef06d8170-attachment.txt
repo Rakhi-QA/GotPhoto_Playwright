@@ -1,0 +1,1 @@
+💾 Saved job link, job name, and job ID to .env

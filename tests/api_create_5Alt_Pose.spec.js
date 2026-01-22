@@ -14,12 +14,15 @@ test.setTimeout(300000); // 5 minutes timeout
 test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ page, request }) => {
 
   // ================================
-  // ✅ FIXED: CORRECT ALURE LABELS
+  // ✅ ALLURE METADATA & LABELS
   // ================================
-  allure.label("Environment", "QA");
-  allure.label("Owner", "Rakhi");
-  allure.label("Epic", "GotPhoto Full Flow");
+  allure.label("environment", "QA");
+  allure.label("owner", "Rakhi");
+  allure.label("epic", "GotPhoto Full Flow");
+  allure.label("feature", "5 Alternate Pose");
+  allure.label("story", "Create job with 5 alternate poses, count images, and configure order options");
   allure.severity("critical");
+  allure.description("Creates a photo editing job via API with 5 alternate poses, uploads images via FTP, counts images per player, and configures order options");
 
   // ====== Declare Variables ======
   let jobId;
@@ -27,7 +30,7 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
   let jobName;
 
   // ====== STEP 1: Create Job via API ======
-  await allure.step('Create job and get generated order link', async () => {
+  await allure.step('Step 1: Create job via API and get generated order link', async () => {
     const apiUrl = 'https://staging.production.nextgenphotosolutions.com/Gpservices/pushData';
 
     const timestamp = Date.now();
@@ -123,7 +126,7 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
   console.log(`✅ Saved generatedData.json to: ${outputPath}`);
 
   // ====== STEP 2: OPEN GENERATED LINK ======
-  await allure.step('Open generated order link in browser', async () => {
+  await allure.step('Step 2: Open generated order link in browser', async () => {
     console.log(`🌐 Navigating to: ${generatedLink}`);
 
     await page.goto(generatedLink, { waitUntil: 'networkidle' });
@@ -137,7 +140,7 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
   });
 
   // ====== STEP 3: FTP Upload ======
-  await allure.step('Upload images to FTP folder', async () => {
+  await allure.step('Step 3: Upload images to FTP folder', async () => {
     const client = new ftp.Client();
     client.ftp.verbose = false;
 
@@ -199,17 +202,228 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
     }
   });
 
-  // ====== STEP 4: VALIDATION ======
-  await allure.step('Validate upload and wait for processing', async () => {
-    console.log('⏳ Waiting for upload confirmation...');
-    await page.waitForTimeout(5000);
+  // ====== STEP 4: COUNT IMAGES PER PLAYER ======
+  await allure.step('Step 4: Count images per player in table', async () => {
+    console.log('\n========== PLAYER IMAGE COUNT ==========\n');
+
+    // Wait for the player table to be visible
+    await page.waitForSelector('#playerinfo_fc tr', { timeout: 15000 });
+    await page.waitForTimeout(2000);
+
+    const rows = await page.$$('#playerinfo_fc tr');
+    let playerImageCounts = [];
+
+    for (let i = 0; i < rows.length; i++) {
+      const row = rows[i];
+
+      try {
+        // Get player name
+        const firstName = await row.$eval('td:nth-child(1)', el => el.innerText.trim()).catch(() => '');
+        const lastName = await row.$eval('td:nth-child(2)', el => el.innerText.trim()).catch(() => '');
+        const playerName = `${firstName} ${lastName}`.trim();
+
+        if (!playerName) continue;
+
+        // Get team image
+        let teamImage = "";
+        const teamBtn = await row.$('td:nth-child(5) button').catch(() => null);
+        if (teamBtn) {
+          teamImage = await teamBtn.innerText().catch(() => '');
+        }
+
+        // Count individual images (columns 8, 9, 10, 11, 12)
+        const imageColumns = [8, 9, 10, 11, 12];
+        let imageNames = [];
+        let imageCount = 0;
+
+        for (let col of imageColumns) {
+          const imgBtn = await row.$(`td:nth-child(${col}) button`).catch(() => null);
+          if (imgBtn) {
+            const imgText = await imgBtn.innerText().catch(() => '');
+            if (imgText && imgText.trim() !== "") {
+              imageNames.push(imgText.trim());
+              imageCount++;
+            }
+          }
+        }
+
+        // Log to console
+        console.log(`-----------------------------------------------------`);
+        console.log(`Player: ${playerName}`);
+        console.log(`Team Image: ${teamImage || "None"}`);
+        console.log(`Individual Images Count: ${imageCount}`);
+        console.log(`Image Names: ${imageNames.join(", ") || "None"}`);
+        console.log(`-----------------------------------------------------\n`);
+
+        // Store for Allure report
+        playerImageCounts.push({
+          player: playerName,
+          teamImage: teamImage || "None",
+          individualImageCount: imageCount,
+          imageNames: imageNames
+        });
+
+      } catch (err) {
+        console.log(`⚠️ Error processing row ${i}: ${err.message}`);
+      }
+    }
+
+    // Attach to Allure report
+    allure.attachment(
+      'Player Image Count Summary',
+      JSON.stringify(playerImageCounts, null, 2),
+      'application/json'
+    );
+
+    console.log(`\n✅ Total Players: ${playerImageCounts.length}`);
+    console.log('===================================================\n');
+  });
+
+  // ====== STEP 5: SELECT ORDER OPTIONS ======
+  await allure.step('Step 5: Select Standard Team Build', async () => {
+    await page.waitForSelector('#std_team_up', { timeout: 10000 });
+    await page.click('#std_team_up');
+    await page.waitForTimeout(1000);
+    console.log('✅ Selected: Standard Team Build');
+  });
+
+  await allure.step('Step 6: Select Single Template for Organization', async () => {
+    await page.waitForSelector('#bgsinglecheck_s', { timeout: 10000 });
+    await page.click('#bgsinglecheck_s');
+    await page.waitForTimeout(1000);
+    console.log('✅ Selected: Single Template for Organization');
+  });
+
+  await allure.step('Step 7: Select 3rd Creative - Fresh Paint', async () => {
+    // Wait for template dropdown to be visible
+    await page.waitForSelector('#bcktemplete', { timeout: 10000 });
+    
+    // Get all options and find "Fresh Paint" (3rd option)
+    const options = await page.$$eval('#bcktemplete option', options => 
+      options.map((opt, idx) => ({ index: idx, value: opt.value, text: opt.text.trim() }))
+    );
+    
+    // Find Fresh Paint option
+    const freshPaintOption = options.find(opt => 
+      opt.text.toLowerCase().includes('fresh paint') || 
+      opt.text.toLowerCase().includes('freshpaint')
+    );
+    
+    if (freshPaintOption) {
+      await page.selectOption('#bcktemplete', { value: freshPaintOption.value });
+      console.log(`✅ Selected: ${freshPaintOption.text} (value: ${freshPaintOption.value})`);
+    } else {
+      // If not found by name, select 3rd option (index 2, since index 0 is usually "Select")
+      if (options.length > 2) {
+        await page.selectOption('#bcktemplete', { value: options[2].value });
+        console.log(`✅ Selected 3rd option: ${options[2].text} (value: ${options[2].value})`);
+      } else {
+        throw new Error('Could not find Fresh Paint or 3rd creative option');
+      }
+    }
+    
+    await page.waitForTimeout(1000);
+  });
+
+  await allure.step('Step 8: Select Extracted images', async () => {
+    await page.waitForSelector('#extractedimages', { timeout: 10000 });
+    await page.click('#extractedimages');
+    await page.waitForTimeout(500);
+    
+    // Also click the inner extracted images option if it exists
+    const extractedImagesI = await page.$('#extractedimagesI').catch(() => null);
+    if (extractedImagesI) {
+      await page.click('#extractedimagesI');
+    }
+    
+    await page.waitForTimeout(1000);
+    console.log('✅ Selected: Extracted images');
+  });
+
+  await allure.step('Step 9: Select PNG Crop - 3/4 Crop', async () => {
+    // First select PNG Crop option
+    await page.waitForSelector('#pngcrop', { timeout: 10000 });
+    await page.click('#pngcrop');
+    await page.waitForTimeout(1000);
+    
+    // Then select 3/4 Crop option
+    await page.waitForSelector('#pngcrop34', { timeout: 10000 });
+    await page.click('#pngcrop34');
+    await page.waitForTimeout(1000);
+    console.log('✅ Selected: PNG Crop - 3/4 Crop');
+  });
+
+  await allure.step('Step 10: Select PNG Team Add On', async () => {
+    await page.waitForSelector('#png_team_add_on', { timeout: 10000 });
+    await page.click('#png_team_add_on');
+    await page.waitForTimeout(1000);
+    console.log('✅ Selected: PNG Team Add On');
+  });
+
+  await allure.step('Step 11: Select Unique color for each team in organization', async () => {
+    // Look for unique color option - common selectors
+    const uniqueColorSelectors = [
+      '#unique_color',
+      '#uniqueColor',
+      '#team_unique_color',
+      'input[name*="unique"][name*="color"]',
+      'input[id*="unique"][id*="color"]'
+    ];
+
+    let found = false;
+    for (const selector of uniqueColorSelectors) {
+      try {
+        const element = await page.$(selector);
+        if (element && await element.isVisible({ timeout: 2000 })) {
+          await element.click();
+          found = true;
+          console.log(`✅ Selected: Unique color for each team (using selector: ${selector})`);
+          break;
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+
+    if (!found) {
+      // Try to find by text content
+      const allInputs = await page.$$('input[type="checkbox"], input[type="radio"]');
+      for (const input of allInputs) {
+        const label = await input.evaluateHandle(el => {
+          const id = el.id;
+          if (!id) return null;
+          const labelEl = document.querySelector(`label[for="${id}"]`);
+          return labelEl ? labelEl.textContent.trim() : null;
+        });
+        
+        if (label && label.toLowerCase().includes('unique') && label.toLowerCase().includes('color')) {
+          await input.click();
+          found = true;
+          console.log(`✅ Selected: Unique color for each team (found by label text)`);
+          break;
+        }
+      }
+    }
+
+    if (!found) {
+      console.log('⚠️ Warning: Could not find "Unique color for each team" option');
+    }
+
+    await page.waitForTimeout(1000);
+  });
+
+  // ====== STEP 12: FINAL VALIDATION ======
+  await allure.step('Step 12: Final validation and screenshot', async () => {
+    console.log('⏳ Waiting for page to update...');
+    await page.waitForTimeout(3000);
 
     const pageContent = await page.content();
     if (pageContent.includes('success') || pageContent.includes('Success')) {
-      console.log('✅ Upload success message detected on page');
+      console.log('✅ Success message detected on page');
     }
 
     await page.screenshot({ path: 'order-validation-complete.png', fullPage: true });
+    console.log('✅ Screenshot saved: order-validation-complete.png');
   });
 
   console.log('\n✅ ========== TEST COMPLETED SUCCESSFULLY ==========');

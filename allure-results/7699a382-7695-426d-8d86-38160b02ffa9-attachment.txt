@@ -1,0 +1,4 @@
+📄 Current URL: https://staging.production.nextgenphotosolutions.com/login
+✅ Email field found using selector: input[type="email"]
+✅ Password field found using selector: input[type="password"]
+✅ Login button clicked using selector: button:has-text("Login")

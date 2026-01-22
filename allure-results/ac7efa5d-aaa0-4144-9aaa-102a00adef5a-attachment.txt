@@ -1,0 +1,7 @@
+🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2627&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1836909806&beta-value1901582537
+📌 Job ID: undefined
+✅ Page Loaded: Next Generation | Photographers
+🔍 Looking for Traditional option...
+✅ Clicked Traditional image using selector: img[src*="Traditional Memorymate.jpg"]
+✅ Traditional option successfully selected
+🔍 Looking for Confirm button...

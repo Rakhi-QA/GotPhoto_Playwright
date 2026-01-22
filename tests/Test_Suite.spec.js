@@ -2,7 +2,8 @@
 import { test } from '@playwright/test';
 
 // Import all individual test specs
-import'./TraditionalPlus_IgnoreImage.spec.js';
+//import'./TraditionalPlus_IgnoreImage.spec.js';
+import'./tests/Traditional_Order_Complete.spec.js --project=chromium';
 //import './open_generated_link.spec.js';
 //import './TraditionalPlus_MoveImages_order.spec.js';
 //import './confirm_images_transferred_Input_to_Cam.spec.js';

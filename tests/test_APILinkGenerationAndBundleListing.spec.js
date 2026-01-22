@@ -18,14 +18,15 @@ test.setTimeout(300000); // 5 minutes
 test('GotPhoto - Create Job Link + Bundle Price + FTP Upload + Validation', async ({ page, request }) => {
 
   // ======================================================
-// 🔥 ALLURE — TEST METADATA (CORRECT FORMAT)
-// ======================================================
-allure.label({ name: 'epic', value: 'GotPhoto Automation Framework' });
-allure.label({ name: 'feature', value: 'End-to-End Order Workflow' });
-allure.label({ name: 'story', value: 'Create Job → Process Bundle → Upload Images → Validate' });
-allure.label({ name: 'owner', value: 'Rakhi' });
-allure.label({ name: 'environment', value: 'QA' });
-allure.label({ name: 'module', value: 'Order Processing' });
+  // ✅ ALLURE METADATA & LABELS
+  // ======================================================
+  allure.label("environment", "QA");
+  allure.label("owner", "Rakhi");
+  allure.label("epic", "GotPhoto Automation Framework");
+  allure.label("feature", "End-to-End Order Workflow");
+  allure.label("story", "Create Job → Print Player Images → Process Bundle → Upload Images → Validate");
+  allure.severity("critical");
+  allure.description("Creates a photo editing job via API, prints all player image data, calculates bundles, uploads images via FTP, and validates the complete workflow");
 
 
 
@@ -35,14 +36,12 @@ allure.label({ name: 'module', value: 'Order Processing' });
   let jobId;
   let generatedLink;
   let jobName;
+  let playersDetail; // Store players data for later use
 
   // ======================================================
   // STEP 1: API Job Creation
   // ======================================================
-  await allure.step('API: Create job and retrieve generated checkout link', async () => {
-
-    allure.description('Sends API request to create a new NextGen job and retrieves the checkout / order link.');
-
+  await allure.step('Step 1: Create job via API and retrieve generated checkout link', async () => {
     const apiUrl = 'https://staging.production.nextgenphotosolutions.com/Gpservices/pushData';
     const timestamp = Date.now();
     jobName = `Test_Staging_${timestamp}`;
@@ -58,7 +57,7 @@ allure.label({ name: 'module', value: 'Order Processing' });
       email_id: "rakhiqa@tiuconsulting.com",
       editing_request_id: "407",
       redirect_success_url: "https://gotphoto.com",
-      players_detail: {
+      players_detail: (playersDetail = {
         0: {
           first_name: "rakesh",
           last_name: "pat",
@@ -88,9 +87,9 @@ allure.label({ name: 'module', value: 'Order Processing' });
         4: { first_name: "OM", last_name: "S", team_name: "GOLD", jersey_number: "11", team_image: "Q4.jpg", individual_image1: "Q5.jpg", individual_image2: "Q6.jpg", access_code: "12A5" },
         5: { first_name: "IRA", last_name: "S", team_name: "SILVER", jersey_number: "11", team_image: "Q7.jpg", individual_image1: "Q8.jpg", individual_image2: "Q9.jpg", individual_image3: "Q10.jpg", access_code: "12A4" },
         6: { first_name: "PARTH", last_name: "G", team_name: "YANKEES", jersey_number: "11", team_image: "Q11.jpg", individual_image1: "Q12.jpg", individual_image2: "Q13.jpg", individual_image3: "Q14.jpg", individual_image4: "Q15.jpg", access_code: "12A3" },
-        7: { first_name: "UVI", last_lastname: "SD", team_name: "YANKEES", jersey_number: "11", team_image: "Q16.jpg", individual_image1: "Q17.jpg", individual_image2: "Q18.jpg", individual_image3: "Q19.jpg", individual_image4: "Q20.jpg", individual_image5: "Q21.jpg", access_code: "12A2" },
+        7: { first_name: "UVI", last_name: "SD", team_name: "YANKEES", jersey_number: "11", team_image: "Q16.jpg", individual_image1: "Q17.jpg", individual_image2: "Q18.jpg", individual_image3: "Q19.jpg", individual_image4: "Q20.jpg", individual_image5: "Q21.jpg", access_code: "12A2" },
         8: { first_name: "JACK", last_name: "KOA", team_name: "YANKEES", jersey_number: "11", team_image: "Q22.jpg", individual_image1: "Q23.jpg", individual_image2: "Q24.jpg", individual_image3: "Q25.jpg", individual_image4: "Q26.jpg", individual_image5: "Q27.jpg", individual_image6: "Q28.jpg", individual_image7: "Q29.jpg", access_code: "12A2" }
-      }
+      })
     };
 
     console.log(`➡️ Creating Job: ${jobName}`);
@@ -117,18 +116,99 @@ allure.label({ name: 'module', value: 'Order Processing' });
       responseBody.url;
 
     expect(generatedLink).toBeTruthy();
+    console.log(`🔗 Generated Link: ${generatedLink}`);
 
     saveGeneratedLink(generatedLink);
+  });
+
+  // ======================================================
+  // STEP 2: Print Player Images Data from API Payload
+  // ======================================================
+  await allure.step('Step 2: Print all player images data from API payload', async () => {
+    console.log('\n========== PLAYER IMAGES DATA (FROM API PAYLOAD) ==========\n');
+
+    let playerImageData = [];
+
+    for (const [playerIndex, player] of Object.entries(playersDetail)) {
+      const playerName = `${player.first_name} ${player.last_name}`.trim();
+      const teamImage = player.team_image || "None";
+      
+      // Collect all individual images
+      const individualImages = [];
+      for (let i = 1; i <= 15; i++) {
+        const imageKey = `individual_image${i}`;
+        if (player[imageKey] && player[imageKey].trim() !== "") {
+          individualImages.push(player[imageKey]);
+        }
+      }
+
+      const imageCount = individualImages.length;
+      const totalImages = (teamImage !== "None" ? 1 : 0) + imageCount;
+
+      // Calculate Bundle Code based on individual image count
+      let bundleCode = "";
+      if (imageCount === 1) {
+        bundleCode = "S";
+      } else if (imageCount === 2) {
+        bundleCode = "R";
+      } else if (imageCount >= 3 && imageCount <= 5) {
+        bundleCode = "L";
+      } else if (imageCount >= 6 && imageCount <= 10) {
+        bundleCode = "XL";
+      } else if (imageCount >= 11 && imageCount <= 15) {
+        bundleCode = "UL";
+      } else {
+        bundleCode = "No Images";
+      }
+
+      // Print to console
+      console.log("=====================================================");
+      console.log(`Player #${playerIndex}: ${playerName}`);
+      console.log(`Team Name: ${player.team_name}`);
+      console.log(`Jersey Number: ${player.jersey_number}`);
+      console.log(`Access Code: ${player.access_code}`);
+      console.log(`Team Image: ${teamImage}`);
+      console.log(`Individual Images Count: ${imageCount}`);
+      console.log(`Individual Images: ${individualImages.length > 0 ? individualImages.join(", ") : "None"}`);
+      console.log(`Total Images (Team + Individual): ${totalImages}`);
+      console.log(`Bundle Code: ${bundleCode}`);
+      console.log("=====================================================\n");
+
+      // Store for Allure report
+      playerImageData.push({
+        playerIndex: parseInt(playerIndex),
+        playerName,
+        teamName: player.team_name,
+        jerseyNumber: player.jersey_number,
+        accessCode: player.access_code,
+        teamImage,
+        individualImages,
+        individualImageCount: imageCount,
+        totalImages,
+        bundleCode
+      });
+    }
+
+    // Attach to Allure report
+    allure.attachment(
+      'Player Images Data (From API Payload)',
+      JSON.stringify(playerImageData, null, 2),
+      'application/json'
+    );
+
+    console.log(`\n✅ Total Players: ${playerImageData.length}`);
+    console.log('===================================================\n');
   });
 
   // Save job details for debugging
   const outputPath = path.resolve(process.cwd(), 'generatedData.json');
   fs.writeFileSync(outputPath, JSON.stringify({ jobId, generatedLink, jobName }, null, 2));
+  console.log(`✅ Saved generatedData.json to: ${outputPath}`);
 
   // ======================================================
-  // STEP 2: Open the Generated Link
+  // STEP 3: Open the Generated Link
   // ======================================================
-  await allure.step('UI: Open generated order link in browser', async () => {
+  await allure.step('Step 3: Open generated order link in browser', async () => {
     console.log(`🌐 Opening URL: ${generatedLink}`);
 
     await page.goto(generatedLink, { waitUntil: 'networkidle' });
@@ -142,11 +222,98 @@ allure.label({ name: 'module', value: 'Order Processing' });
   });
 
   // ======================================================
-  // STEP 3B: Bundle + Price Logic for all players
+  // STEP 4: Extract Alternate Pose Graphic Options Selection
   // ======================================================
-  await allure.step('Bundle & Price Calculation for all players', async () => {
+  await allure.step('Step 4: Extract Alternate Pose Graphic Options - Selected/Not Selected', async () => {
+    console.log('\n========== ALTERNATE POSE GRAPHIC OPTIONS SELECTION ==========\n');
 
-    allure.description('Reads UI table and calculates bundle symbol + amount based on number of images for each player.');
+    // Wait for the graphics table to be visible
+    await page.waitForSelector('#altPoseTbl', { timeout: 15000 }).catch(() => {
+      console.log('⚠️ Alternate Pose Graphics table not found. Skipping graphics extraction.');
+      return;
+    });
+
+    await page.waitForTimeout(2000);
+
+    const rows = await page.$$('#altPoseTbl tr');
+    let graphicsSelectionData = [];
+
+    if (rows.length === 0) {
+      console.log('⚠️ No graphics rows found in table.');
+      return;
+    }
+
+    for (let i = 1; i < rows.length - 1; i++) {
+      try {
+        const row = rows[i];
+        const graphicName = await row.$eval('td:first-child', el => el.innerText.trim()).catch(() => '');
+        
+        if (!graphicName) continue;
+
+        const checkboxes = await row.$$('input[type="checkbox"]');
+        
+        let selectedImages = [];
+        let notSelectedImages = [];
+        let disabledImages = [];
+
+        for (let colIndex = 0; colIndex < checkboxes.length; colIndex++) {
+          const checkbox = checkboxes[colIndex];
+          const checked = await checkbox.isChecked().catch(() => false);
+          const disabled = await checkbox.isDisabled().catch(() => false);
+          const imageColumn = `Image${colIndex + 1}`;
+
+          if (disabled) {
+            disabledImages.push(imageColumn);
+          } else if (checked) {
+            selectedImages.push(imageColumn);
+          } else {
+            notSelectedImages.push(imageColumn);
+          }
+        }
+
+        // Print to console
+        console.log("=====================================================");
+        console.log(`Graphic: ${graphicName}`);
+        console.log(`✔ Selected For: ${selectedImages.length > 0 ? selectedImages.join(", ") : "None"}`);
+        console.log(`✖ Not Selected For: ${notSelectedImages.length > 0 ? notSelectedImages.join(", ") : "None"}`);
+        console.log(`🚫 Disabled: ${disabledImages.length > 0 ? disabledImages.join(", ") : "None"}`);
+        console.log("=====================================================\n");
+
+        // Store for Allure report
+        graphicsSelectionData.push({
+          graphicName,
+          selectedFor: selectedImages,
+          notSelectedFor: notSelectedImages,
+          disabled: disabledImages,
+          selectedCount: selectedImages.length,
+          notSelectedCount: notSelectedImages.length,
+          disabledCount: disabledImages.length
+        });
+
+      } catch (err) {
+        console.log(`⚠️ Error processing graphics row ${i}: ${err.message}`);
+      }
+    }
+
+    // Attach to Allure report
+    if (graphicsSelectionData.length > 0) {
+      allure.attachment(
+        'Alternate Pose Graphic Options Selection',
+        JSON.stringify(graphicsSelectionData, null, 2),
+        'application/json'
+      );
+      console.log(`\n✅ Total Graphics: ${graphicsSelectionData.length}`);
+    } else {
+      console.log('\n⚠️ No graphics data extracted.');
+    }
+
+    console.log('===================================================\n');
+  });
+
+  // ======================================================
+  // STEP 5: Bundle + Price Logic for all players
+  // ======================================================
+  await allure.step('Step 5: Bundle & Price Calculation for all players', async () => {
 
     const rows = await page.$$('#playerinfo_fc tr');
 
@@ -207,11 +374,9 @@ allure.label({ name: 'module', value: 'Order Processing' });
   });
 
   // ======================================================
-  // STEP 3: FTP Upload (Simple)
+  // STEP 6: FTP Upload
   // ======================================================
-  await allure.step('FTP: Upload all images for the job', async () => {
-
-    allure.description('Uploads all images from test-images folder into the job FTP photos folder.');
+  await allure.step('Step 6: Upload all images for the job via FTP', async () => {
 
     const client = new ftp.Client();
     client.ftp.verbose = false;
@@ -221,7 +386,7 @@ allure.label({ name: 'module', value: 'Order Processing' });
     const FTP_PASSWORD = '5Z6$7I*L7Z-k';
 
     const remotePhotosDir = `/gotphoto/input/${jobName}/photos`;
-    const localDir = path.resolve(__dirname, '../test-images');
+    const localDir = path.resolve(__dirname, '../test-images/images');
 
     if (!fs.existsSync(localDir)) {
       throw new Error(`Local image folder not found: ${localDir}`);
@@ -252,11 +417,9 @@ allure.label({ name: 'module', value: 'Order Processing' });
   });
 
   // ======================================================
-  // STEP 4: Validation
+  // STEP 7: Validation
   // ======================================================
-  await allure.step('Validate successful upload & page status', async () => {
-
-    allure.description('Final validation of UI to confirm success message or stable status after upload.');
+  await allure.step('Step 7: Validate successful upload & page status', async () => {
 
     await page.waitForTimeout(4000);
 

@@ -1,4 +1,0 @@
-⚠ Popup (Move Team Images) not found or not clickable: page.waitForSelector: Timeout 12000ms exceeded.
-Call log:
-  - waiting for locator('text=You have images in the image5 column') to be visible
-

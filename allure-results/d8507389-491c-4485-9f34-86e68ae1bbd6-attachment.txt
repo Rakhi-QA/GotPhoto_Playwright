@@ -1,0 +1,12 @@
+📄 Current URL: https://staging.production.nextgenphotosolutions.com/login
+✅ Email field found using selector: input[type="email"]
+✅ Password field found using selector: input[type="password"]
+✅ Filled email: rakhiqa@tiuconsulting.com
+✅ Filled password: ******
+✅ Login button clicked using selector: button:has-text("Login")
+📄 Post-login URL: https://staging.production.nextgenphotosolutions.com/bdevelopers/redirectionurl
+📄 Page Title: Next Generation | Photographers
+✅ Login successful!
+
+🎉 POSITIVE LOGIN TEST COMPLETED SUCCESSFULLY 🎉
+

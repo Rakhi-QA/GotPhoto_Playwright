@@ -28,7 +28,7 @@ test('Full Composite Standard >> Place Order + FTP Upload + Confirm Image Transf
   // ============================================================
 
   await allure.step('Create Full Composite job using API', async () => {
-    const apiUrl = 'https://staging.production.nextgenphotosolutions.com/Gpservices/pushData';
+    const apiUrl = 'https://production.nextgenphotosolutions.com/Gpservices/pushData';
     jobName = `Test_Staging_${Date.now()}`;
 
     const payload = {
@@ -229,7 +229,7 @@ test('Full Composite Standard >> Place Order + FTP Upload + Confirm Image Transf
   });
 
   await allure.step('Apply Discount', async () => {
-    await page.fill('#discount_code', '100OFF');
+    await page.fill('#discount_code', '0AMT');
     await page.click('#Redeem');
     await page.waitForTimeout(3000);
   });

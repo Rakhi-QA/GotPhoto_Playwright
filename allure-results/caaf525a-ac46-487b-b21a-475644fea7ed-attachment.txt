@@ -1,0 +1,207 @@
+➡️ Creating Job: Test_Staging_1768810213948
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2626",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2626&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value165371639&beta-value115080184",
+  "message": "Congratulations! The order has been created successfully."
+}
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2626&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value165371639&beta-value115080184
+💾 Saved job link, job name, and job ID to .env
+
+========== PLAYER IMAGES DATA (FROM API PAYLOAD) ==========
+
+=====================================================
+Player #0: rakesh pat
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A1
+Team Image: A.jpg
+Individual Images Count: 15
+Individual Images: B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg, K.jpg, L.jpg, M.jpg, N.jpg, O.jpg, P.jpg
+Total Images (Team + Individual): 16
+Bundle Code: UL
+=====================================================
+
+=====================================================
+Player #1: Ana A
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A1
+Team Image: C.jpg
+Individual Images Count: 2
+Individual Images: D.jpg, E.jpg
+Total Images (Team + Individual): 3
+Bundle Code: R
+=====================================================
+
+=====================================================
+Player #2: TOM D
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A7
+Team Image: Q1.jpg
+Individual Images Count: 0
+Individual Images: None
+Total Images (Team + Individual): 1
+Bundle Code: No Images
+=====================================================
+
+=====================================================
+Player #3: HENRY H
+Team Name: GOLD
+Jersey Number: 11
+Access Code: 12A6
+Team Image: Q2.jpg
+Individual Images Count: 1
+Individual Images: Q3.jpg
+Total Images (Team + Individual): 2
+Bundle Code: S
+=====================================================
+
+=====================================================
+Player #4: OM S
+Team Name: GOLD
+Jersey Number: 11
+Access Code: 12A5
+Team Image: Q4.jpg
+Individual Images Count: 2
+Individual Images: Q5.jpg, Q6.jpg
+Total Images (Team + Individual): 3
+Bundle Code: R
+=====================================================
+
+=====================================================
+Player #5: IRA S
+Team Name: SILVER
+Jersey Number: 11
+Access Code: 12A4
+Team Image: Q7.jpg
+Individual Images Count: 3
+Individual Images: Q8.jpg, Q9.jpg, Q10.jpg
+Total Images (Team + Individual): 4
+Bundle Code: L
+=====================================================
+
+=====================================================
+Player #6: PARTH G
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A3
+Team Image: Q11.jpg
+Individual Images Count: 4
+Individual Images: Q12.jpg, Q13.jpg, Q14.jpg, Q15.jpg
+Total Images (Team + Individual): 5
+Bundle Code: L
+=====================================================
+
+=====================================================
+Player #7: UVI SD
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A2
+Team Image: Q16.jpg
+Individual Images Count: 5
+Individual Images: Q17.jpg, Q18.jpg, Q19.jpg, Q20.jpg, Q21.jpg
+Total Images (Team + Individual): 6
+Bundle Code: L
+=====================================================
+
+=====================================================
+Player #8: JACK KOA
+Team Name: YANKEES
+Jersey Number: 11
+Access Code: 12A2
+Team Image: Q22.jpg
+Individual Images Count: 7
+Individual Images: Q23.jpg, Q24.jpg, Q25.jpg, Q26.jpg, Q27.jpg, Q28.jpg, Q29.jpg
+Total Images (Team + Individual): 8
+Bundle Code: XL
+=====================================================
+
+
+✅ Total Players: 9
+===================================================
+
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Opening URL: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2626&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value165371639&beta-value115080184
+📄 Page Loaded: Next Generation | Photographers
+-----------------------------------------------------
+Player: Ana A
+Team Image: C.jpg
+Images (2): D.jpg, E.jpg
+Bundle Symbol: R
+Bundle Amount: $1.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: HENRY H
+Team Image: Q2.jpg
+Images (1): Q3.jpg
+Bundle Symbol: S
+Bundle Amount: $1.00
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: IRA S
+Team Image: Q7.jpg
+Images (3): Q8.jpg, Q9.jpg, Q10.jpg
+Bundle Symbol: L
+Bundle Amount: $3.50
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: JACK KOA
+Team Image: Q22.jpg
+Images (7): Q23.jpg, Q24.jpg, Q25.jpg, Q26.jpg, Q27.jpg, Q28.jpg, Q29.jpg
+Bundle Symbol: XL
+Bundle Amount: $5.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: OM S
+Team Image: Q4.jpg
+Images (2): Q5.jpg, Q6.jpg
+Bundle Symbol: R
+Bundle Amount: $1.80
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: PARTH G
+Team Image: Q11.jpg
+Images (4): Q12.jpg, Q13.jpg, Q14.jpg, Q15.jpg
+Bundle Symbol: L
+Bundle Amount: $3.50
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: rakesh pat
+Team Image: A.jpg
+Images (13): B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg, K.jpg, L.jpg, M.jpg, N.jpg
+Bundle Symbol: UL
+Bundle Amount: $8.10
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: TOM D
+Team Image: Q1.jpg
+Images (0): None
+Bundle Symbol: No Images
+Bundle Amount: $0.00
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: UVI SD
+Team Image: Q16.jpg
+Images (5): Q17.jpg, Q18.jpg, Q19.jpg, Q20.jpg, Q21.jpg
+Bundle Symbol: L
+Bundle Amount: $3.50
+-----------------------------------------------------
+
+Success message detected.
+
+  ========== TEST COMPLETED ==========
+  Job ID: 2626
+  Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2626&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value165371639&beta-value115080184
+  Job Name: Test_Staging_1768810213948
+  ====================================
+  

@@ -13,9 +13,16 @@ test.setTimeout(300000); // 5 minutes timeout
 
 test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ page, request }) => {
 
-  allure.label({ name: 'Environment', value: 'QA' });
-  allure.label({ name: 'Executor', value: 'Rakhi' });
-  allure.label({ name: 'Trend', value: 'Stable' });
+  // ================================
+  // ✅ ALLURE METADATA & LABELS
+  // ================================
+  allure.label("environment", "QA");
+  allure.label("owner", "Rakhi");
+  allure.label("epic", "GotPhoto Full Flow");
+  allure.label("feature", "API Job Creation & FTP Upload");
+  allure.label("story", "Create job with multiple players and upload images via FTP");
+  allure.severity("critical");
+  allure.description("Creates a photo editing job via API with multiple players, uploads images via FTP, and validates the complete workflow");
 
   // ====== Declare Variables Globally ======
   let jobId;
@@ -23,7 +30,7 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
   let jobName;
 
   // ====== STEP 1: Create Job via API ======
-  await allure.step('Create job and get generated order link', async () => {
+  await allure.step('Step 1: Create job via API and get generated order link', async () => {
     const apiUrl = 'https://staging.production.nextgenphotosolutions.com/Gpservices/pushData';
 
     const timestamp = Date.now();
@@ -185,17 +192,14 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
       data: payload
     });
 
-    // ✅ Validate response
     expect(response.ok()).toBeTruthy();
     const responseBody = await response.json();
     console.log('✅ API Response:', JSON.stringify(responseBody, null, 2));
 
-    // ✅ Extract jobId (handle different response keys)
-   jobId = responseBody.nextgen_job_id || responseBody.job_id || responseBody.jobId || responseBody.id;
+    jobId = responseBody.nextgen_job_id || responseBody.job_id || responseBody.jobId || responseBody.id;
     expect(jobId).toBeTruthy();
     console.log(`📌 Job ID: ${jobId}`);
 
-    // ✅ Extract generatedLink (handle different response keys)
     generatedLink = 
       responseBody.checkout_url ||
       responseBody.redirect_link ||
@@ -206,11 +210,10 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
     expect(generatedLink).toBeTruthy();
     console.log(`🔗 Generated Link: ${generatedLink}`);
 
-    // ✅ Save link to utility for other tests
     saveGeneratedLink(generatedLink);
   });
 
-  // ✅ SAVE jobId, generatedLink, jobName to file for downstream tests
+  // ====== SAVE FILE ======
   const outputPath = path.resolve(process.cwd(), 'generatedData.json');
   fs.writeFileSync(
     outputPath,
@@ -219,33 +222,31 @@ test('GotPhoto: Create Job → Get Link → FTP Upload → Validate', async ({ p
   console.log(`✅ Saved generatedData.json to: ${outputPath}`);
 
   // ====== STEP 2: Open the Generated Link ======
-  await allure.step('Open generated order link in browser', async () => {
+  await allure.step('Step 2: Open generated order link in browser', async () => {
     console.log(`🌐 Navigating to: ${generatedLink}`);
     
     await page.goto(generatedLink, { waitUntil: 'networkidle' });
     await page.waitForTimeout(5000);
 
-    // ✅ Wait for page to fully load
     await page.waitForFunction(() => document.title && document.title.length > 0, { timeout: 15000 });
     const pageTitle = await page.title();
     console.log(`✅ Page Title: ${pageTitle}`);
     
-    // ✅ Take screenshot for debugging
     await page.screenshot({ path: 'order-page-loaded.png', fullPage: true });
     console.log('📸 Screenshot saved: order-page-loaded.png');
   });
 
-  // ====== STEP 3: FTP Upload (Simplified) ======
-await allure.step('Upload images to FTP folder', async () => {
+  // ====== STEP 3: FTP Upload ======
+  await allure.step('Step 3: Upload images to FTP folder', async () => {
   const client = new ftp.Client();
-  client.ftp.verbose = false;   // 🔹 Change 1: Disable noisy FTP logs → only our logs
+  client.ftp.verbose = false;
 
   const FTP_HOST = 'staging.production.nextgenphotosolutions.com';
   const FTP_USER = 'imageprocessing@staging.production.nextgenphotosolutions.com';
   const FTP_PASSWORD = '5Z6$7I*L7Z-k';
 
   const remotePhotosDir = `/gotphoto/input/${jobName}/photos`;
-  const localDir = path.resolve(__dirname, '../test-images');
+  const localDir = path.resolve(__dirname, '../test-images/images');
 
   // Validate folder exists
   if (!fs.existsSync(localDir)) {
@@ -261,8 +262,8 @@ await allure.step('Upload images to FTP folder', async () => {
     throw new Error(`❌ No image files found in: ${localDir}`);
   }
 
-  console.log(`📂 Found ${files.length} images:`);
-  console.log(files.join(", "));   // 🔹 Change 2: Clean printing, no long sentence
+    console.log(`📂 Found ${files.length} images:`);
+    console.log(files.join(", "));
 
   try {
     console.log(`➡️ Connecting to FTP...`);
@@ -280,7 +281,7 @@ await allure.step('Upload images to FTP folder', async () => {
 
     for (const file of files) {
       await client.uploadFrom(path.join(localDir, file), file);
-      console.log(`✔ Uploaded: ${file}`);   // 🔹 Change 3: Simple success log
+      console.log(`✔ Uploaded: ${file}`);
     }
 
     console.log(`🎉 Upload complete! Total uploaded: ${files.length}`);
@@ -297,11 +298,10 @@ await allure.step('Upload images to FTP folder', async () => {
 });
 
   // ====== STEP 4: Validate ======
-  await allure.step('Validate upload and wait for processing', async () => {
+  await allure.step('Step 4: Validate upload and wait for processing', async () => {
     console.log('⏳ Waiting for upload confirmation...');
     await page.waitForTimeout(5000);
     
-    // ✅ Optional: Add assertion for confirmation message on page
     const pageContent = await page.content();
     if (pageContent.includes('success') || pageContent.includes('Success')) {
       console.log('✅ Upload success message detected on page');
@@ -309,8 +309,8 @@ await allure.step('Upload images to FTP folder', async () => {
     
     console.log('✅ Validation step completed');
     
-    // ✅ Take final screenshot
     await page.screenshot({ path: 'order-validation-complete.png', fullPage: true });
+    console.log('📸 Screenshot saved: order-validation-complete.png');
   });
 
   console.log('\n✅ ========== TEST COMPLETED SUCCESSFULLY ==========');

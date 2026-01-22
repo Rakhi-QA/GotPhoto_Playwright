@@ -1,2 +1,5 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
-"1","","2","","4","0","","0"
+"0","Traditional Order Flow","0","Complete Traditional Order Workflow","1","0","Select Traditional → Confirm → Ignore Teams → Print Players → Upload Team Photos","0"
+"0","GotPhoto Full Flow","1","API Job Creation & FTP Upload","2","0","Create job with multiple players and upload images via FTP","0"
+"0","GotPhoto Automation Framework","0","End-to-End Order Workflow","1","0","Create Job → Print Player Images → Process Bundle → Upload Images → Validate","0"
+"0","","0","","1","0","","0"
