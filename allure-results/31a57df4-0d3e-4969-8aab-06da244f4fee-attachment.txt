@@ -1,0 +1,93 @@
+🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2627&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1836909806&beta-value1901582537
+📌 Job ID: undefined
+✅ Page Loaded: Next Generation | Photographers
+🔍 Looking for Traditional Plus option...
+✅ Clicked Traditional Plus image using selector: img[src*="Traditional Plus Memorymate.jpg"]
+🎯 Traditional Plus option successfully selected
+🔍 Looking for Confirm button...
+⚠️ No confirm modal detected, continuing...
+✅ Clicked Confirm button using selector: button:has-text("Confirm")
+🔍 Looking for Ignore team images button...
+⚠️ No ignore modal detected, continuing...
+✅ Clicked Ignore teams button using selector: button:has-text("Ignore team images")
+✅ Ignore teams step completed
+
+========== PLAYER LIST WITH IMAGE COUNT AND BUNDLE TEXT ==========
+
+-----------------------------------------------------
+Player: Ana A
+Team Image: None
+Images (1): image 1 (E.jpg)
+Bundle Text: S
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: HENRY H
+Team Image: None
+Images (0): None
+Bundle Text: No Images
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: IRA S
+Team Image: None
+Images (2): image 1 (Q9.jpg), image 2 (Q10.jpg)
+Bundle Text: R
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: JACK KOA
+Team Image: None
+Images (6): image 1 (Q24.jpg), image 2 (Q25.jpg), image 3 (Q26.jpg), image 4 (Q27.jpg), image 5 (Q28.jpg), image 6 (Q29.jpg)
+Bundle Text: XL
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: OM S
+Team Image: None
+Images (1): image 1 (Q6.jpg)
+Bundle Text: S
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: PARTH G
+Team Image: None
+Images (3): image 1 (Q13.jpg), image 2 (Q14.jpg), image 3 (Q15.jpg)
+Bundle Text: L
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: rakesh pat
+Team Image: None
+Images (14): image 1 (C.jpg), image 2 (D.jpg), image 3 (E.jpg), image 4 (F.jpg), image 5 (G.jpg), image 6 (H.jpg), image 7 (I.jpg), image 8 (J.jpg), image 9 (K.jpg), image 10 (L.jpg), image 11 (M.jpg), image 12 (N.jpg), image 13 (O.jpg), image 14 (P.jpg)
+Bundle Text: UL
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: TOM D
+Team Image: None
+Images (0): None
+Bundle Text: No Images
+-----------------------------------------------------
+
+-----------------------------------------------------
+Player: UVI SD
+Team Image: None
+Images (4): image 1 (Q18.jpg), image 2 (Q19.jpg), image 3 (Q20.jpg), image 4 (Q21.jpg)
+Bundle Text: L
+-----------------------------------------------------
+
+
+✅ Listed 9 players with image counts and bundle text
+🔍 Looking for Background Template - Single Template for Organization...
+✅ Clicked Background Template - Single Template for Organization
+🔍 Looking for template dropdown...
+⚠️ Could not select template: locator.selectOption: Error: strict mode violation: locator('#bcktemplete') resolved to 4 elements:
+    1) <select tabindex="7" id="bcktemplete" name="bcktemplete" class="form-control" onchange="funisfulllength(this.options[this.selectedIndex],'S'),funisbanner(this.options[this.selectedIndex],'S');">…</select> aka getByRole('combobox')
+    2) <select tabindex="7" id="bcktemplete" name="bcktemplete_108005" class="form-control multibgteam" onchange="getbgteamval(108005,this.value,this.options[this.selectedIndex]);">…</select> aka locator('select[name="bcktemplete_108005"]')
+    3) <select tabindex="7" id="bcktemplete" name="bcktemplete_108006" class="form-control multibgteam" onchange="getbgteamval(108006,this.value,this.options[this.selectedIndex]);">…</select> aka locator('select[name="bcktemplete_108006"]')
+    4) <select tabindex="7" id="bcktemplete" name="bcktemplete_108007" class="form-control multibgteam" onchange="getbgteamval(108007,this.value,this.options[this.selectedIndex]);">…</select> aka locator('select[name="bcktemplete_108007"]')
+
+Call log:
+  - waiting for locator('#bcktemplete')
+

@@ -1,0 +1,94 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - banner [ref=e1]:
+    - generic [ref=e5]:
+      - text: "Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e9] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e10] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - link [ref=e14] [cursor=pointer]:
+          - /url: /orderstatus/activejobs
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e20]
+          - listitem [ref=e21]:
+            - link "Dashboard" [ref=e22] [cursor=pointer]:
+              - /url: /orderstatus/activejobs
+          - listitem [ref=e23]:
+            - link "My Account" [ref=e24] [cursor=pointer]:
+              - /url: /bdevelopers/admin
+          - listitem [ref=e25]:
+            - link " Logout" [ref=e26] [cursor=pointer]:
+              - /url: /bdevelopers/logout
+              - generic [ref=e27]: 
+              - text: Logout
+      - generic [ref=e28]: (17355) GotPhoto - Test_ALT_FC_26
+  - generic [ref=e31]:
+    - generic:
+      - generic:
+        - generic [ref=e32]:
+          - generic:
+            - text: 
+            - generic [ref=e33]:
+              - link [ref=e35] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - img [ref=e36]
+              - list [ref=e37]:
+                - listitem [ref=e38]:
+                  - link "9 Status" [ref=e39] [cursor=pointer]:
+                    - /url: /jobstatus/jobstatus/3619/17355
+                    - generic [ref=e40]: "9"
+                    - text: Status
+              - link [ref=e42] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - img [ref=e43]
+        - generic [ref=e45]:
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Order Overview" [ref=e50] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/jobstatus/overview/3619/17355/
+            - listitem [ref=e51]:
+              - link "Status" [ref=e52] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/jobstatus/jobstatus/3619/17355/
+            - listitem [ref=e53]:
+              - link "Request Help" [ref=e54]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthelps/3619/17355/
+            - listitem [ref=e55]:
+              - link "Cart" [ref=e56] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthelppayment/3619/17355/1148872894
+            - listitem [ref=e57]:
+              - link "Help History" [ref=e58] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthistory/3619/17355
+          - generic [ref=e64]:
+            - generic [ref=e65]: Issue*
+            - combobox [ref=e68]:
+              - option "-- Select --" [selected]
+              - option "Design Individual Graphics"
+              - option "Design Buddy Graphics"
+              - option "Correct Spelling"
+              - option "Other"
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - text: Copyright © 2026
+      - link "Privacy Policy" [ref=e72] [cursor=pointer]:
+        - /url: /privacypolics/privacypolics
+      - link "Terms of Service" [ref=e73] [cursor=pointer]:
+        - /url: "#"
+```

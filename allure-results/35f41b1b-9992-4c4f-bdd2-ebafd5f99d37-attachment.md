@@ -1,0 +1,208 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - banner [ref=e1]:
+    - generic [ref=e5]:
+      - text: "Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e9] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e10] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - link [ref=e14] [cursor=pointer]:
+          - /url: /orderstatus/activejobs
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link [ref=e18] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e20]
+          - listitem [ref=e21]:
+            - link "Dashboard" [ref=e22] [cursor=pointer]:
+              - /url: /orderstatus/activejobs
+          - listitem [ref=e23]:
+            - link "My Account" [ref=e24] [cursor=pointer]:
+              - /url: /bdevelopers/admin
+          - listitem [ref=e25]:
+            - link " Logout" [ref=e26] [cursor=pointer]:
+              - /url: /bdevelopers/logout
+              - generic [ref=e27]: 
+              - text: Logout
+      - generic [ref=e28]: (17355) GotPhoto - Test_ALT_FC_26
+  - generic [ref=e31]:
+    - generic:
+      - generic:
+        - generic [ref=e32]:
+          - generic:
+            - text: 
+            - generic [ref=e33]:
+              - link [ref=e35] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - img [ref=e36]
+              - list [ref=e37]:
+                - listitem [ref=e38]:
+                  - link "9 Status" [ref=e39] [cursor=pointer]:
+                    - /url: /jobstatus/jobstatus/3619/17355
+                    - generic [ref=e40]: "9"
+                    - text: Status
+              - link [ref=e42] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - img [ref=e43]
+        - generic [ref=e45]:
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Order Overview" [ref=e50] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/jobstatus/overview/3619/17355/
+            - listitem [ref=e51]:
+              - link "Status" [ref=e52] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/jobstatus/jobstatus/3619/17355/
+            - listitem [ref=e53]:
+              - link "Request Help" [ref=e54]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthelps/3619/17355/
+            - listitem [ref=e55]:
+              - link "Cart" [ref=e56] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthelppayment/3619/17355/446231715
+            - listitem [ref=e57]:
+              - link "Help History" [ref=e58] [cursor=pointer]:
+                - /url: https://staging.production.nextgenphotosolutions.com/Requesthelps/requesthistory/3619/17355
+          - generic [ref=e60]:
+            - generic [ref=e64]:
+              - generic [ref=e65]: Issue*
+              - combobox [ref=e68]:
+                - option "-- Select --"
+                - option "Design Individual Graphics" [selected]
+                - option "Design Buddy Graphics"
+                - option "Correct Spelling"
+                - option "Other"
+              - generic [ref=e69]: Price:$2
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72]:
+                  - generic [ref=e73]: Team*
+                  - combobox [ref=e76]:
+                    - option "-- Select --" [selected]
+                    - option "GOLD"
+                    - option "SILVER"
+                    - option "YANKEES"
+                - generic [ref=e77]:
+                  - generic [ref=e78]: Player*
+                  - combobox [ref=e80]:
+                    - option "-- Select --" [selected]
+                - generic [ref=e81]:
+                  - generic [ref=e82]: Upload Image
+                  - button "Choose File" [ref=e84]
+                - generic [ref=e85]:
+                  - generic [ref=e86]: Files Needed*
+                  - generic [ref=e87]:
+                    - checkbox [ref=e88]
+                    - text: _45TV
+                    - checkbox [ref=e89]
+                    - text: _45V
+                    - checkbox [ref=e90]
+                    - text: _55T
+                    - checkbox [ref=e91]
+                    - text: _55
+                    - checkbox [ref=e92]
+                    - text: _MM
+                    - checkbox [ref=e93]
+                    - text: _TM
+                    - checkbox [ref=e94]
+                    - text: _SV
+                    - checkbox [ref=e95]
+                    - text: _12TV
+                - generic [ref=e96]:
+                  - generic [ref=e97]: First Name
+                  - textbox [ref=e99]
+                - generic [ref=e100]:
+                  - generic [ref=e101]: Last Name
+                  - textbox [ref=e103]
+                - generic [ref=e104]:
+                  - generic [ref=e105]: Jersey*
+                  - textbox [ref=e107]
+                - generic [ref=e108]:
+                  - generic [ref=e109]: Image Numbers
+                  - generic [ref=e110]:
+                    - generic [ref=e111]:
+                      - generic [ref=e112]:
+                        - generic [ref=e113]: Team Img. No.
+                        - textbox [ref=e114]
+                      - generic [ref=e115]:
+                        - generic [ref=e116]: Ind. Img. No.
+                        - textbox [ref=e117]
+                      - generic [ref=e118]:
+                        - generic [ref=e119]: Buddy Img. No.
+                        - textbox [ref=e120]
+                    - generic [ref=e121]:
+                      - generic [ref=e122]:
+                        - generic [ref=e123]: Alt1 Img. No.
+                        - textbox [ref=e124]
+                      - generic [ref=e125]:
+                        - generic [ref=e126]: Alt2 Img. No.
+                        - textbox [ref=e127]
+                      - generic [ref=e128]:
+                        - generic [ref=e129]: Alt3 Img. No.
+                        - textbox [ref=e130]
+                    - generic [ref=e131]:
+                      - generic [ref=e132]:
+                        - generic [ref=e133]: Alt4 Img. No.
+                        - textbox [ref=e134]
+                      - generic [ref=e135]:
+                        - generic [ref=e136]: Alt5 Img. No.
+                        - textbox [ref=e137]
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: Alt6 Img. No.
+                        - textbox [ref=e140]
+                    - generic [ref=e141]:
+                      - generic [ref=e142]:
+                        - generic [ref=e143]: Alt7 Img. No.
+                        - textbox [ref=e144]
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: Alt8 Img. No.
+                        - textbox [ref=e147]
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: Alt9 Img. No.
+                        - textbox [ref=e150]
+                    - generic [ref=e151]:
+                      - generic [ref=e152]:
+                        - generic [ref=e153]: Alt10 Img. No.
+                        - textbox [ref=e154]
+                      - generic [ref=e155]:
+                        - generic [ref=e156]: Alt11 Img. No.
+                        - textbox [ref=e157]
+                      - generic [ref=e158]:
+                        - generic [ref=e159]: Alt12 Img. No.
+                        - textbox [ref=e160]
+                    - generic [ref=e161]:
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: Alt13 Img. No.
+                        - textbox [ref=e164]
+                      - generic [ref=e165]:
+                        - generic [ref=e166]: Alt14 Img. No.
+                        - textbox [ref=e167]
+                      - generic [ref=e168]:
+                        - generic [ref=e169]: Alt15 Img. No.
+                        - textbox [ref=e170]
+              - generic [ref=e171]:
+                - link "Previous Page" [ref=e172] [cursor=pointer]:
+                  - /url: https://staging.production.nextgenphotosolutions.com/jobstatus/jobstatus/3619/17355/
+                - button "Check Out" [ref=e173] [cursor=pointer]
+                - button "Add to Cart" [ref=e174] [cursor=pointer]
+  - contentinfo [ref=e175]:
+    - generic [ref=e176]:
+      - text: Copyright © 2026
+      - link "Privacy Policy" [ref=e177] [cursor=pointer]:
+        - /url: /privacypolics/privacypolics
+      - link "Terms of Service" [ref=e178] [cursor=pointer]:
+        - /url: "#"
+```

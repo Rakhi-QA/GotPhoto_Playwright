@@ -1,0 +1,70 @@
+========== PLAYER LIST WITH IMAGE COUNT AND BUNDLE TEXT ==========
+
+Total Players: 9
+Total Team Images: 0
+Total Individual Images: 31
+
+Bundle Distribution:
+  S: 2
+  R: 1
+  L: 2
+  XL: 1
+  UL: 1
+  No Images: 2
+
+==========================================
+
+Player: Ana A
+Team Image: None
+Images (1): image 1 (E.jpg)
+Bundle Text: S
+----------------------------------------
+
+Player: HENRY H
+Team Image: None
+Images (0): None
+Bundle Text: No Images
+----------------------------------------
+
+Player: IRA S
+Team Image: None
+Images (2): image 1 (Q9.jpg), image 2 (Q10.jpg)
+Bundle Text: R
+----------------------------------------
+
+Player: JACK KOA
+Team Image: None
+Images (6): image 1 (Q24.jpg), image 2 (Q25.jpg), image 3 (Q26.jpg), image 4 (Q27.jpg), image 5 (Q28.jpg), image 6 (Q29.jpg)
+Bundle Text: XL
+----------------------------------------
+
+Player: OM S
+Team Image: None
+Images (1): image 1 (Q6.jpg)
+Bundle Text: S
+----------------------------------------
+
+Player: PARTH G
+Team Image: None
+Images (3): image 1 (Q13.jpg), image 2 (Q14.jpg), image 3 (Q15.jpg)
+Bundle Text: L
+----------------------------------------
+
+Player: rakesh pat
+Team Image: None
+Images (14): image 1 (C.jpg), image 2 (D.jpg), image 3 (E.jpg), image 4 (F.jpg), image 5 (G.jpg), image 6 (H.jpg), image 7 (I.jpg), image 8 (J.jpg), image 9 (K.jpg), image 10 (L.jpg), image 11 (M.jpg), image 12 (N.jpg), image 13 (O.jpg), image 14 (P.jpg)
+Bundle Text: UL
+----------------------------------------
+
+Player: TOM D
+Team Image: None
+Images (0): None
+Bundle Text: No Images
+----------------------------------------
+
+Player: UVI SD
+Team Image: None
+Images (4): image 1 (Q18.jpg), image 2 (Q19.jpg), image 3 (Q20.jpg), image 4 (Q21.jpg)
+Bundle Text: L
+----------------------------------------
+
