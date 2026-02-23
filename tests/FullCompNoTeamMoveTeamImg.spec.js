@@ -54,6 +54,29 @@ test('Full Composite NO Team Move >> Place Order + FTP Upload + Confirm Image Tr
           individual_image1: "B.jpg",
           individual_image2: "C.jpg",
           access_code: "T123"
+        },
+        1: {
+          first_name: "Rakhi",
+          last_name: "D",
+          team_name: "Lions",
+          jersey_number: "7",
+          team_image: "D.jpg",
+          individual_image1: "E.jpg",
+          individual_image2: "F.jpg",
+          individual_image3: "G.jpg",
+          individual_image4: "H.jpg",
+          individual_image5: "I.jpg",
+          individual_image6: "J.jpg",
+          individual_image7: "K.jpg",
+          individual_image8: "L.jpg",
+          individual_image9: "M.jpg",
+          individual_image10: "N.jpg",
+          individual_image11: "O.jpg",
+          individual_image12: "P.jpg",
+          individual_image13: "Q.jpg",
+          individual_image14: "R.jpg",
+          individual_image15: "",
+          access_code: "T124"
         }
       }
     };
@@ -168,7 +191,7 @@ test('Full Composite NO Team Move >> Place Order + FTP Upload + Confirm Image Tr
       console.log("⚠ Popup NOT shown (OK to continue)");
     }
   });
-await page.waitForTimeout(1000);
+await page.waitForTimeout(2000);
   // ============================================================
   // ========== ORDER CONFIGURATION STEPS ========================
   // ============================================================
@@ -178,19 +201,25 @@ await page.waitForTimeout(1000);
   });*/
 
  await allure.step('Select Single Template for Organization', async () => {
+  await page.locator('#bgsinglecheck_s').waitFor({ state: 'visible', timeout: 15000 });
+  await page.locator('#bgsinglecheck_s').scrollIntoViewIfNeeded();
   await page.click('#bgsinglecheck_s');
-  await page.waitForTimeout(2000);
+  await page.click('#bgsinglecheck_s');
+  await page.waitForTimeout(3000);
 });
 
 await allure.step('Select Template', async () => {
-  const dropdown = page.locator('#bcktemplete');
-
-  await dropdown.waitFor({ state: 'attached', timeout: 20000 });
-  await dropdown.waitFor({ state: 'visible', timeout: 20000 });
-
+  // Optional: expand Background Template section if collapsed
+  const bgSection = page.locator('text=Background Template').first();
+  if (await bgSection.isVisible({ timeout: 2000 }).catch(() => false)) {
+    await bgSection.click();
+    await page.waitForTimeout(1500);
+  }
+  const dropdown = page.locator('#bcktemplete').first();
   await dropdown.scrollIntoViewIfNeeded();
-  await dropdown.selectOption('487');
-
+  await page.waitForTimeout(1000);
+  await dropdown.waitFor({ state: 'visible', timeout: 25000 });
+  await dropdown.selectOption({ value: '487' });
   await page.waitForTimeout(1500);
 });
 
