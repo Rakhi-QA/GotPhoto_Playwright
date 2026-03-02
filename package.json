@@ -13,7 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@applitools/eyes-playwright": "^1.42.4",
-    "@playwright/test": "^1.56.1",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^24.9.2",
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.4.2",
@@ -21,5 +21,17 @@
   },
   "dependencies": {
     "basic-ftp": "^5.0.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakhi-QA/GotPhoto_Playwright.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rakhi-QA/GotPhoto_Playwright/issues"
+  },
+  "homepage": "https://github.com/Rakhi-QA/GotPhoto_Playwright#readme"
 }

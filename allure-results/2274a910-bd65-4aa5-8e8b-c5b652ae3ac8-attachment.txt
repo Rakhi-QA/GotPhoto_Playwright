@@ -1,0 +1,1 @@
+⚠️ Could not apply discount code: locator.waitFor: Target page, context or browser has been closed

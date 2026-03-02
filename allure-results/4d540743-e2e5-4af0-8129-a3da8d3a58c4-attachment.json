@@ -1,0 +1,46 @@
+[
+  {
+    "player": "rakesh pat",
+    "teamImage": "A.jpg",
+    "images": [
+      "image1:B.jpg",
+      "image2:C.jpg",
+      "image3:D.jpg",
+      "image4:E.jpg",
+      "image5:F.jpg",
+      "image6:G.jpg",
+      "image7:H.jpg",
+      "image8:I.jpg",
+      "image9:J.jpg",
+      "image10:K.jpg",
+      "image11:L.jpg",
+      "image12:M.jpg",
+      "image13:N.jpg",
+      "image14:O.jpg"
+    ],
+    "imageCount": 14,
+    "bundleCode": "UL",
+    "totalImages": 15
+  },
+  {
+    "player": "Ana A",
+    "teamImage": "L.jpg",
+    "images": [
+      "image1:M.jpg",
+      "image2:N.jpg"
+    ],
+    "imageCount": 2,
+    "bundleCode": "R",
+    "totalImages": 3
+  },
+  {
+    "player": "TOM D",
+    "teamImage": "P.jpg",
+    "images": [
+      "image1:O.jpg"
+    ],
+    "imageCount": 1,
+    "bundleCode": "S",
+    "totalImages": 2
+  }
+]

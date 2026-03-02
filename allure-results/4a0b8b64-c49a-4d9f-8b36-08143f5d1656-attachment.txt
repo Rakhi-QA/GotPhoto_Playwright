@@ -1,0 +1,13 @@
+➡️ Creating Job: Test_Staging_1772023794260
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2683",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2683&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value12057568076&beta-value12128028894",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2683
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2683&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value12057568076&beta-value12128028894
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2683&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value12057568076&beta-value12128028894
+✅ Page Title: Next Generation | Photographers

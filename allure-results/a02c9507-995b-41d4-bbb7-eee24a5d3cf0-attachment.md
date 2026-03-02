@@ -1,0 +1,1481 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e6]:
+      - text: "Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e9] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e10] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e11] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e12]:
+      - link [ref=e15] [cursor=pointer]:
+        - /url: /Gpservices/payforimages/2/3619/2026/260225/Full%20Composite/G/17415/2686/338/Test_Staging_1772027140105/17448/1425605833
+      - generic [ref=e17]: (17415) GotPhoto - Test_Staging_1772027140105
+  - generic [ref=e19]:
+    - generic [ref=e21]:
+      - textbox [ref=e22]: "0"
+      - generic [ref=e24]:
+        - generic:
+          - generic [ref=e25]:
+            - generic [ref=e26]:
+              - generic:
+                - checkbox [checked]
+            - generic [ref=e28]:
+              - text: Full Composite
+              - superscript [ref=e29]:
+                - generic [ref=e30]: 
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic:
+                - checkbox
+            - generic [ref=e34]:
+              - text: Traditional
+              - superscript [ref=e35]:
+                - generic [ref=e36]: 
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - generic:
+                - checkbox
+            - generic [ref=e40]:
+              - text: Traditional+
+              - superscript [ref=e41]:
+                - generic [ref=e42]: 
+        - img "bundlepriceing" [ref=e44]
+        - generic [ref=e45]:
+          - table [ref=e47]:
+            - rowgroup [ref=e48]:
+              - row "First Name Last Name Jersey Team Name Team Image Bundles Poses Image1 Image2 Image3 Image4 Image5 Image6 Image7 Image8 Image9 Image10 Image11 Image12 Image13 Image14 Image15" [ref=e49]:
+                - columnheader "First Name" [ref=e50]
+                - columnheader "Last Name" [ref=e51]
+                - columnheader "Jersey" [ref=e52]
+                - columnheader "Team Name" [ref=e53]
+                - columnheader "Team Image" [ref=e54]
+                - columnheader "Bundles" [ref=e55]
+                - columnheader "Poses" [ref=e56]
+                - columnheader "Image1" [ref=e57]
+                - columnheader "Image2" [ref=e58]
+                - columnheader "Image3" [ref=e59]
+                - columnheader "Image4" [ref=e60]
+                - columnheader "Image5" [ref=e61]
+                - columnheader "Image6" [ref=e62]
+                - columnheader "Image7" [ref=e63]
+                - columnheader "Image8" [ref=e64]
+                - columnheader "Image9" [ref=e65]
+                - columnheader "Image10" [ref=e66]
+                - columnheader "Image11" [ref=e67]
+                - columnheader "Image12" [ref=e68]
+                - columnheader "Image13" [ref=e69]
+                - columnheader "Image14" [ref=e70]
+                - columnheader "Image15" [ref=e71]
+            - rowgroup [ref=e72]:
+              - row "Tom Smith 7 Lions A.jpg Regular 2 B.jpg C.jpg" [ref=e73]:
+                - cell "Tom" [ref=e74]
+                - cell "Smith" [ref=e75]
+                - cell "7" [ref=e76]
+                - cell "Lions" [ref=e77]
+                - cell "A.jpg" [ref=e78]:
+                  - button "A.jpg" [ref=e79] [cursor=pointer]
+                - cell "Regular" [ref=e80]:
+                  - img "Regular" [ref=e81]
+                - cell "2" [ref=e82]
+                - cell "B.jpg" [ref=e83]:
+                  - button "B.jpg" [ref=e84] [cursor=pointer]
+                - cell "C.jpg" [ref=e85]:
+                  - button "C.jpg" [ref=e86] [cursor=pointer]
+                - cell [ref=e87]
+                - cell [ref=e88]
+                - cell [ref=e89]
+                - cell [ref=e90]
+                - cell [ref=e91]
+                - cell [ref=e92]
+                - cell [ref=e93]
+                - cell [ref=e94]
+                - cell [ref=e95]
+                - cell [ref=e96]
+                - cell [ref=e97]
+                - cell [ref=e98]
+                - cell [ref=e99]
+              - row "Rakhi D 7 Lions D.jpg Ultra Large 14 E.jpg F.jpg G.jpg H.jpg I.jpg J.jpg K.jpg L.jpg M.jpg N.jpg O.jpg P.jpg Q.jpg R.jpg" [ref=e100]:
+                - cell "Rakhi" [ref=e101]
+                - cell "D" [ref=e102]
+                - cell "7" [ref=e103]
+                - cell "Lions" [ref=e104]
+                - cell "D.jpg" [ref=e105]:
+                  - button "D.jpg" [ref=e106] [cursor=pointer]
+                - cell "Ultra Large" [ref=e107]:
+                  - img "Ultra Large"
+                - cell "14" [ref=e108]
+                - cell "E.jpg" [ref=e109]:
+                  - button "E.jpg" [ref=e110] [cursor=pointer]
+                - cell "F.jpg" [ref=e111]:
+                  - button "F.jpg" [ref=e112] [cursor=pointer]
+                - cell "G.jpg" [ref=e113]:
+                  - button "G.jpg" [ref=e114] [cursor=pointer]
+                - cell "H.jpg" [ref=e115]:
+                  - button "H.jpg" [ref=e116] [cursor=pointer]
+                - cell "I.jpg" [ref=e117]:
+                  - button "I.jpg" [ref=e118] [cursor=pointer]
+                - cell "J.jpg" [ref=e119]:
+                  - button "J.jpg" [ref=e120] [cursor=pointer]
+                - cell "K.jpg" [ref=e121]:
+                  - button "K.jpg" [ref=e122] [cursor=pointer]
+                - cell "L.jpg" [ref=e123]:
+                  - button "L.jpg" [ref=e124] [cursor=pointer]
+                - cell "M.jpg" [ref=e125]:
+                  - button "M.jpg" [ref=e126] [cursor=pointer]
+                - cell "N.jpg" [ref=e127]:
+                  - button "N.jpg" [ref=e128] [cursor=pointer]
+                - cell "O.jpg" [ref=e129]:
+                  - button "O.jpg" [ref=e130] [cursor=pointer]
+                - cell "P.jpg" [ref=e131]:
+                  - button "P.jpg" [ref=e132] [cursor=pointer]
+                - cell "Q.jpg" [ref=e133]:
+                  - button "Q.jpg" [ref=e134] [cursor=pointer]
+                - cell "R.jpg" [ref=e135]:
+                  - button "R.jpg" [ref=e136] [cursor=pointer]
+                - cell [ref=e137]
+          - generic [ref=e139]:
+            - generic [ref=e141]:
+              - heading "Team Options" [level=2] [ref=e142]
+              - generic [ref=e143]:
+                - generic [ref=e144]:
+                  - checkbox "Standard Team Build" [ref=e145]
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: Standard Team Build
+                    - superscript [ref=e148]:
+                      - generic [ref=e149]: 
+                - generic [ref=e150]:
+                  - checkbox "Virtual Riser Team Build" [ref=e151]
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: Virtual Riser Team Build
+                    - superscript [ref=e154]:
+                      - generic [ref=e155]: 
+                - generic [ref=e156]:
+                  - checkbox "No Team Images" [checked] [active] [ref=e157]
+                  - generic [ref=e159]: No Team Images
+            - generic [ref=e161]:
+              - heading "Alternate Pose Graphic Options" [level=2] [ref=e162]
+              - table [ref=e164]:
+                - rowgroup [ref=e165]:
+                  - row "Img1 Img2 Img3 Img4 Img5 Img6 Img7 Img8 Img9 Img10 Img11 Img12 Img13 Img14 Img15" [ref=e166]:
+                    - columnheader [ref=e167]
+                    - columnheader "Img1" [ref=e168]
+                    - columnheader "Img2" [ref=e169]
+                    - columnheader "Img3" [ref=e170]
+                    - columnheader "Img4" [ref=e171]
+                    - columnheader "Img5" [ref=e172]
+                    - columnheader "Img6" [ref=e173]
+                    - columnheader "Img7" [ref=e174]
+                    - columnheader "Img8" [ref=e175]
+                    - columnheader "Img9" [ref=e176]
+                    - columnheader "Img10" [ref=e177]
+                    - columnheader "Img11" [ref=e178]
+                    - columnheader "Img12" [ref=e179]
+                    - columnheader "Img13" [ref=e180]
+                    - columnheader "Img14" [ref=e181]
+                    - columnheader "Img15" [ref=e182]
+                  - row "_45V" [ref=e183]:
+                    - cell "_45V" [ref=e184]
+                    - cell [ref=e185]:
+                      - checkbox [checked] [ref=e186]
+                    - cell [ref=e187]:
+                      - checkbox [checked] [ref=e188]
+                    - cell [ref=e189]:
+                      - checkbox [checked] [ref=e190]
+                    - cell [ref=e191]:
+                      - checkbox [checked] [ref=e192]
+                    - cell [ref=e193]:
+                      - checkbox [checked] [ref=e194]
+                    - cell [ref=e195]:
+                      - checkbox [checked] [ref=e196]
+                    - cell [ref=e197]:
+                      - checkbox [checked] [ref=e198]
+                    - cell [ref=e199]:
+                      - checkbox [checked] [ref=e200]
+                    - cell [ref=e201]:
+                      - checkbox [checked] [ref=e202]
+                    - cell [ref=e203]:
+                      - checkbox [checked] [ref=e204]
+                    - cell [ref=e205]:
+                      - checkbox [checked] [ref=e206]
+                    - cell [ref=e207]:
+                      - checkbox [checked] [ref=e208]
+                    - cell [ref=e209]:
+                      - checkbox [checked] [ref=e210]
+                    - cell [ref=e211]:
+                      - checkbox [checked] [ref=e212]
+                    - cell [ref=e213]:
+                      - checkbox [disabled] [ref=e214]
+                  - row "_45TV" [ref=e215]:
+                    - cell "_45TV" [ref=e216]
+                    - cell [ref=e217]:
+                      - checkbox [checked] [ref=e218]
+                    - cell [ref=e219]:
+                      - checkbox [checked] [ref=e220]
+                    - cell [ref=e221]:
+                      - checkbox [checked] [ref=e222]
+                    - cell [ref=e223]:
+                      - checkbox [checked] [ref=e224]
+                    - cell [ref=e225]:
+                      - checkbox [checked] [ref=e226]
+                    - cell [ref=e227]:
+                      - checkbox [checked] [ref=e228]
+                    - cell [ref=e229]:
+                      - checkbox [checked] [ref=e230]
+                    - cell [ref=e231]:
+                      - checkbox [checked] [ref=e232]
+                    - cell [ref=e233]:
+                      - checkbox [checked] [ref=e234]
+                    - cell [ref=e235]:
+                      - checkbox [checked] [ref=e236]
+                    - cell [ref=e237]:
+                      - checkbox [checked] [ref=e238]
+                    - cell [ref=e239]:
+                      - checkbox [checked] [ref=e240]
+                    - cell [ref=e241]:
+                      - checkbox [checked] [ref=e242]
+                    - cell [ref=e243]:
+                      - checkbox [checked] [ref=e244]
+                    - cell [ref=e245]:
+                      - checkbox [disabled] [ref=e246]
+                  - row "_55" [ref=e247]:
+                    - cell "_55" [ref=e248]
+                    - cell [ref=e249]:
+                      - checkbox [ref=e250]
+                    - cell [ref=e251]:
+                      - checkbox [ref=e252]
+                    - cell [ref=e253]:
+                      - checkbox [ref=e254]
+                    - cell [ref=e255]:
+                      - checkbox [ref=e256]
+                    - cell [ref=e257]:
+                      - checkbox [ref=e258]
+                    - cell [ref=e259]:
+                      - checkbox [ref=e260]
+                    - cell [ref=e261]:
+                      - checkbox [ref=e262]
+                    - cell [ref=e263]:
+                      - checkbox [ref=e264]
+                    - cell [ref=e265]:
+                      - checkbox [ref=e266]
+                    - cell [ref=e267]:
+                      - checkbox [ref=e268]
+                    - cell [ref=e269]:
+                      - checkbox [ref=e270]
+                    - cell [ref=e271]:
+                      - checkbox [ref=e272]
+                    - cell [ref=e273]:
+                      - checkbox [ref=e274]
+                    - cell [ref=e275]:
+                      - checkbox [ref=e276]
+                    - cell [ref=e277]:
+                      - checkbox [disabled] [ref=e278]
+                  - row "_55T" [ref=e279]:
+                    - cell "_55T" [ref=e280]
+                    - cell [ref=e281]:
+                      - checkbox [ref=e282]
+                    - cell [ref=e283]:
+                      - checkbox [ref=e284]
+                    - cell [ref=e285]:
+                      - checkbox [ref=e286]
+                    - cell [ref=e287]:
+                      - checkbox [ref=e288]
+                    - cell [ref=e289]:
+                      - checkbox [ref=e290]
+                    - cell [ref=e291]:
+                      - checkbox [ref=e292]
+                    - cell [ref=e293]:
+                      - checkbox [ref=e294]
+                    - cell [ref=e295]:
+                      - checkbox [ref=e296]
+                    - cell [ref=e297]:
+                      - checkbox [ref=e298]
+                    - cell [ref=e299]:
+                      - checkbox [ref=e300]
+                    - cell [ref=e301]:
+                      - checkbox [ref=e302]
+                    - cell [ref=e303]:
+                      - checkbox [ref=e304]
+                    - cell [ref=e305]:
+                      - checkbox [ref=e306]
+                    - cell [ref=e307]:
+                      - checkbox [ref=e308]
+                    - cell [ref=e309]:
+                      - checkbox [disabled] [ref=e310]
+                  - row "_MM" [ref=e311]:
+                    - cell "_MM" [ref=e312]
+                    - cell [ref=e313]:
+                      - checkbox [checked] [ref=e314]
+                    - cell [ref=e315]:
+                      - checkbox [checked] [ref=e316]
+                    - cell [ref=e317]:
+                      - checkbox [checked] [ref=e318]
+                    - cell [ref=e319]:
+                      - checkbox [checked] [ref=e320]
+                    - cell [ref=e321]:
+                      - checkbox [checked] [ref=e322]
+                    - cell [ref=e323]:
+                      - checkbox [checked] [ref=e324]
+                    - cell [ref=e325]:
+                      - checkbox [checked] [ref=e326]
+                    - cell [ref=e327]:
+                      - checkbox [checked] [ref=e328]
+                    - cell [ref=e329]:
+                      - checkbox [checked] [ref=e330]
+                    - cell [ref=e331]:
+                      - checkbox [checked] [ref=e332]
+                    - cell [ref=e333]:
+                      - checkbox [checked] [ref=e334]
+                    - cell [ref=e335]:
+                      - checkbox [checked] [ref=e336]
+                    - cell [ref=e337]:
+                      - checkbox [checked] [ref=e338]
+                    - cell [ref=e339]:
+                      - checkbox [checked] [ref=e340]
+                    - cell [ref=e341]:
+                      - checkbox [disabled] [ref=e342]
+                  - row "_SV" [ref=e343]:
+                    - cell "_SV" [ref=e344]
+                    - cell [ref=e345]:
+                      - checkbox [ref=e346]
+                    - cell [ref=e347]:
+                      - checkbox [ref=e348]
+                    - cell [ref=e349]:
+                      - checkbox [ref=e350]
+                    - cell [ref=e351]:
+                      - checkbox [ref=e352]
+                    - cell [ref=e353]:
+                      - checkbox [ref=e354]
+                    - cell [ref=e355]:
+                      - checkbox [ref=e356]
+                    - cell [ref=e357]:
+                      - checkbox [ref=e358]
+                    - cell [ref=e359]:
+                      - checkbox [ref=e360]
+                    - cell [ref=e361]:
+                      - checkbox [ref=e362]
+                    - cell [ref=e363]:
+                      - checkbox [ref=e364]
+                    - cell [ref=e365]:
+                      - checkbox [ref=e366]
+                    - cell [ref=e367]:
+                      - checkbox [ref=e368]
+                    - cell [ref=e369]:
+                      - checkbox [ref=e370]
+                    - cell [ref=e371]:
+                      - checkbox [ref=e372]
+                    - cell [ref=e373]:
+                      - checkbox [disabled] [ref=e374]
+                  - row "_12TV" [ref=e375]:
+                    - cell "_12TV" [ref=e376]
+                    - cell [ref=e377]:
+                      - checkbox [ref=e378]
+                    - cell [ref=e379]:
+                      - checkbox [ref=e380]
+                    - cell [ref=e381]:
+                      - checkbox [ref=e382]
+                    - cell [ref=e383]:
+                      - checkbox [ref=e384]
+                    - cell [ref=e385]:
+                      - checkbox [ref=e386]
+                    - cell [ref=e387]:
+                      - checkbox [ref=e388]
+                    - cell [ref=e389]:
+                      - checkbox [ref=e390]
+                    - cell [ref=e391]:
+                      - checkbox [ref=e392]
+                    - cell [ref=e393]:
+                      - checkbox [ref=e394]
+                    - cell [ref=e395]:
+                      - checkbox [ref=e396]
+                    - cell [ref=e397]:
+                      - checkbox [ref=e398]
+                    - cell [ref=e399]:
+                      - checkbox [ref=e400]
+                    - cell [ref=e401]:
+                      - checkbox [ref=e402]
+                    - cell [ref=e403]:
+                      - checkbox [ref=e404]
+                    - cell [ref=e405]:
+                      - checkbox [disabled] [ref=e406]
+                  - row "Additional Graphics 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e407]:
+                    - cell "Additional Graphics" [ref=e408]
+                    - cell "0" [ref=e409]
+                    - cell "0" [ref=e410]
+                    - cell "0" [ref=e411]
+                    - cell "0" [ref=e412]
+                    - cell "0" [ref=e413]
+                    - cell "0" [ref=e414]
+                    - cell "0" [ref=e415]
+                    - cell "0" [ref=e416]
+                    - cell "0" [ref=e417]
+                    - cell "0" [ref=e418]
+                    - cell "0" [ref=e419]
+                    - cell "0" [ref=e420]
+                    - cell "0" [ref=e421]
+                    - cell "0" [ref=e422]
+                    - cell "0" [ref=e423]
+            - generic [ref=e425]:
+              - heading "Graphic Example" [level=2] [ref=e426]
+              - generic [ref=e427]:
+                - generic [ref=e428]:
+                  - text: _MM
+                  - generic "Memory mate with team and individual with text" [ref=e429]:
+                    - generic [ref=e430]: 
+                  - img "_MM" [ref=e431] [cursor=pointer]
+                - generic [ref=e432]:
+                  - text: _45V
+                  - 'generic "4x5 ratio graphic no text (for traditional: with border no text)" [ref=e433]':
+                    - generic [ref=e434]: 
+                  - img "_45V" [ref=e435] [cursor=pointer]
+                - generic [ref=e436]:
+                  - text: _55T
+                  - generic "5x5 ratio graphic with text (Round products)" [ref=e437]:
+                    - generic [ref=e438]: 
+                  - img "_55T" [ref=e439] [cursor=pointer]
+              - separator [ref=e440]
+              - generic [ref=e441]:
+                - generic [ref=e442]:
+                  - text: _45TV
+                  - 'generic "4x5 ratio with graphic with text (for traditional: with border and text)" [ref=e443]':
+                    - generic [ref=e444]: 
+                  - img "_45TV" [ref=e445] [cursor=pointer]
+                - generic [ref=e446]:
+                  - text: _SV
+                  - generic "Extracted individual image placed on white background" [ref=e447]:
+                    - generic [ref=e448]: 
+                  - img "_SV" [ref=e449] [cursor=pointer]
+                - generic [ref=e450]:
+                  - text: _55
+                  - generic "5x5 ratio graphic no text (Round products)" [ref=e451]:
+                    - generic [ref=e452]: 
+                  - img "_55" [ref=e453] [cursor=pointer]
+              - separator [ref=e454]
+              - generic [ref=e455]:
+                - generic [ref=e456]:
+                  - text: _12TV
+                  - generic "1x2 ratio graphic with text" [ref=e457]:
+                    - generic [ref=e458]: 
+                  - img "_12TV" [ref=e459] [cursor=pointer]
+                - generic [ref=e460]:
+                  - text: 3D Standard
+                  - img "3D Standard Design" [ref=e461] [cursor=pointer]
+                - generic [ref=e462]:
+                  - text: Virtual Riser
+                  - img "Virtual Riser Style" [ref=e463] [cursor=pointer]
+        - generic [ref=e465]:
+          - table [ref=e467]:
+            - rowgroup [ref=e468]:
+              - row "Job Name* Test_Staging_1772027140105" [ref=e469]:
+                - cell "Job Name*" [ref=e470]:
+                  - generic [ref=e471]: Job Name*
+                - cell [ref=e472]
+                - cell "Test_Staging_1772027140105" [ref=e473]:
+                  - textbox [ref=e474]: Test_Staging_1772027140105
+                - cell [ref=e475]
+              - row "Add Graphic Team Name  Yes No" [ref=e476]:
+                - cell "Add Graphic Team Name " [ref=e477]:
+                  - generic [ref=e478]:
+                    - text: Add Graphic Team Name
+                    - superscript [ref=e479]:
+                      - generic [ref=e480]: 
+                - cell [ref=e481]
+                - cell "Yes No" [ref=e482]:
+                  - generic [ref=e483]:
+                    - generic [ref=e484] [cursor=pointer]:
+                      - radio "Yes" [ref=e485]
+                      - text: "Yes"
+                    - generic [ref=e486] [cursor=pointer]:
+                      - radio "No" [checked] [ref=e487]
+                      - text: "No"
+              - row "Background Template* View Designs Single Template for Organization Different Template for Each Team Custom Background" [ref=e488]:
+                - cell "Background Template* View Designs" [ref=e489]:
+                  - generic [ref=e490]:
+                    - text: Background Template*
+                    - link "View Designs" [ref=e491] [cursor=pointer]:
+                      - /url: https://www.nextgenphotosolutions.com/team-individual-graphics
+                - cell [ref=e492]
+                - cell "Single Template for Organization Different Template for Each Team Custom Background" [ref=e493]:
+                  - table [ref=e495]:
+                    - rowgroup [ref=e496]:
+                      - row "Single Template for Organization" [ref=e497]:
+                        - cell "Single Template for Organization" [ref=e498]:
+                          - radio [ref=e499]
+                          - generic [ref=e500]: Single Template for Organization
+                      - row "Different Template for Each Team" [ref=e501]:
+                        - cell "Different Template for Each Team" [ref=e502]:
+                          - radio [ref=e503]
+                          - generic [ref=e504]: Different Template for Each Team
+                      - row "Custom Background" [ref=e505]:
+                        - cell "Custom Background" [ref=e506]:
+                          - radio [ref=e507]
+                          - generic [ref=e508]: Custom Background
+                - cell [ref=e509]
+              - row "Extracted images  Attach extracted images to access codes" [ref=e510]:
+                - cell "Extracted images " [ref=e511]:
+                  - generic [ref=e512]:
+                    - text: Extracted images
+                    - superscript [ref=e513]:
+                      - generic [ref=e514]: 
+                - cell [ref=e515]
+                - cell "Attach extracted images to access codes" [ref=e516]:
+                  - checkbox [ref=e517]
+                  - text: Attach extracted images to access codes
+                - cell [ref=e518]
+              - text: 
+              - row "PNG Team Add On  * $1.00 X 1 (Total Number of Teams)" [ref=e519]:
+                - cell "PNG Team Add On  *" [ref=e520]:
+                  - generic [ref=e521]:
+                    - text: PNG Team Add On
+                    - superscript [ref=e522]:
+                      - generic [ref=e523]: 
+                    - text: "*"
+                - cell [ref=e524]
+                - cell "$1.00 X 1 (Total Number of Teams)" [ref=e525]:
+                  - checkbox [ref=e526]
+                  - text: $1.00 X 1 (Total Number of Teams)
+                - cell [ref=e527]
+              - 'row "Unique color for each team in organization  * Yes (Custom Team Color: $1.00 x Number of Teams: 1)" [ref=e528]':
+                - cell "Unique color for each team in organization  *" [ref=e529]:
+                  - generic [ref=e530]:
+                    - text: Unique color for each team in organization
+                    - superscript [ref=e531]:
+                      - generic [ref=e532]: 
+                    - text: "*"
+                - cell [ref=e533]
+                - 'cell "Yes (Custom Team Color: $1.00 x Number of Teams: 1)" [ref=e534]':
+                  - radio [ref=e535]
+                  - text: "Yes (Custom Team Color: $1.00 x Number of Teams: 1)"
+                - cell [ref=e536]
+              - row "Single color for entire organization  * Yes" [ref=e537]:
+                - cell "Single color for entire organization  *" [ref=e538]:
+                  - generic [ref=e539]:
+                    - text: Single color for entire organization
+                    - superscript [ref=e540]:
+                      - generic [ref=e541]: 
+                    - text: "*"
+                - cell [ref=e542]
+                - cell "Yes" [ref=e543]:
+                  - radio [checked] [ref=e544]
+                  - text: "Yes"
+                - cell [ref=e545]
+              - row "Theme Color  E.g. \"the blue of their jersey\" or \"background can be the red from their logo\" or \"text can be the yellow of their jersey\", etc. 0/250 characters" [ref=e546]:
+                - cell "Theme Color  E.g. \"the blue of their jersey\" or \"background can be the red from their logo\" or \"text can be the yellow of their jersey\", etc." [ref=e547]:
+                  - generic [ref=e548]:
+                    - text: Theme Color
+                    - superscript [ref=e549]:
+                      - generic [ref=e550]: 
+                    - generic [ref=e551]:
+                      - text: E.g. "the blue of their jersey"
+                      - text: or "background can be the red from their logo"
+                      - text: or "text can be the yellow of their jersey", etc.
+                - cell [ref=e552]
+                - cell "0/250 characters" [ref=e553]:
+                  - textbox [ref=e554]
+                  - generic [ref=e555]: 0/250 characters
+                - cell [ref=e556]
+              - row "Special Requests 0/250 characters" [ref=e557]:
+                - cell "Special Requests" [ref=e558]:
+                  - generic [ref=e559]: Special Requests
+                - cell [ref=e560]
+                - cell "0/250 characters" [ref=e561]:
+                  - textbox [ref=e562]
+                  - generic [ref=e563]: 0/250 characters
+                - cell [ref=e564]
+              - row "Upload reference files You can upload multiple reference files Choose File" [ref=e565]:
+                - cell "Upload reference files You can upload multiple reference files" [ref=e566]:
+                  - generic [ref=e567]: Upload reference files
+                  - text: You can upload multiple reference files
+                - cell [ref=e568]
+                - cell "Choose File" [ref=e569]:
+                  - button "Choose File" [ref=e571]
+                - cell [ref=e572]
+              - row "Upload logo You can upload logo files Choose File" [ref=e573]:
+                - cell "Upload logo You can upload logo files" [ref=e574]:
+                  - generic [ref=e575]: Upload logo
+                  - text: You can upload logo files
+                - cell [ref=e576]
+                - cell "Choose File" [ref=e577]:
+                  - button "Choose File" [ref=e579]
+                - cell [ref=e580]
+              - text: 
+              - row "Total Number of Team Images 2 X $1.65 (Team Price) $3.30" [ref=e581]:
+                - cell "Total Number of Team Images" [ref=e582]:
+                  - generic [ref=e583]: Total Number of Team Images
+                - cell [ref=e584]
+                - cell "2 X $1.65 (Team Price)" [ref=e585]:
+                  - text: "2"
+                  - generic [ref=e586]: X $1.65 (Team Price)
+                - cell "$3.30" [ref=e587]
+              - row "Total Number of individual images" [ref=e588]:
+                - cell "Total Number of individual images" [ref=e589]:
+                  - generic [ref=e590]: Total Number of individual images
+                - cell [ref=e591]
+                - cell [ref=e592]
+                - cell [ref=e593]
+              - row [ref=e594]:
+                - cell [ref=e595]
+                - cell [ref=e596]
+                - cell [ref=e597]
+                - cell [ref=e598]
+              - row "Regular 1 X $1.80" [ref=e599]:
+                - cell [ref=e600]
+                - cell "Regular" [ref=e601]:
+                  - img "Regular" [ref=e603]
+                - cell "1 X $1.80" [ref=e604]:
+                  - generic [ref=e605]: "1"
+                  - text: X $1.80
+                - cell [ref=e606]
+              - row [ref=e607]:
+                - cell [ref=e608]
+                - cell [ref=e609]
+                - cell [ref=e610]
+                - cell [ref=e611]
+              - row [ref=e612]:
+                - cell [ref=e613]
+                - cell [ref=e614]
+                - cell [ref=e615]
+                - cell [ref=e616]
+              - row "UL 1 X $8.10 $ 9.90" [ref=e617]:
+                - cell [ref=e618]
+                - cell "UL" [ref=e619]:
+                  - generic:
+                    - img "UL"
+                - cell "1 X $8.10" [ref=e620]:
+                  - generic [ref=e621]: "1"
+                  - text: X $8.10
+                - cell "$ 9.90" [ref=e622]
+              - row "Additional graphics X $0.15 $0.00" [ref=e623]:
+                - cell "Additional graphics" [ref=e624]:
+                  - generic [ref=e625]: Additional graphics
+                - cell [ref=e626]
+                - cell "X $0.15" [ref=e627]:
+                  - generic [ref=e628]: X $0.15
+                - cell "$0.00" [ref=e629]
+              - row [ref=e630]:
+                - cell [ref=e631]
+                - cell [ref=e632]
+                - cell [ref=e633]
+                - cell [ref=e634]
+              - row "Color Correction $0.20 X 18 (Total Number of Images)" [ref=e635]:
+                - cell "Color Correction" [ref=e636]:
+                  - generic [ref=e637]: Color Correction
+                - cell [ref=e638]
+                - cell "$0.20 X 18 (Total Number of Images)" [ref=e639]:
+                  - checkbox [ref=e640]
+                  - text: $0.20 X 18 (Total Number of Images)
+                - cell [ref=e641]
+              - row "Subtotal $ 16.90" [ref=e642]:
+                - cell "Subtotal" [ref=e643]:
+                  - generic [ref=e644]: Subtotal
+                - cell "$ 16.90" [ref=e645]
+              - row "Discount $0.00" [ref=e646]:
+                - cell "Discount" [ref=e647]:
+                  - generic [ref=e648]: Discount
+                - cell "$0.00" [ref=e649]
+              - row "Total $ 16.90" [ref=e650]:
+                - cell "Total" [ref=e651]:
+                  - generic [ref=e652]: Total
+                - cell "$ 16.90" [ref=e653]:
+                  - text: $
+                  - generic [ref=e655]: "16.90"
+          - generic [ref=e660]:
+            - generic [ref=e662]: Discount Code
+            - textbox [ref=e664]
+            - button "Redeem" [ref=e666] [cursor=pointer]
+          - table [ref=e671]:
+            - rowgroup [ref=e672]:
+              - row "Select Payment Methods:" [ref=e673]:
+                - cell "Select Payment Methods:" [ref=e674]
+              - row "Use Saved Card details Enter Card Information Below" [ref=e675]:
+                - cell "Use Saved Card details Enter Card Information Below" [ref=e676]:
+                  - table [ref=e678]:
+                    - rowgroup [ref=e679]:
+                      - row "Use Saved Card details" [ref=e680]:
+                        - cell "Use Saved Card details" [ref=e681]:
+                          - radio [ref=e682]
+                          - text: Use Saved Card details
+                      - row
+                      - row "Enter Card Information Below" [ref=e683]:
+                        - cell "Enter Card Information Below" [ref=e684]:
+                          - radio [ref=e685]
+                          - text: Enter Card Information Below
+                      - row
+          - button "Checkout" [ref=e687] [cursor=pointer]
+        - table [ref=e689]:
+          - rowgroup [ref=e690]:
+            - row "Team Background Template Lions --Select -- Save Close" [ref=e691]:
+              - cell "Team Background Template Lions --Select -- Save Close" [ref=e692]:
+                - generic [ref=e693]:
+                  - table [ref=e694]:
+                    - rowgroup [ref=e695]:
+                      - row "Team Background Template" [ref=e696]:
+                        - columnheader "Team" [ref=e697]
+                        - columnheader "Background Template" [ref=e698]
+                    - rowgroup [ref=e699]:
+                      - row "Lions --Select --" [ref=e700]:
+                        - cell "Lions" [ref=e701]
+                        - cell "--Select --" [ref=e702]:
+                          - combobox [ref=e703]:
+                            - option "--Select --" [selected]
+                            - option "3rd Creative - Fresh Paint"
+                            - option "3rd Creative - Baseline - Softball/Baseball"
+                            - option "3rd Creative - Coyote Multi-Sport - Baseball"
+                            - option "3rd Creative - Coyote Multi-Sport - Basketball"
+                            - option "3rd Creative - Coyote Multi-Sport - Football"
+                            - option "3rd Creative - Coyote Multi-Sport - Soccer"
+                            - option "3rd Creative - Coyote Multi-Sport - Softball"
+                            - option "3rd Creative - Coyote Multisport Outdoor - Baseball / Softball Horizontal - Full Length PNG"
+                            - option "3rd Creative - Coyote Multisport Outdoor - Baseball / Softball Horizontal PNG"
+                            - option "3rd Creative - Coyote Multisport Outdoor - Football Horizontal"
+                            - option "3rd Creative - Coyote Multisport Outdoor - Football Horizontal PNG"
+                            - option "3rd Creative - Coyote Outdoor Baseball Horizontal - PNG"
+                            - option "3rd Creative - Coyote Outdoor Baseball Vertical - PNG"
+                            - option "3rd Creative - Coyote Outdoor Golf Horizontal - FULL LENGTH"
+                            - option "3rd Creative - Coyotes"
+                            - option "3rd Creative - Fusion"
+                            - option "3rd Creative - Fusion - Horizontal FULL LENGTH"
+                            - option "3rd Creative - Hazardous"
+                            - option "3rd Creative - Haze"
+                            - option "3rd Creative - In the Dust - Baseball"
+                            - option "3rd Creative - In the Dust - Softball"
+                            - option "3rd Creative - Knights"
+                            - option "3rd Creative - Knights - FULL LENGTH"
+                            - option "3rd Creative - Nightgame - Baseball/Softball - Requires Logo"
+                            - option "3rd Creative - Nightgame - Football - Requires Logo"
+                            - option "3rd Creative - On Paper - Horizontal - Baseball 1"
+                            - option "3rd Creative - On Paper - Horizontal - Basketball"
+                            - option "3rd Creative - On Paper - Horizontal - Basketball 2"
+                            - option "3rd Creative - On Paper - Horizontal - Football"
+                            - option "3rd Creative - On Paper - Horizontal - Golf"
+                            - option "3rd Creative - On Paper - Horizontal - Soccer 1"
+                            - option "3rd Creative - On Paper - Horizontal - Soccer 2"
+                            - option "3rd Creative - On Paper - Horizontal - Softball"
+                            - option "3rd Creative - On Paper - Horizontal - Swim"
+                            - option "3rd Creative - On Paper - Horizontal - Tennis"
+                            - option "3rd Creative - On Paper - Horizontal - Vball 1"
+                            - option "3rd Creative - On Paper - Horizontal - Vball 2"
+                            - option "3rd Creative - On Paper - Horizontal - Wrestling"
+                            - option "3rd Creative - Pastime Baseball - Black Riders"
+                            - option "3rd Creative - Pastime Baseball - Mascot MVB"
+                            - option "3rd Creative - Pastime Baseball - Mathison"
+                            - option "3rd Creative - Pastime Softball - Black Riders"
+                            - option "3rd Creative - Pastime Softball - Mascot MVB"
+                            - option "3rd Creative - Pastime Softball - Mathison"
+                            - option "3rd Creative - Ranger Football Vertical MM"
+                            - option "3rd Creative - Rangers Baseball Horizontal"
+                            - option "3rd Creative - Rangers Baseball Vertical"
+                            - option "3rd Creative - Rangers Football Horizontal"
+                            - option "3rd Creative - Rangers Football Vertical"
+                            - option "3rd Creative - Rangers Soccer Horizontal"
+                            - option "3rd Creative - Rangers Soccer Vertical PNG"
+                            - option "3rd Creative - Rangers Softball Horizontal"
+                            - option "3rd Creative - Rangers Softball Vertical"
+                            - option "3rd Creative - Rise"
+                            - option "3rd Creative - Rough Riders - Horizontal"
+                            - option "3rd Creative - Rough Riders - Vertical"
+                            - option "3rd Creative - TGA Shine"
+                            - option "3rd Creative - TGA Shine FULL LENGTH"
+                            - option "3rd Creative - Torn 1"
+                            - option "3rd Creative - Torn 2"
+                            - option "3rd Creative - Torn 3"
+                            - option "3rd Creative - Versatility (PNG)"
+                            - option "3rd Creative - Wichita"
+                            - option "3rd Creative - Ziva - Black - Baseball"
+                            - option "3rd Creative - Ziva - Black - Basketball"
+                            - option "3rd Creative - Ziva - Black - Soccer"
+                            - option "3rd Creative - Ziva - Black - Softball"
+                            - option "3rd Creative - Ziva - Black - Volleyball"
+                            - option "3rd Creative - Ziva - Color - Baseball"
+                            - option "3rd Creative - Ziva - Color - Basketball"
+                            - option "3rd Creative - Ziva - Color - Soccer"
+                            - option "3rd Creative - Ziva - Color - Softball"
+                            - option "3rd Creative - Ziva - Color - Volleyball"
+                            - option "3rd Creative - Ziva - White - Baseball"
+                            - option "3rd Creative - Ziva - White - Basketball"
+                            - option "3rd Creative - Ziva - White - Soccer"
+                            - option "3rd Creative - Ziva - White - Softball"
+                            - option "3rd Creative - Ziva - White - Volleyball"
+                            - option "3rd Creative - Zone In - Basketball"
+                            - option "3rd Creative - Zone In - Dirt and Turf Football"
+                            - option "3rd Creative - Zone In - Hockey"
+                            - option "3rd Creative - Zone In - Softball/Baseball"
+                            - option "3rd Creative - Zone In - Water Swim"
+                            - option "3rd Creative - Zone In - Wrestling"
+                            - option "Alien World"
+                            - option "Arc 4 Studio - Evolve"
+                            - option "Arc 4 Studio - Evolve - FULL LENGTH"
+                            - option "Arc 4 Studio - Onyx"
+                            - option "BANNER Individual - Next Gen - Center Stage"
+                            - option "BANNER Individual - 3rd Creative - On Paper Basketball"
+                            - option "BANNER Individual - 3rd Creative Multi-Sport"
+                            - option "BANNER Individual - 3rd Creative Multi-Sport Outdoor (FULL LENGTH)"
+                            - option "BANNER Individual - 3rd Creative - Haze"
+                            - option "BANNER Individual - 3rd Creative - Rise"
+                            - option "BANNER Individual - 3rd Creative - Torn 1"
+                            - option "BANNER Individual - 3rd Creative - Torn 2"
+                            - option "BANNER Individual - 3rd Creative - Torn 3"
+                            - option "BANNER Individual - 3rd Creative Fusion"
+                            - option "BANNER Individual - 3rd Creative Fusion (FULL LENGTH)"
+                            - option "BANNER Individual - 3rd Creative Multi-Sport"
+                            - option "BANNER Individual - 3rd Creative Rise - Color"
+                            - option "BANNER Individual - Arc 4 Studio - Epic Arena"
+                            - option "BANNER Individual - Arc 4 Studio - Evolve"
+                            - option "BANNER Individual - Arc 4 Studio - Onyx"
+                            - option "BANNER Individual - Arc 4 Studio - Platinum Stadium"
+                            - option "BANNER Individual - Hanna - Hot Streak"
+                            - option "BANNER Individual - Hanna Core DARK"
+                            - option "BANNER Individual - Hanna Core LIGHT"
+                            - option "BANNER Individual - Hanna Sparked"
+                            - option "BANNER Individual - Hanna Sports Scenes Football"
+                            - option "BANNER Individual - Hanna Sports Scenes Track"
+                            - option "BANNER Individual - Josh Hanna - Aeon Dark"
+                            - option "BANNER Individual - Josh Hanna - Brandish"
+                            - option "BANNER Individual - Josh Hanna - Enamel"
+                            - option "BANNER Individual - Josh Hanna - Enamel - FULL LENGTH"
+                            - option "BANNER Individual - Josh Hanna - Vector"
+                            - option "BANNER Individual - Josh Hanna Aeon Light"
+                            - option "BANNER Individual - Next Gen - Impact"
+                            - option "BANNER Individual - Next Gen - Trojan"
+                            - option "Bass Shirk - Spirit of the Game"
+                            - option "BG_Temp_Demo_839"
+                            - option "Bryant - Digit"
+                            - option "Bryant - River City"
+                            - option "Cobblestone"
+                            - option "Dragon"
+                            - option "Fantasy"
+                            - option "Hanna - Hot Streak"
+                            - option "Higdon - Bright Lights (FULL LENGTH)"
+                            - option "Higdon - White Wall"
+                            - option "Higdon - White Wall - FULL LENGTH"
+                            - option "Josh Hanna - Aeon - Dark"
+                            - option "Josh Hanna - Aeon - Dark - Basketball"
+                            - option "Josh Hanna - Aeon - Light"
+                            - option "Josh Hanna - Aglow - Archery"
+                            - option "Josh Hanna - Aglow - Baseball"
+                            - option "Josh Hanna - Aglow - Basketball"
+                            - option "Josh Hanna - Aglow - Cheer"
+                            - option "Josh Hanna - Aglow - Cross Country - Track"
+                            - option "Josh Hanna - Aglow - Field Hockey"
+                            - option "Josh Hanna - Aglow - Football"
+                            - option "Josh Hanna - Aglow - Golf"
+                            - option "Josh Hanna - Aglow - Hockey"
+                            - option "Josh Hanna - Aglow - Lacrosse"
+                            - option "Josh Hanna - Aglow - Music/Band"
+                            - option "Josh Hanna - Aglow - Soccer"
+                            - option "Josh Hanna - Aglow - Softball"
+                            - option "Josh Hanna - Aglow - Swim"
+                            - option "Josh Hanna - Aglow - Tennis"
+                            - option "Josh Hanna - Aglow - Volleyball"
+                            - option "Josh Hanna - Aglow - Wrestling"
+                            - option "Josh Hanna - Americana"
+                            - option "Josh Hanna - Backstop"
+                            - option "Josh Hanna - Basketball"
+                            - option "Josh Hanna - Bleachers ( DIRT )"
+                            - option "Josh Hanna - Bleachers ( TURF )"
+                            - option "Josh Hanna - Brandish"
+                            - option "Josh Hanna - Chain Link"
+                            - option "Josh Hanna - Chainlink Baseball/Softball"
+                            - option "Josh Hanna - Core Dark (Horizontal)"
+                            - option "Josh Hanna - Core Light (Horizontal)"
+                            - option "Josh Hanna - Core Light (Vertical)"
+                            - option "Josh Hanna - Core Light (Vertical)"
+                            - option "Josh Hanna - Cornered Dance - FULL LENGTH"
+                            - option "Josh Hanna - Court Order - Basketball"
+                            - option "Josh Hanna - Court Order - Basketball"
+                            - option "Josh Hanna - Court Order - Volleyball"
+                            - option "Josh Hanna - Cross Country"
+                            - option "Josh Hanna - Dance Color Option Background - FULL LENGTH"
+                            - option "Josh Hanna - Dance White Background - FULL LENGTH"
+                            - option "Josh Hanna - Dancehall (FULL LENGTH)"
+                            - option "Josh Hanna - Dancehall V1"
+                            - option "Josh Hanna - Dancehall V2"
+                            - option "Josh Hanna - Dojo - Martial Arts"
+                            - option "Josh Hanna - Dojo - Martial Arts - (Full Length)"
+                            - option "Josh Hanna - Dusty Road"
+                            - option "Josh Hanna - Enamel"
+                            - option "Josh Hanna - Enamel - FULL LENGTH"
+                            - option "Josh Hanna - Epic Soccer DAY"
+                            - option "Josh Hanna - Epic Soccer NIGHT"
+                            - option "Josh Hanna - Field Lightning"
+                            - option "Josh Hanna - Football"
+                            - option "Josh Hanna - Football Cheer"
+                            - option "Josh Hanna - Game Time - Baseball"
+                            - option "Josh Hanna - Game Time - Cheer"
+                            - option "Josh Hanna - Game Time - Football"
+                            - option "Josh Hanna - Game Time - Generic"
+                            - option "Josh Hanna - Game Time - Soccer"
+                            - option "Josh Hanna - Game Time - Softball"
+                            - option "Josh Hanna - Glitter Bomb"
+                            - option "Josh Hanna - Glitter Bomb - FULL LENGTH"
+                            - option "Josh Hanna - Glitter Bomb - Vertical Memorymate"
+                            - option "Josh Hanna - Glitter Bomb STARS"
+                            - option "Josh Hanna - Glitter Bomb STARS - FULL LENGTH"
+                            - option "Josh Hanna - Glitter Bomb STARS - Vertical Memorymate"
+                            - option "Josh Hanna - Grunge Baseball"
+                            - option "Josh Hanna - Grunge Lacrosse"
+                            - option "Josh Hanna - Grunge Soccer"
+                            - option "Josh Hanna - Grunge Softball"
+                            - option "Josh Hanna - Grunge Volleyball"
+                            - option "Josh Hanna - Home Stretch"
+                            - option "Josh Hanna - Metal Grunge"
+                            - option "Josh Hanna - Monochromatic"
+                            - option "Josh Hanna - Night Stadium"
+                            - option "Josh Hanna - On The Ice - Hockey"
+                            - option "Josh Hanna - On The Ice - Hockey (Full Length)"
+                            - option "Josh Hanna - On The Mat"
+                            - option "Josh Hanna - On The Mat - (Full Length)"
+                            - option "Josh Hanna - Outfield"
+                            - option "Josh Hanna - Outfield"
+                            - option "Josh Hanna - Poolside"
+                            - option "Josh Hanna - Rustic Basketball"
+                            - option "Josh Hanna - Sandlot (Baseball)"
+                            - option "Josh Hanna - Sandlot (Softball)"
+                            - option "Josh Hanna - Shredded"
+                            - option "Josh Hanna - Sky Zone - Baseball"
+                            - option "Josh Hanna - Sky Zone - Football"
+                            - option "Josh Hanna - Sky Zone - Lacrosse"
+                            - option "Josh Hanna - Sky Zone - Soccer"
+                            - option "Josh Hanna - Soccer"
+                            - option "Josh Hanna - Soccer Lightning"
+                            - option "Josh Hanna - Soccer Sunrise"
+                            - option "Josh Hanna - Sparked Full Length"
+                            - option "Josh Hanna - Sparked Horizontal"
+                            - option "Josh Hanna - Sparked Vertical MM"
+                            - option "Josh Hanna - Sparked Vertical MM PNG Team"
+                            - option "Josh Hanna - Sports Scenes - Basketball"
+                            - option "Josh Hanna - Sports Scenes - Bleachers"
+                            - option "Josh Hanna - Sports Scenes - Bowling"
+                            - option "Josh Hanna - Sports Scenes - Clouds"
+                            - option "Josh Hanna - Sports Scenes - Swim"
+                            - option "Josh Hanna - Sports Scenes - Track"
+                            - option "Josh Hanna - Squad Goals"
+                            - option "Josh Hanna - Squad Goals - Full Length"
+                            - option "Josh Hanna - Squad Goals - Vertical MM"
+                            - option "Josh Hanna - Squad Goals Vertical MM - Full Length"
+                            - option "Josh Hanna - Swim"
+                            - option "Josh Hanna - Tennis"
+                            - option "Josh Hanna - Track"
+                            - option "Josh Hanna - Valor"
+                            - option "Josh Hanna - Volleyball"
+                            - option "Josh Hanna - Volleyball SPIKE"
+                            - option "Josh Higdon - Bright Lights"
+                            - option "KT Template"
+                            - option "KT2"
+                            - option "Live Test (Do not use)"
+                            - option "MI-001"
+                            - option "Next Gen - SYNC SPORTS"
+                            - option "Next Gen - Crosscheck"
+                            - option "Next Gen - Crosscheck - FULL LENGTH"
+                            - option "Next Gen - Cubes"
+                            - option "Next Gen - Fairway"
+                            - option "Next Gen - Free Kick"
+                            - option "Next Gen - Impact (Horizontal)"
+                            - option "Next Gen - Impact (Vertical)"
+                            - option "Next Gen - Masters Template 1"
+                            - option "Next Gen - Spirit Stadium"
+                            - option "Next Gen - Trojan"
+                            - option "Next Gen - Trojan - Full Length"
+                            - option "Next Gen - Trojan - Vertical"
+                            - option "NO TEMPLATE - PNG DELIVERY"
+                            - option "PANO - Josh Hanna - Court Order Volleyball - 1:2"
+                            - option "PANO - 3rd Creative - Coyote Multisport Outdoor GOLF - 1:3 FULL LENGTH"
+                            - option "PANO - 3rd Creative - Fusion - 1:2"
+                            - option "PANO - 3rd Creative - Fusion - 1:3"
+                            - option "PANO - 3rd Creative - Haze - 1:2 3/4 Crop"
+                            - option "PANO - 3rd Creative - Haze - 1:2 FULL LENGTH"
+                            - option "PANO - 3rd Creative - Haze - 1:3 3/4 Crop"
+                            - option "PANO - 3rd Creative - Haze - 1:3 FULL LENGTH"
+                            - option "PANO - 3rd Creative - Knights Basketball - 1:2 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Knights Basketball - 1:2 - Full Length"
+                            - option "PANO - 3rd Creative - Knights Basketball - 1:3 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Knights Basketball - 1:3 - Full Length"
+                            - option "PANO - 3rd Creative - Knights Volleyball - 1:2 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Knights Volleyball - 1:2 - Full Length"
+                            - option "PANO - 3rd Creative - Knights Volleyball - 1:3 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Knights Volleyball - 1:3 - Full Length"
+                            - option "PANO - 3rd Creative - Rise 1:2 - 3/4 Crop"
+                            - option "PANO - 3rd Creative - Rise 1:2 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Rise 1:3 - 3/4 Crop"
+                            - option "PANO - 3rd Creative - Rise 1:3 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Rough Riders Baseball - 1:2"
+                            - option "PANO - 3rd Creative - Rough Riders Baseball - 1:2 FULL LENGTH"
+                            - option "PANO - 3rd Creative - Rough Riders Baseball - 1:3"
+                            - option "PANO - 3rd Creative - Rough Riders Baseball - 1:3 FULL LENGTH"
+                            - option "Pano - 3rd Creative - Torn 3 - 1:2 - 3/4 Crop"
+                            - option "Pano - 3rd Creative - Torn 3 - 1:2 - FULL LENGTH"
+                            - option "Pano - 3rd Creative - Torn 3 - 1:3 - 3/4 Crop"
+                            - option "Pano - 3rd Creative - Torn 3 - 1:3 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Zone In - Dirt Turf 1:2 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In - Dirt Turf 1:2 Full Length"
+                            - option "PANO - 3rd Creative - Zone In - Dirt Turf 1:3 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In - Dirt Turf 1:3 Full Length"
+                            - option "PANO - 3rd Creative - Zone In - Swim 1:2 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In - Swim 1:2 Full Length"
+                            - option "PANO - 3rd Creative - Zone In - Swim 1:3 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In - Swim 1:3 Full Length"
+                            - option "PANO - 3rd Creative - Zone In Rubber Tennis - 1:2 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In Rubber Tennis - 1:2 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Zone In Rubber Tennis - 1:3 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In Rubber Tennis - 1:3 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Zone In Rubber Track - 1:2 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In Rubber Track - 1:2 - FULL LENGTH"
+                            - option "PANO - 3rd Creative - Zone In Rubber Track - 1:3 - 3/4 Length"
+                            - option "PANO - 3rd Creative - Zone In Rubber Track - 1:3 - FULL LENGTH"
+                            - option "PANO - Arc 4 Studio - Evolve 1:2 - 3/4 Crop"
+                            - option "PANO - Arc 4 Studio - Evolve 1:2 - FULL LENGTH"
+                            - option "PANO - Arc 4 Studio - Evolve 1:3 - 3/4 Crop"
+                            - option "PANO - Arc 4 Studio - Evolve 1:3 - FULL LENGTH"
+                            - option "PANO - Arc 4 Studio - Onyx 1:2 - 3/4 Crop"
+                            - option "PANO - Arc 4 Studio - Onyx 1:2 - FULL LENGTH"
+                            - option "PANO - Arc 4 Studio - Onyx 1:3 - 3/4 Crop"
+                            - option "PANO - Arc 4 Studio - Onyx 1:3 - FULL LENGTH"
+                            - option "PANO - Hanna - Ball Field - 1:2"
+                            - option "PANO - Hanna - Ball Field - 1:3"
+                            - option "PANO - Hanna - Bleachers (DIRT) 1:2"
+                            - option "PANO - Hanna - Bleachers (DIRT) 1:2 FULL LENGTH"
+                            - option "PANO - Hanna - Bleachers (DIRT) 1:3"
+                            - option "PANO - Hanna - Bleachers (DIRT) 1:3 FULL LENGTH"
+                            - option "PANO - Hanna - Bleachers (TURF) 1:2"
+                            - option "PANO - Hanna - Bleachers (TURF) 1:2 FULL LENGTH"
+                            - option "PANO - Hanna - Bleachers (TURF) 1:3"
+                            - option "PANO - Hanna - Bleachers (TURF) 1:3 FULL LENGTH"
+                            - option "PANO - Hanna - Brandish - 1:2 3/4 Crop"
+                            - option "PANO - Hanna - Brandish - 1:2 Full Length"
+                            - option "PANO - Hanna - Brandish - 1:3 3/4 Crop"
+                            - option "PANO - Hanna - Brandish - 1:3 Full Length"
+                            - option "PANO - Hanna - Hot Streak - 1:2"
+                            - option "PANO - Hanna - Hot Streak - 1:2 - FULL LENGTH"
+                            - option "PANO - Hanna - Hot Streak - 1:3"
+                            - option "PANO - Hanna - Hot Streak - 1:3 - FULL LENGTH"
+                            - option "PANO - Josh Hanna - Aeon - Dark - 1:2 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Aeon - Dark - 1:2 - FULL LENGTH"
+                            - option "PANO - Josh Hanna - Aeon - Dark - 1:3 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Aeon - Dark - 1:3 - FULL LENGTH"
+                            - option "PANO - Josh Hanna - Aeon - Light - 1:2 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Aeon - Light - 1:2 - Full Length"
+                            - option "PANO - Josh Hanna - Aeon - Light - 1:3 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Aeon - Light - 1:3 - Full Length"
+                            - option "PANO - Josh Hanna - Backstop 1:2"
+                            - option "PANO - Josh Hanna - Backstop 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Backstop 1:3"
+                            - option "PANO - Josh Hanna - Backstop 1:3 (FULL LENGTH)"
+                            - option "PANO - Josh Hanna - Backstop 1:3 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Ballfield - 1:3"
+                            - option "PANO - Josh Hanna - Core 1:2 3/4 Length"
+                            - option "PANO - Josh Hanna - Core 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Core 1:3 3/4 Length"
+                            - option "PANO - Josh Hanna - Core 1:3 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Court Order Basketball - 1:2"
+                            - option "PANO - Josh Hanna - Court Order Basketball - 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Court Order Basketball - 1:3"
+                            - option "PANO - Josh Hanna - Court Order Basketball 1:3 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Court Order Volleyball - 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Court Order Volleyball - 1:3"
+                            - option "PANO - Josh Hanna - Court Order Volleyball - 1:3 FULL LENGTH"
+                            - option "Pano - Josh Hanna - Enamel - 1:2 - 3/4 Crop"
+                            - option "Pano - Josh Hanna - Enamel - 1:2 - FULL LENGTH"
+                            - option "Pano - Josh Hanna - Enamel - 1:3 - 3/4 Crop"
+                            - option "Pano - Josh Hanna - Enamel - 1:3 - FULL LENGTH"
+                            - option "PANO - Josh Hanna - Night Stadium - 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Night Stadium - 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Sparked - 1:2 3/4 Crop"
+                            - option "PANO - Josh Hanna - Sparked - 1:2 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Sparked - 1:3 3/4 Crop"
+                            - option "PANO - Josh Hanna - Sparked - 1:3 FULL LENGTH"
+                            - option "PANO - Josh Hanna - Vector - 1:2 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Vector - 1:2 - FULL LENGTH"
+                            - option "PANO - Josh Hanna - Vector - 1:3 - 3/4 Crop"
+                            - option "PANO - Josh Hanna - Vector - 1:3 - FULL LENGTH"
+                            - option "PANO - Next Gen - Trojan 1:2 - 3/4 Layout"
+                            - option "PANO - Next Gen - Trojan 1:2 - Full Length Layout"
+                            - option "PANO - Next Gen - Trojan 1:3 - 3/4 Layout"
+                            - option "PANO - Next Gen - Trojan 1:3 - Full Length Layout"
+                            - option "PANO - Verzea - Epic 1:3"
+                            - option "PANO - Verzea - Epic 1:3 FULL LENGTH"
+                            - option "PANO - Verzea - Epic Softball/Baseball 1:2"
+                            - option "PANO - Verzea - Epic Softball/Baseball 1:3"
+                            - option "PANO - Verzea - Platinum 1:2"
+                            - option "PANO - Verzea - Platinum 1:3"
+                            - option "PANO 1:2 - NO TEMPLATE PNG DELIVERY"
+                            - option "PDLow01"
+                            - option "PSM - Cinema Series - Fire Sky"
+                            - option "PSM - Dungeon"
+                            - option "PSM - Equalizer"
+                            - option "PSM - Flare"
+                            - option "PSM - Friday Night Lights"
+                            - option "PSM - Full Court"
+                            - option "PSM - Hazardous"
+                            - option "PSM - IRMO"
+                            - option "PSM - Main Stage"
+                            - option "PSM - Main Stage (Full Length)"
+                            - option "PSM - Next Series - Rebel"
+                            - option "PSM - Shark"
+                            - option "PSM - Signature Series - V1 - Band"
+                            - option "PSM - Signature Series - V1 - Baseball"
+                            - option "PSM - Signature Series - V1 - Cheer"
+                            - option "PSM - Signature Series - V1 - Football"
+                            - option "PSM - Signature Series - V1 - Hockey"
+                            - option "PSM - Signature Series - V1 - Soccer"
+                            - option "PSM - Signature Series - V1 - Softball"
+                            - option "PSM - Signature Series - V1 - Track"
+                            - option "PSM - Signature Series - V2 - Band"
+                            - option "PSM - Signature Series - V2 - Baseball"
+                            - option "PSM - Signature Series - V2 - Basketball"
+                            - option "PSM - Signature Series - V2 - Cheer"
+                            - option "PSM - Signature Series - V2 - Football"
+                            - option "PSM - Signature Series - V2 - Golf"
+                            - option "PSM - Signature Series - V2 - Hockey"
+                            - option "PSM - Signature Series - V2 - Soccer"
+                            - option "PSM - Signature Series - V2 - Volleyball"
+                            - option "PSM - Signature Series - V2 - Wrestling"
+                            - option "PSM - Starz"
+                            - option "PSM - Street Ball"
+                            - option "PSM - Transporter (Multisport)"
+                            - option "Space Station"
+                            - option "Steampunk"
+                            - option "Superhero"
+                            - option "Test for all"
+                            - option "Test Teamp 020925 A"
+                            - option "Test Teamp 020925 C"
+                            - option "Test Temp for new user 001"
+                            - option "TESTING BANNERS"
+                            - option "TESTING BANNERS FULL LENGTH"
+                            - option "Test_BG_090425_Both"
+                            - option "Test_BG_Admin_F"
+                            - option "Test_BG_ApplyToAll_A1"
+                            - option "Test_BG_custom_2025_Admin_1"
+                            - option "Test_BG_FLT_TP_SU_N_A_11"
+                            - option "Test_BG_SingleUser_FLT_A"
+                            - option "Test_BG_SingleUSer_FLT_IBD_S2"
+                            - option "Test_Fullcomp_InDBan_ALL_TD__13"
+                            - option "Test_IBT_Single_N_A_S1"
+                            - option "Test_New BG_090425_FLT_A_S3"
+                            - option "Test_New BG_090425_FLT_A_S4"
+                            - option "Test_New BG_090425_FLT_S1"
+                            - option "Test_PNG_SU_12"
+                            - option "Test_TEMP_200825_A1"
+                            - option "Test_TEMP_200825_A2"
+                            - option "Test_TEMP_200825_A3"
+                            - option "Test_TEMP_200825_A4"
+                            - option "TEST_temp_210825_01"
+                            - option "Test_TEMP_TPDIND_A1"
+                            - option "Test_To_Check_Ccustom_BG_Temp_2"
+                            - option "Test_To_Check_Ccustom_BG_Temp_3"
+                            - option "Test_TraditionalPlue_with_PNG"
+                            - option "TIU Banner with FLT"
+                            - option "TIU Only Banner"
+                            - option "TIU Test FLT Temp"
+                            - option "Tiu-Test-Temp"
+                            - option "TIU2719"
+                            - option "TIU27april2019"
+                            - option "TIUTESTBANNER78"
+                            - option "TYLER - ON FTP"
+                            - option "U - 3rd Creative - Coyotes - Smith"
+                            - option "U - 3rd Creative - Haze - Hutchinson"
+                            - option "U - 3rd Creative - Rise - Crase"
+                            - option "U - 3rd Creative Coyote Outdoor Baseball Horizontal PNG - Carpenter"
+                            - option "U - 3rd Creative Coyote Outdoor Softball Horizontal PNG - Carpenter"
+                            - option "U - 3rd Creative Haze - SSHS - Hutchinson"
+                            - option "U - 3rd Creative Rangers - Carpenter"
+                            - option "U - Above The Lines - Jones"
+                            - option "U - ALDS - Merrill"
+                            - option "U - All American - Soop"
+                            - option "U - All Around Girls Gymnastics - Bass"
+                            - option "U - All Around Gymnastics - BASS"
+                            - option "U - All Out - VOS"
+                            - option "U - American Baseball - GND"
+                            - option "U - Apex Cheer - Carlino"
+                            - option "U - Aqua II - Reabe"
+                            - option "U - Arbutus Cheer Riser - Soop"
+                            - option "U - Arbutus Football - Soop"
+                            - option "U - Archer - Miller"
+                            - option "U - Archers - Diamond"
+                            - option "U - Archery - Tysinger"
+                            - option "U - Archery - VOS"
+                            - option "U - Archery Lightning- Tysinger"
+                            - option "U - Archery NEW - Tysinger"
+                            - option "U - Band - Carlinos"
+                            - option "U - BANNER Individual - 3rd Creative - Rise - Crase"
+                            - option "U - Baseball - Blakeney"
+                            - option "U - Baseball - Crase"
+                            - option "U - Baseball - Hultman"
+                            - option "U - Baseball - Melloan"
+                            - option "U - Baseball2018 - Hultman"
+                            - option "U - Basketball - Jay Johnston"
+                            - option "U - Bass Eastlake Gymnasts"
+                            - option "U - Blue Masters - Smith"
+                            - option "U - Bowling - Hultman"
+                            - option "U - Bowling Bruins - Cooke"
+                            - option "U - Brickfire Full Length - Wolf"
+                            - option "U - Bricklights - Toal"
+                            - option "U - Brightlights - Hultman"
+                            - option "U - Butler - Melloan"
+                            - option "U - Butler Bears Soccer - Melloan"
+                            - option "U - Centurions - Davis"
+                            - option "U - Classic - Celii"
+                            - option "U - Country Soccer Katrina"
+                            - option "U - Court Order - VOS"
+                            - option "U - Court Order On Ice - Rian"
+                            - option "U - Cracked Ice - Berni"
+                            - option "U - Creasey Mahan - Melloan"
+                            - option "U - Crew 2020 - VOS"
+                            - option "U - Cross Country - VOS"
+                            - option "U - Dance - Jordan"
+                            - option "U - Dance Star - Marr"
+                            - option "U - Daycare 1 - Bashore"
+                            - option "U - Diamond Team Banner - Sidelines"
+                            - option "U - Dix Hills - Dwyer"
+                            - option "U - DKSC - Rodriguez"
+                            - option "U - Dream Team Cheer - Donovan"
+                            - option "U - Dream Team Football - Donovan"
+                            - option "U - Dream Team Hockey - Birchler"
+                            - option "U - Dugout - Wagner"
+                            - option "U - Edgemere 10U Banner 2019- Soop"
+                            - option "U - Edgemere 10U Team 2019 - Soop"
+                            - option "U - Edgemere 14U Banner 2019 - Soop"
+                            - option "U - Edgemere 14U Team 2019- Soop"
+                            - option "U - Edgemere 16U Banner 2019- Soop"
+                            - option "U - Edgemere 16U Team 2019 - Soop"
+                            - option "U - Edgemere Steel 12U Banner - Soop"
+                            - option "U - Edgemere Steel 14U Banner - Soop"
+                            - option "U - Edgemere Steel 16U Banner - Soop"
+                            - option "U - Electric Dojo - Burke"
+                            - option "U - Elite Volleyball - Bass"
+                            - option "U - Extreme Band - Melloan"
+                            - option "U - Face Off - Pitzer"
+                            - option "U - Fantasy Baseball - Larson"
+                            - option "U - Fantasy Cheer - Bass - Full Length"
+                            - option "U - Fantasy Cheer - Zeliger FULL LENGTH"
+                            - option "U - Fantasy Soccer - Wagner"
+                            - option "U - Field Hockey - VOS"
+                            - option "U - Figure Skating Bruins - Cooke"
+                            - option "U - Fire Sunset - Wolf"
+                            - option "U - FMG - Rodriguez"
+                            - option "U - Football Cheer - VOSj"
+                            - option "U - Football Field - Melloan"
+                            - option "U - Friday Night Lights - Latoya"
+                            - option "U - Fusion - Crase"
+                            - option "U - Game Over - VOS"
+                            - option "U - Gardendale - ICS"
+                            - option "U - GCHS - David"
+                            - option "U - Girls of Summer Blue - Wagner"
+                            - option "U - GMS - Davis"
+                            - option "U - GMS - Soccer"
+                            - option "U - Goal Post - Seely"
+                            - option "U - Graduate - Hultman"
+                            - option "U - Grey - Tumbleston"
+                            - option "U - Gridlights - Toal"
+                            - option "U - Gymnastics - VOS"
+                            - option "U - Gymnastics Bruins - Cooke"
+                            - option "U - Hanna - Bleachers - Hutchinson"
+                            - option "U - Hanna - Epic Soccer Day - SMITH"
+                            - option "U - Hanna - Poolside - Hultman"
+                            - option "U - Hanna - Sandlot(Baseball) - SMITH"
+                            - option "U - Hanna - Sandlot(Softball) - SMITH"
+                            - option "U - Hanna - Volleyball Spike - SMITH"
+                            - option "U - Hanna Epic Soccer Night - Jessup"
+                            - option "U - Hanna Gametime Baseball - Jessup"
+                            - option "U - Hanna On Ice - Butch"
+                            - option "U - Hanna Sandlot Softball - Jessup"
+                            - option "U - Hanna Volleyball - Smith"
+                            - option "U - Hannah - FOOTBALL FIELD - Football(s) - WALT"
+                            - option "U - Hannah - Game Time Series - Football(s) - WALT"
+                            - option "U - Hardwood Full Length - Wolf"
+                            - option "U - Hawks - Fiona"
+                            - option "U - Haze - Bashore"
+                            - option "U - Hi Key Swim - Reabe"
+                            - option "U - HIGDON BRIGHTLIGHTS - SMITH"
+                            - option "U - Higdon White Wall - Hultman \"FULL LENGTH\""
+                            - option "U - Hockey - Brantley"
+                            - option "U - Home of Turf II - Donovan"
+                            - option "U - Home Plate - Bass"
+                            - option "U - Home Turf Football - Donovan"
+                            - option "U - Hometown Baseball - Soop"
+                            - option "U - Honeycomb - Melloan"
+                            - option "U - Howard Huskies - Soop"
+                            - option "U - Hurricanes Friday Lights - Soop"
+                            - option "U - Ice Eagles - Bass"
+                            - option "U - Intensity - Reabe"
+                            - option "U - Josh Hanna - Bleachers - Smith"
+                            - option "U - Josh Hanna - Court Order - Volleyball - Smith"
+                            - option "U - Josh Hanna - Epic Soccer - Carpenter"
+                            - option "U - Josh Hanna - Football - Jessup"
+                            - option "U - Kirtland Wrestling - BASS"
+                            - option "U - Lacrosse 2020 - VOS"
+                            - option "U - Legendary Hockey - Bass"
+                            - option "U - Lemoore Cheer - Garcia"
+                            - option "U - LF Archers 9U - Soop"
+                            - option "U - Lightning - Wolf"
+                            - option "U - Lions - Strachan"
+                            - option "U - Main Stage - Latoya"
+                            - option "U - Manual Basketball - Melloan"
+                            - option "U - March On - Melloan"
+                            - option "U - New World - Foley"
+                            - option "U - Next Gen Thunder - Hultman"
+                            - option "U - NGSL - Dungan"
+                            - option "U - NHS Baseball - Dungan"
+                            - option "U - Nisky Rec Baseball - Dungan"
+                            - option "U - North Oldham Football - Melloan"
+                            - option "U - OCHS Baseball Field - Melloan"
+                            - option "U - OG Boys - Bass"
+                            - option "U - OG Girls - Bass"
+                            - option "U - OGI - Bass FULL LENGTH"
+                            - option "U - Oldham County Football - Melloan"
+                            - option "U - Photo Solutions - Loker"
+                            - option "U - Plano East Softball - SMITH"
+                            - option "U - Pride - Fiona"
+                            - option "U - Pride - Wagner"
+                            - option "U - Prime Time Soccer - Narciso"
+                            - option "U - Prom1 - S3P"
+                            - option "U - Prom2 - S3P"
+                            - option "U - Prom3 - S3P"
+                            - option "U - Prom4 - S3P"
+                            - option "U - Prom5 - S3P"
+                            - option "U - Prom6 - S3P"
+                            - option "U - PRP Baseball - Melloan"
+                            - option "U - PSG Academy Florida - Sergio"
+                            - option "U - PSM - IRMO - Jessup"
+                            - option "U - Rangers Multisport - Donovan"
+                            - option "U - Red Classic - Celii"
+                            - option "U - Rifle - VOS"
+                            - option "U - Rifle NO TEXT - VOS"
+                            - option "U - Rise Up - Crase"
+                            - option "U - Rising Sun - Baumann"
+                            - option "U - Sandlot - Wagner"
+                            - option "U - School 1 - Bashore"
+                            - option "U - Shirk - Fieldlights - Hultman"
+                            - option "U - Sidelines - All American Baseball"
+                            - option "U - Sidelines_up in smoke_36x72 - Soop"
+                            - option "U - Skating - Scott"
+                            - option "U - Ski 2 - Hultman"
+                            - option "U - Ski Alpine - Hultman"
+                            - option "U - Ski Nordic - Hultman"
+                            - option "U - Skyfall - Wilson"
+                            - option "U - Smash Sponsor Banner - Sidelines"
+                            - option "U - Softball - Hultman"
+                            - option "U - Softball - Melloan"
+                            - option "U - Softball 2020 - VOS"
+                            - option "U - South Oldham Football - Melloan"
+                            - option "U - South Oldham Vball - Melloan"
+                            - option "U - Sparkle - Toal"
+                            - option "U - Spirt of the Game Cheerleading - Seely"
+                            - option "U - Spirt of the Game Soccer - Seely"
+                            - option "U - Spirt of the Game Volleyball - Seely"
+                            - option "U - Spotless - Bashore"
+                            - option "U - Spotlight - Shark - SMITH"
+                            - option "U - TGA - Long"
+                            - option "Uttaradhikar"
+                  - table [ref=e704]:
+                    - rowgroup [ref=e705]:
+                      - row "Save Close" [ref=e706]:
+                        - cell "Save Close" [ref=e707]:
+                          - button "Save" [ref=e708] [cursor=pointer]
+                          - button "Close" [ref=e709] [cursor=pointer]
+        - table [ref=e711]:
+          - rowgroup [ref=e712]:
+            - row "Team Alt Text Line1 Alt Text Line2 Alt Text Line3 Alt Text Line4 Lions Save Close" [ref=e713]:
+              - cell "Team Alt Text Line1 Alt Text Line2 Alt Text Line3 Alt Text Line4 Lions Save Close" [ref=e714]:
+                - generic [ref=e715]:
+                  - table [ref=e716]:
+                    - rowgroup [ref=e717]:
+                      - row "Team Alt Text Line1 Alt Text Line2 Alt Text Line3 Alt Text Line4" [ref=e718]:
+                        - columnheader "Team" [ref=e719]
+                        - columnheader "Alt Text Line1" [ref=e720]
+                        - columnheader "Alt Text Line2" [ref=e721]
+                        - columnheader "Alt Text Line3" [ref=e722]
+                        - columnheader "Alt Text Line4" [ref=e723]
+                    - rowgroup [ref=e724]:
+                      - row "Lions" [ref=e725]:
+                        - cell "Lions" [ref=e726]
+                        - cell [ref=e727]:
+                          - textbox [ref=e728]
+                        - cell [ref=e729]:
+                          - textbox [ref=e730]
+                        - cell [ref=e731]:
+                          - textbox [ref=e732]
+                        - cell [ref=e733]:
+                          - textbox [ref=e734]
+                  - table [ref=e735]:
+                    - rowgroup [ref=e736]:
+                      - row "Save Close" [ref=e737]:
+                        - cell "Save Close" [ref=e738]:
+                          - button "Save" [ref=e739] [cursor=pointer]
+                          - button "Close" [ref=e740] [cursor=pointer]
+    - group [ref=e742]:
+      - table [ref=e743]:
+        - rowgroup [ref=e744]:
+          - row [ref=e745]:
+            - cell [ref=e746]:
+              - generic [ref=e747]:
+                - paragraph [ref=e748]: Terms of Service ("Terms")
+                - paragraph [ref=e749]: "Last updated: June 21, 2016"
+                - paragraph [ref=e750]:
+                  - text: Please read these Terms of Service (hereafter known as "Terms", "Terms of Service") carefully before using the www.nextgenphotosolutions.com website and any subsidiary or affiliated websites (hereafter known as the "Compan
+                  - text: y") operated by Next Gen Photo Solutions (hereafter known as "us", "we", or "our").
+                - paragraph [ref=e751]: Your access to and use of the Company is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who wish to access or use the Company.
+                - paragraph [ref=e752]: By accessing or using the Company you agree to be bound by these Terms. If you disagree with any part of the terms then you do not have permission to access the Company.
+                - paragraph [ref=e753]: Purchases
+                - paragraph [ref=e754]: If you wish to purchase any product or service (hereafter known as “service”) made available through the Company, you may be asked to supply certain information relevant to your service including, without limitation, your credit card number, the expiration date of your credit card, your billing address, and your shipping information.
+                - paragraph [ref=e755]: "You represent and warrant that: (i) you have the legal right to use any credit card(s) or other payment method(s) in connection with any service; and that (ii) the information you supply to us is true, correct and complete."
+                - paragraph [ref=e756]: The Company may employ the use of third party services for the purpose of facilitating payment and the completion of purchases. By submitting your information, you grant us the right to provide the information to these third parties subject to our Privacy Policy.
+                - paragraph [ref=e757]: "We reserve the right to refuse or cancel your order at any time for reasons including but not limited to: service availability, errors in the description or price of the product or service, error in your order, not following defined workflow processes (described below) or other reasons."
+                - paragraph [ref=e758]: We reserve the right to refuse or cancel your order if fraud or an unauthorized or illegal transaction is suspected.
+                - paragraph [ref=e759]: Availability, Errors and Inaccuracies
+                - paragraph [ref=e760]: We are constantly updating Company services. We may experience delays in updating information on the Company and in our advertising on other web sites. The information found on the Company may contain errors or inaccuracies and may not be complete or current. Services may be mispriced, described inaccurately, or unavailable on the Company and we cannot guarantee the accuracy or completeness of any information found on the Company.
+                - paragraph [ref=e761]: We therefore reserve the right to change or update information and to correct errors, inaccuracies, or omissions at any time without prior notice.
+                - paragraph [ref=e762]: Accounts
+                - paragraph [ref=e763]: When you create an account with us, you guarantee that you are above the age of 18, and that the information you provide us is accurate, complete, and current at all times. Inaccurate, incomplete, or obsolete information may result in the immediate termination of your account on the Company.
+                - paragraph [ref=e764]: You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Company or a third-party Company. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+                - paragraph [ref=e765]: We reserve the right to refuse Company, terminate accounts, remove or edit content, or cancel orders in our sole discretion.
+                - paragraph [ref=e766]: Intellectual Property
+                - paragraph [ref=e767]: The Company and its original content, features and functionality are and will remain the exclusive property of Next Generation Photo Solutions and its licensors. The Company is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or Company without the prior written consent of Next Gen Photo Solutions.
+                - paragraph [ref=e768]: Links To Other Web Sites
+                - paragraph [ref=e769]: Our Company may contain links to third party web sites or services that are not owned or controlled by Next Gen Photo Solutions.
+                - paragraph [ref=e770]: Next Gen Photo Solutions has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
+                - paragraph [ref=e771]: You acknowledge and agree that Next Gen Photo Solutions shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party web sites or services.
+                - paragraph [ref=e772]: We strongly advise you to read the terms and conditions and privacy policies of any third party web sites or Companys that you visit.
+                - paragraph [ref=e773]: Termination
+                - paragraph [ref=e774]: We may terminate or suspend your account and bar access to the Company immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
+                - paragraph [ref=e775]: If you wish to terminate your account, you may simply discontinue using the Company.
+                - paragraph [ref=e776]: All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+                - paragraph [ref=e777]: Indemnification
+                - paragraph [ref=e778]: You agree to defend, indemnify and hold harmless Next Gen Photo Solutions and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Company and its services, by you or any person using your account and password, or b) a breach of these Terms.
+                - paragraph [ref=e779]: Limitation Of Liability
+                - paragraph [ref=e780]: In no event shall Next Gen Photo Solutions, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Company and its services; (ii) any conduct or content of any third party on the Company or its services; (iii) any content obtained from the Company and its services; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                - paragraph [ref=e781]: Disclaimer
+                - paragraph [ref=e782]: Your use of the Company is at your sole risk. The Company is provided on an "AS IS" and "AS AVAILABLE" basis. The Company is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, turn around times, fitness for a particular purpose, non-infringement or course of performance.
+                - paragraph [ref=e783]: Next Gen Photo Solutions its subsidiaries, affiliates, and its licensors do not warrant that a) the Company will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Company is free of viruses or other harmful components; or d) the results of using the Company will meet your requirements.
+                - paragraph [ref=e784]: Exclusions
+                - paragraph [ref=e785]: Some jurisdictions do not allow the exclusion of certain warranties or the exclusion or limitation of liability for consequential or incidental damages, so the limitations above may not apply to you.
+                - paragraph [ref=e786]: Governing Law
+                - paragraph [ref=e787]: These Terms shall be governed and construed in accordance with the laws of Ohio..., United States, without regard to its conflict of law provisions.
+                - paragraph [ref=e788]: Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Company, and supersede and replace any prior agreements we might have had between us regarding the Company.
+                - paragraph [ref=e789]: Changes
+                - paragraph [ref=e790]: We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+                - paragraph [ref=e791]: By continuing to access or use our Company after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Company.
+                - paragraph [ref=e792]: Contact Us
+                - paragraph [ref=e793]: If you have any questions about these Terms, please contact us.
+                - paragraph [ref=e794]: Workflow Errors That Are Grounds for Refusal of Services
+                - paragraph [ref=e795]: "Services can be refused and orders canceled for, but not limited to the following reasons:"
+                - paragraph [ref=e796]: 1.) Scaling procedures not followed correctly
+                - paragraph [ref=e797]: 2.) Date capture not performed properly including barcode scanning or manual data capture
+                - paragraph [ref=e798]: 3.) Posing guidelines not followed
+                - paragraph [ref=e799]: 4.) Lighting inconsistencies
+                - paragraph [ref=e800]: FTP File Storage
+                - paragraph [ref=e801]: All old files need to be removed after the job is completed for 60 days. If they are not removed, they may be removed without prior notice.
+                - paragraph [ref=e802]: If you have any questions about these items please contact a Next Generation Photo Solutions Representative for clarification.
+                - paragraph [ref=e803]
+```

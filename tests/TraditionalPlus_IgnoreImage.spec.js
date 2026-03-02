@@ -403,7 +403,7 @@ test('Traditional Plus job >> Ignore Team Images (Full flow)', async ({ page, re
   // ====== STEP 3: FTP Upload (send images to job folder) ======
   await allure.step('Upload images to FTP folder (input/photos)', async () => {
     const client = new ftp.Client(30000);
-    client.ftp.verbose = true;
+    client.ftp.verbose = false;
 
     const FTP_HOST = 'staging.production.nextgenphotosolutions.com';
     const FTP_USER = 'imageprocessing@staging.production.nextgenphotosolutions.com';
@@ -486,73 +486,55 @@ test('Traditional Plus job >> Ignore Team Images (Full flow)', async ({ page, re
     allure.attachment('Validation screenshot', fs.readFileSync('order-validation-complete.png'), 'image/png');
   });
 
-  // ====== STEP 5: PAYMENT FORM ENTRY & FINAL CHECKOUT ======
-  await allure.step('Enter Card Information and Checkout', async () => {
-    // STEP A: Click "Enter Card Information Below" (id = cardinfo)
+  // ====== STEP 4B: APPLY DISCOUNT CODE ======
+  await allure.step('Apply discount code', async () => {
     try {
-      await page.waitForSelector('#cardinfo', { timeout: 10000 });
-      await page.click('#cardinfo');
-      console.log("✔ Clicked 'Enter Card Information Below' (#cardinfo)");
+      const discountInput = page.locator('#discount_code');
+      await discountInput.waitFor({ state: 'visible', timeout: 8000 });
+      await discountInput.scrollIntoViewIfNeeded();
+      await discountInput.fill('100OFF');
+      console.log('✅ Entered discount code: 100OFF');
+      const redeemBtn = page.locator('#Redeem');
+      await redeemBtn.waitFor({ state: 'visible', timeout: 5000 });
+      await redeemBtn.scrollIntoViewIfNeeded();
+      await redeemBtn.click({ timeout: 3000 });
+      console.log('✅ Clicked Redeem');
       await page.waitForTimeout(1500);
+      const discountTotal = await page.locator('#disctotl').textContent().catch(() => '0');
+      console.log(`💰 Discount applied: ${discountTotal}`);
     } catch (e) {
-      console.warn("⚠ Could not click #cardinfo:", e.message);
+      console.warn('⚠ Could not apply discount code:', e.message);
     }
+  });
 
-    // STEP B: Card Number
-    try {
-      await page.waitForSelector('#cardnumber1', { timeout: 10000 });
-      await page.fill('#cardnumber1', '4669424246660779');
-      console.log('✔ Entered card number');
-    } catch (e) {
-      console.warn('⚠ Card number field not found:', e.message);
+  // ====== STEP 5: CLICK CHECKOUT BUTTON ======
+  await allure.step('Click Checkout button', async () => {
+    const checkoutSelectors = [
+      '#btnpaynow',
+      'button:has-text("Pay Now")',
+      'input[type="submit"][value*="Pay"]',
+      'a:has-text("Pay Now")'
+    ];
+    let clicked = false;
+    for (const sel of checkoutSelectors) {
+      try {
+        const btn = page.locator(sel).first();
+        await btn.waitFor({ state: 'visible', timeout: 8000 });
+        await btn.scrollIntoViewIfNeeded();
+        await btn.click({ force: true, timeout: 8000 });
+        console.log('✔ Clicked Checkout:', sel);
+        clicked = true;
+        break;
+      } catch (e) {
+        // try next
+      }
     }
-
-    // STEP C: Expiry Month
-    try {
-      await page.waitForSelector('#month1', { timeout: 10000 });
-      await page.selectOption('#month1', '04');
-      console.log('✔ Selected expiry month 04');
-    } catch (e) {
-      console.warn('⚠ Expiry month dropdown not found:', e.message);
-    }
-
-    // STEP D: Expiry Year
-    try {
-      await page.waitForSelector('#year1', { timeout: 10000 });
-      await page.selectOption('#year1', '2026');
-      console.log('✔ Selected expiry year 2026');
-    } catch (e) {
-      console.warn('⚠ Expiry year dropdown not found:', e.message);
-    }
-
-    // STEP E: CVV
-    try {
-      await page.waitForSelector('#cvv1', { timeout: 10000 });
-      await page.fill('#cvv1', '111');
-      console.log('✔ Entered CVV');
-    } catch (e) {
-      console.warn('⚠ CVV field not found:', e.message);
-    }
-
-    // STEP F: Name on card
-    try {
-      await page.waitForSelector('#name_on_card_first', { timeout: 10000 });
-      await page.fill('#name_on_card_first', 'Rakhi');
-      await page.fill('#name_on_card_last', 'Doijad');
-      console.log('✔ Entered cardholder name');
-    } catch (e) {
-      console.warn('⚠ Name fields not found:', e.message);
-    }
-
-    // STEP G: Scroll to Checkout button and click
-    try {
-      await page.waitForSelector('#btnpaynow', { timeout: 15000 });
-      await page.evaluate(() => document.querySelector('#btnpaynow')?.scrollIntoView({ block: 'center' }));
-      await page.click('#btnpaynow');
-      console.log('✔ Clicked Pay Now / Checkout (#btnpaynow)');
-    } catch (e) {
-      console.error('❌ Could not click the checkout button:', e.message);
-      throw e;
+    if (!clicked) {
+      const payBtn = page.locator('#btnpaynow');
+      await payBtn.waitFor({ state: 'visible', timeout: 5000 });
+      await payBtn.scrollIntoViewIfNeeded();
+      await payBtn.click({ force: true, timeout: 5000 });
+      console.log('✔ Clicked Checkout (#btnpaynow)');
     }
 
     // STEP H: Wait for redirect / result

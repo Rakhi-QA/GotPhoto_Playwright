@@ -1,0 +1,1 @@
+⚠ Second popup (Ignore Team Images) not found or not clickable: locator.count: Target page, context or browser has been closed

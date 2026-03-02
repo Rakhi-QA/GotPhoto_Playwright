@@ -1,0 +1,19 @@
+➡️ Creating Job: Test_Staging_1771844844899
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2653",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2653&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11754428387&beta-value11399915611",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2653
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2653&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11754428387&beta-value11399915611
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2653&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11754428387&beta-value11399915611
+✅ Page Title: Next Generation | Photographers
+✔ Clicked Traditional Plus via selector: img[src*="Traditional Plus Memorymate.jpg"]
+✔ Clicked Confirm on first popup
+✔ Clicked Move Team Images
+✔ Clicked Single Check background (#bgsinglecheck_s)
+✔ Selected template 611 (3rd Creative - Softball/Baseball)
+📤 Starting image upload process...

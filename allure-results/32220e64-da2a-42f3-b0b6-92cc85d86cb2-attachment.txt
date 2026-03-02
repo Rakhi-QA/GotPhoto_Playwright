@@ -1,0 +1,93 @@
+➡️ Creating Job: Test_Staging_1772092342421
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2700",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2700&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1571880515&beta-value11386861878",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2700
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2700&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1571880515&beta-value11386861878
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2700&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1571880515&beta-value11386861878
+✅ Page Title: Next Generation | Photographers
+ℹ Not on login page, skipping login step.
+✔ Set Traditional via #ch_td (evaluate)
+✔ Clicked Confirm on first popup (selector: .bootbox .modal-footer button:has-text("Confirm"))
+✔ Clicked Ignore team images (bootbox)
+✔ Clicked Single Check background (#bgsinglecheck_s)
+✔ Selected template 818 (Test_BG_Dropin Temp_A)
+📤 Starting image upload process...
+✅ Clicked final active upload button (#upload_tp_filesBtn)
+🟢 Found 2 team dropdown(s)
+✅ Selected team "Winners" in first dropdown
+✅ Selected team "YANKEES" in second dropdown
+💾 Clicked on Save button
+📨 Upload message: 
+
+========== BUNDLES PER PLAYER (from API payload) ==========
+
+Player: rakesh pat
+  Team Image: A.jpg
+  Individual Images: image1:B.jpg, image2:C.jpg, image3:D.jpg, image4:E.jpg, image5:F.jpg, image6:G.jpg, image7:H.jpg, image8:I.jpg, image9:J.jpg, image10:K.jpg, image11:L.jpg, image12:M.jpg, image13:N.jpg, image14:O.jpg
+  Image Count: 14 | Bundle: UL | Total: 15
+-----------------------------------------------------
+Player: Ana A
+  Team Image: L.jpg
+  Individual Images: image1:M.jpg, image2:N.jpg
+  Image Count: 2 | Bundle: R | Total: 3
+-----------------------------------------------------
+Player: TOM D
+  Team Image: P.jpg
+  Individual Images: image1:O.jpg
+  Image Count: 1 | Bundle: S | Total: 2
+-----------------------------------------------------
+
+✅ Printed bundles for 3 players
+
+📍 Section: Unique color for each team in organization
+✔ Selected Team Color (#teamcolorY)
+✔ Clicked Color Correction (#ccservices)
+
+========== ALTERNATE POSE GRAPHIC OPTIONS ==========
+
+Graphic: _45V
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+Graphic: _45TV
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+Graphic: _55
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+Graphic: _55T
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+Graphic: _MM
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+Graphic: _SV
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14
+-----------------------------------------------------
+
+✅ Total graphics: 6
+
+
+========== ORDER TOTALS ==========
+
+Total Number of Team Images: 0.00
+Total Number of Individual Images: 0
+Additional Graphics: 0
+Subtotal: 0
+Discount: 0
+Total: 0
+=====================================
+
+✅ Totals printed
+🔍 Looking for discount code input...

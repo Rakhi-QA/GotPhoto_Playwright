@@ -1,0 +1,47 @@
+➡️ Creating Job: Test_Staging_1771915492207
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2664",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2664&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11616106071&beta-value11728817986",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2664
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2664&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11616106071&beta-value11728817986
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2664&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11616106071&beta-value11728817986
+✅ Page Title: Next Generation | Photographers
+✔ Clicked Traditional via selector: img[src="https://staging.production.nextgenphotosolutions.com/img/Traditional Memorymate.jpg"]
+✔ Clicked Confirm on first popup (selector: button:has-text("Confirm"))
+✔ Clicked Ignore team images (bootbox)
+✔ Clicked Single Check background (#bgsinglecheck_s)
+✔ Selected template 818 (Test_BG_Dropin Temp_A)
+📤 Starting image upload process...
+✅ Clicked final active upload button (#upload_tp_filesBtn)
+🟢 Found 2 team dropdown(s)
+✅ Selected team "Winners" in first dropdown
+✅ Selected team "YANKEES" in second dropdown
+💾 Clicked on Save button
+📨 Upload message: 
+
+========== BUNDLES PER PLAYER (from API payload) ==========
+
+Player: rakesh pat
+  Team Image: A.jpg
+  Individual Images: image1:B.jpg, image2:C.jpg, image3:D.jpg, image4:E.jpg, image5:F.jpg, image6:G.jpg, image7:H.jpg, image8:I.jpg, image9:J.jpg, image10:K.jpg, image11:L.jpg, image12:M.jpg, image13:N.jpg, image14:O.jpg
+  Image Count: 14 | Bundle: UL | Total: 15
+-----------------------------------------------------
+Player: Ana A
+  Team Image: L.jpg
+  Individual Images: image1:M.jpg, image2:N.jpg
+  Image Count: 2 | Bundle: R | Total: 3
+-----------------------------------------------------
+Player: TOM D
+  Team Image: P.jpg
+  Individual Images: image1:O.jpg
+  Image Count: 1 | Bundle: S | Total: 2
+-----------------------------------------------------
+
+✅ Printed bundles for 3 players
+
+ℹ Skipped Extracted Images — not available or disabled for Traditional.

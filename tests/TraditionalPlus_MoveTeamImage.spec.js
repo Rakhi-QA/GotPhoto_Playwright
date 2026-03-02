@@ -25,6 +25,7 @@ test('Traditional Plus job >> Ignore Team Images ', async ({ page, request }) =>
   let jobId;
   let generatedLink;
   let jobName;
+  let playersDetail;
 
   // ====== STEP 1: Create Job via API ======
   await allure.step('Create job and get generated order link Traditional Plus', async () => {
@@ -85,6 +86,7 @@ test('Traditional Plus job >> Ignore Team Images ', async ({ page, request }) =>
         }
       }
     };
+    playersDetail = payload.players_detail;
 
     console.log(`➡️ Creating Job: ${jobName}`);
 
@@ -224,6 +226,41 @@ await page.waitForTimeout(2000);
 
   });
 
+  // ====== STEP 2B2: PRINT BUNDLES PER PLAYER (from API payload) ======
+  await allure.step('Print bundles per player with image count (image1..image15)', async () => {
+    console.log('\n========== BUNDLES PER PLAYER (from API payload) ==========\n');
+    const bundleReport = [];
+    const keys = Object.keys(playersDetail || {}).filter(k => /^\d+$/.test(k)).sort((a, b) => Number(a) - Number(b));
+    for (const key of keys) {
+      const p = playersDetail[key];
+      const firstName = p.first_name || '';
+      const lastName = p.last_name || '';
+      const playerName = `${firstName} ${lastName}`.trim();
+      const teamImage = p.team_image || '';
+      const images = [];
+      for (let i = 1; i <= 15; i++) {
+        const val = p[`individual_image${i}`];
+        if (val && String(val).trim()) images.push(`image${i}:${val}`);
+      }
+      const imageCount = images.length;
+      let bundleCode = 'No Images';
+      if (imageCount === 1) bundleCode = 'S';
+      else if (imageCount === 2) bundleCode = 'R';
+      else if (imageCount >= 3 && imageCount <= 5) bundleCode = 'L';
+      else if (imageCount >= 6 && imageCount <= 10) bundleCode = 'XL';
+      else if (imageCount >= 11 && imageCount <= 15) bundleCode = 'UL';
+      const totalImages = (teamImage ? 1 : 0) + imageCount;
+      console.log(`Player: ${playerName}`);
+      console.log(`  Team Image: ${teamImage || 'None'}`);
+      console.log(`  Individual: ${images.join(', ') || 'None'}`);
+      console.log(`  Image Count: ${imageCount} | Bundle: ${bundleCode} | Total: ${totalImages}`);
+      console.log('-----------------------------------------------------');
+      bundleReport.push({ player: playerName, teamImage: teamImage || 'None', images, imageCount, bundleCode, totalImages });
+    }
+    allure.attachment('Bundles per player', JSON.stringify(bundleReport, null, 2), 'application/json');
+    console.log('\n✅ Printed bundles for', bundleReport.length, 'players\n');
+  });
+
   // ====== STEP 2C: SELECT BACKGROUND & TEMPLATE ======
   await allure.step('Select background and template', async () => {
 
@@ -335,6 +372,70 @@ await allure.step('Select 3/4 Crop', async () => {
   await page.waitForTimeout(1000);
 });
 
+  // ====== STEP 2F2: PRINT PNG CROP OPTION SELECTED ======
+  await allure.step('Print PNG crop option selected', async () => {
+    const cropIds = [
+      { id: 'cropimagesfull', label: 'Full Length Centering' },
+      { id: 'cropimageshalf', label: '3/4 Crop' },
+      { id: 'cropimagesqtr', label: '1/4 Crop' }
+    ];
+    let selected = null;
+    for (const { id, label } of cropIds) {
+      const el = page.locator(`#${id}`);
+      if (await el.count() > 0) {
+        const checked = await el.isChecked().catch(() => false);
+        if (checked) {
+          selected = { id, label };
+          break;
+        }
+      }
+    }
+    const text = selected ? `PNG Crop: ${selected.label} (#${selected.id})` : 'PNG Crop: None selected';
+    console.log('\n========== PNG CROP OPTION ==========');
+    console.log(text);
+    console.log('=====================================\n');
+    allure.attachment('PNG crop selected', JSON.stringify(selected || { message: 'No crop option selected' }, null, 2), 'application/json');
+  });
+
+  // ====== STEP 2F3: PRINT ALTERNATE POSE GRAPHIC OPTIONS (selected) ======
+  await allure.step('Print Alternate Pose Graphic Options selected', async () => {
+    console.log('\n========== ALTERNATE POSE GRAPHIC OPTIONS ==========\n');
+    await page.waitForSelector('#altPoseTbl', { timeout: 15000 }).catch(() => null);
+    const rows = await page.$$('#altPoseTbl tr').catch(() => []);
+    const graphicsSelectionData = [];
+    for (let i = 1; i < rows.length - 1; i++) {
+      try {
+        const row = rows[i];
+        const graphicName = await row.$eval('td:first-child', el => el.innerText.trim()).catch(() => '');
+        if (!graphicName) continue;
+        const checkboxes = await row.$$('input[type="checkbox"]');
+        const selectedImages = [];
+        const notSelectedImages = [];
+        for (let colIndex = 0; colIndex < checkboxes.length; colIndex++) {
+          const checkbox = checkboxes[colIndex];
+          const checked = await checkbox.isChecked().catch(() => false);
+          const disabled = await checkbox.isDisabled().catch(() => false);
+          const imageColumn = `Image${colIndex + 1}`;
+          if (disabled) continue;
+          if (checked) selectedImages.push(imageColumn);
+          else notSelectedImages.push(imageColumn);
+        }
+        console.log(`Graphic: ${graphicName}`);
+        console.log(`  Selected For: ${selectedImages.length > 0 ? selectedImages.join(', ') : 'None'}`);
+        console.log(`  Not Selected For: ${notSelectedImages.length > 0 ? notSelectedImages.join(', ') : 'None'}`);
+        console.log('-----------------------------------------------------');
+        graphicsSelectionData.push({ graphicName, selectedFor: selectedImages, notSelectedFor: notSelectedImages });
+      } catch (err) {
+        console.warn(`⚠ Row ${i}: ${err.message}`);
+      }
+    }
+    if (graphicsSelectionData.length > 0) {
+      allure.attachment('Alternate Pose Graphic Options', JSON.stringify(graphicsSelectionData, null, 2), 'application/json');
+      console.log(`\n✅ Total graphics: ${graphicsSelectionData.length}\n`);
+    } else {
+      console.log('⚠ No Alternate Pose Graphics table or rows found.\n');
+    }
+  });
 
   // ====== STEP 2G: TEAM COLOR SELECTION ======
   await allure.step('Select Team Color', async () => {
@@ -362,10 +463,39 @@ await allure.step('Select 3/4 Crop', async () => {
     await page.waitForTimeout(1000);
   });
 
+  // ====== STEP 2I: PRINT SUBTOTAL, DISCOUNT, TOTAL (and amount breakdown) ======
+  await allure.step('Print Subtotal, Discount, Total and amount breakdown', async () => {
+    console.log('\n========== ORDER TOTALS ==========\n');
+    const getText = async (selector) => (await page.locator(selector).textContent().catch(() => '')) || '0';
+    const teamImagesTotal = (await getText('#setteamonly1')).trim();
+    const individualImagesTotal = (await getText('#bundlesSubTotal1')).trim();
+    const additionalGraphics = (await getText('#bundle_AddinalTotal_amt_span')).trim();
+    const subtotal = (await getText('#subtotal1')).trim();
+    const discount = (await getText('#disctotl')).trim();
+    const total = (await getText('#finaltotl')).trim();
+    console.log(`Total Number of Team Images: ${teamImagesTotal}`);
+    console.log(`Total Number of Individual Images: ${individualImagesTotal}`);
+    console.log(`Additional Graphics: ${additionalGraphics}`);
+    console.log(`Subtotal: ${subtotal}`);
+    console.log(`Discount: ${discount}`);
+    console.log(`Total: ${total}`);
+    console.log('=====================================\n');
+    const totalsData = {
+      teamImages: teamImagesTotal,
+      individualImages: individualImagesTotal,
+      additionalGraphics,
+      subtotal,
+      discount,
+      total
+    };
+    allure.attachment('Order Totals (Subtotal, Discount, Total)', JSON.stringify(totalsData, null, 2), 'application/json');
+    console.log('✅ Totals printed');
+  });
+
   // ====== STEP 3: FTP Upload (send images to job folder) ======
   await allure.step('Upload images to FTP folder (input/photos)', async () => {
     const client = new ftp.Client(30000);
-    client.ftp.verbose = true;
+    client.ftp.verbose = false;
 
     const FTP_HOST = 'staging.production.nextgenphotosolutions.com';
     const FTP_USER = 'imageprocessing@staging.production.nextgenphotosolutions.com';

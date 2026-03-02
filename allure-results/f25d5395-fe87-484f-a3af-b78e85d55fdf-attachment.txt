@@ -1,0 +1,29 @@
+⚠ Second popup (Ignore Team Images) not found or not clickable: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('.bootbox .modal-footer button').first()
+    - locator resolved to <button type="button" class="btn btn-danger" data-bb-handler="cancel">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <button type="button" class="btn btn-danger" data-bb-handler="cancel">…</button> from <div tabindex="-1" role="dialog" class="bootbox modal fade bootbox-confirm in">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <button type="button" class="btn btn-danger" data-bb-handler="cancel">…</button> from <div tabindex="-1" role="dialog" class="bootbox modal fade bootbox-confirm in">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    79 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <button type="button" class="btn btn-danger" data-bb-handler="cancel">…</button> from <div tabindex="-1" role="dialog" class="bootbox modal fade bootbox-confirm in">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
