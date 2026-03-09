@@ -1,0 +1,685 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - banner [ref=e1]:
+    - generic [ref=e5]:
+      - text: "Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e7] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e9] [cursor=pointer]:
+        - /url: "#"
+      - text: ". Coming soon: On Jan 27th the Help Request flow is changing. Learn what to expect in our"
+      - link "updated guide" [ref=e10] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e11]:
+      - link [ref=e14] [cursor=pointer]:
+        - /url: /Gpservices/payforimages/2/3619/2026/260219/Full%20Composite/G/17373/2636/338/Test_Staging_1771479468686/17406/1824077883/ch_fc_ignore
+      - generic [ref=e16]: (17373) GotPhoto - Test_Staging_1771479468686
+  - generic [ref=e20]:
+    - textbox [ref=e21]: "8"
+    - generic [ref=e23]:
+      - generic:
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - generic:
+              - checkbox [checked]
+          - generic [ref=e27]:
+            - text: Full Composite
+            - superscript [ref=e28]:
+              - generic [ref=e29]: 
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic:
+              - checkbox
+          - generic [ref=e33]:
+            - text: Traditional
+            - superscript [ref=e34]:
+              - generic [ref=e35]: 
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic:
+              - checkbox
+          - generic [ref=e39]:
+            - text: Traditional+
+            - superscript [ref=e40]:
+              - generic [ref=e41]: 
+      - img "bundlepriceing" [ref=e43]
+      - generic [ref=e44]:
+        - generic [ref=e46]:
+          - generic [ref=e48]:
+            - text: "Search:"
+            - searchbox "Search:" [ref=e49]
+          - generic [ref=e50]:
+            - table [ref=e53]:
+              - rowgroup [ref=e54]:
+                - 'row "First Name: activate to sort column descending Last Name: activate to sort column ascending Jersey: activate to sort column ascending Team Name: activate to sort column ascending Bundles: activate to sort column ascending Poses: activate to sort column ascending Image1: activate to sort column ascending Image2: activate to sort column ascending" [ref=e55]':
+                  - 'cell "First Name: activate to sort column descending" [ref=e56] [cursor=pointer]': ▴ First Name ▾
+                  - 'cell "Last Name: activate to sort column ascending" [ref=e57] [cursor=pointer]': ▴ Last Name ▾
+                  - 'cell "Jersey: activate to sort column ascending" [ref=e58] [cursor=pointer]': ▴ Jersey ▾
+                  - 'cell "Team Name: activate to sort column ascending" [ref=e59] [cursor=pointer]': ▴ Team Name ▾
+                  - 'cell "Bundles: activate to sort column ascending" [ref=e60] [cursor=pointer]': ▴ Bundles ▾
+                  - 'cell "Poses: activate to sort column ascending" [ref=e61] [cursor=pointer]': ▴ Poses ▾
+                  - 'cell "Image1: activate to sort column ascending" [ref=e62] [cursor=pointer]': ▴ Image1 ▾
+                  - 'cell "Image2: activate to sort column ascending" [ref=e63] [cursor=pointer]': ▴ Image2 ▾
+            - table [ref=e65]:
+              - rowgroup:
+                - 'row "First Name: activate to sort column descending Last Name: activate to sort column ascending Jersey: activate to sort column ascending Team Name: activate to sort column ascending Bundles: activate to sort column ascending Poses: activate to sort column ascending Image1: activate to sort column ascending Image2: activate to sort column ascending"':
+                  - 'cell "First Name: activate to sort column descending"':
+                    - generic: First Name
+                  - 'cell "Last Name: activate to sort column ascending"':
+                    - generic: Last Name
+                  - 'cell "Jersey: activate to sort column ascending"':
+                    - generic: Jersey
+                  - 'cell "Team Name: activate to sort column ascending"':
+                    - generic: Team Name
+                  - 'cell "Bundles: activate to sort column ascending"':
+                    - generic: Bundles
+                  - 'cell "Poses: activate to sort column ascending"':
+                    - generic: Poses
+                  - 'cell "Image1: activate to sort column ascending"':
+                    - generic: Image1
+                  - 'cell "Image2: activate to sort column ascending"':
+                    - generic: Image2
+              - rowgroup [ref=e66]:
+                - row "Rakhi D 7 Lions Regular 2 E.jpg F.jpg" [ref=e67]:
+                  - cell "Rakhi" [ref=e68]
+                  - cell "D" [ref=e69]
+                  - cell "7" [ref=e70]
+                  - cell "Lions" [ref=e71]
+                  - cell "Regular" [ref=e72]:
+                    - img "Regular" [ref=e73]
+                  - cell "2" [ref=e74]
+                  - cell "E.jpg" [ref=e75]:
+                    - button "E.jpg" [ref=e76] [cursor=pointer]
+                  - cell "F.jpg" [ref=e77]:
+                    - button "F.jpg" [ref=e78] [cursor=pointer]
+                - row "Tom Smith 7 Lions Regular 2 B.jpg C.jpg" [ref=e79]:
+                  - cell "Tom" [ref=e80]
+                  - cell "Smith" [ref=e81]
+                  - cell "7" [ref=e82]
+                  - cell "Lions" [ref=e83]
+                  - cell "Regular" [ref=e84]:
+                    - img "Regular" [ref=e85]
+                  - cell "2" [ref=e86]
+                  - cell "B.jpg" [ref=e87]:
+                    - button "B.jpg" [ref=e88] [cursor=pointer]
+                  - cell "C.jpg" [ref=e89]:
+                    - button "C.jpg" [ref=e90] [cursor=pointer]
+          - status [ref=e92]: Showing 1 to 2 of 2 entries
+        - generic [ref=e94]:
+          - generic [ref=e96]:
+            - heading "Team Options" [level=2] [ref=e97]
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - checkbox "Standard Team Build" [ref=e100]
+                - generic [ref=e101]:
+                  - generic [ref=e102]: Standard Team Build
+                  - superscript [ref=e103]:
+                    - generic [ref=e104]: 
+              - generic [ref=e105]:
+                - checkbox "Virtual Riser Team Build" [ref=e106]
+                - generic [ref=e107]:
+                  - generic [ref=e108]: Virtual Riser Team Build
+                  - superscript [ref=e109]:
+                    - generic [ref=e110]: 
+              - generic [ref=e111]:
+                - checkbox "No Team Images" [checked] [ref=e112]
+                - generic [ref=e114]: No Team Images
+          - generic [ref=e116]:
+            - heading "Alternate Pose Graphic Options" [level=2] [ref=e117]
+            - table [ref=e119]:
+              - rowgroup [ref=e120]:
+                - row "Img1 Img2 Img3 Img4 Img5 Img6 Img7 Img8 Img9 Img10 Img11 Img12 Img13 Img14 Img15" [ref=e121]:
+                  - cell [ref=e122]
+                  - cell "Img1" [ref=e123]
+                  - cell "Img2" [ref=e124]
+                  - cell "Img3" [ref=e125]
+                  - cell "Img4" [ref=e126]
+                  - cell "Img5" [ref=e127]
+                  - cell "Img6" [ref=e128]
+                  - cell "Img7" [ref=e129]
+                  - cell "Img8" [ref=e130]
+                  - cell "Img9" [ref=e131]
+                  - cell "Img10" [ref=e132]
+                  - cell "Img11" [ref=e133]
+                  - cell "Img12" [ref=e134]
+                  - cell "Img13" [ref=e135]
+                  - cell "Img14" [ref=e136]
+                  - cell "Img15" [ref=e137]
+                - row "_45V" [ref=e138]:
+                  - cell "_45V" [ref=e139]
+                  - cell [ref=e140]:
+                    - checkbox [checked] [ref=e141]
+                  - cell [ref=e142]:
+                    - checkbox [checked] [ref=e143]
+                  - cell [ref=e144]:
+                    - checkbox [disabled] [ref=e145]
+                  - cell [ref=e146]:
+                    - checkbox [disabled] [ref=e147]
+                  - cell [ref=e148]:
+                    - checkbox [disabled] [ref=e149]
+                  - cell [ref=e150]:
+                    - checkbox [disabled] [ref=e151]
+                  - cell [ref=e152]:
+                    - checkbox [disabled] [ref=e153]
+                  - cell [ref=e154]:
+                    - checkbox [disabled] [ref=e155]
+                  - cell [ref=e156]:
+                    - checkbox [disabled] [ref=e157]
+                  - cell [ref=e158]:
+                    - checkbox [disabled] [ref=e159]
+                  - cell [ref=e160]:
+                    - checkbox [disabled] [ref=e161]
+                  - cell [ref=e162]:
+                    - checkbox [disabled] [ref=e163]
+                  - cell [ref=e164]:
+                    - checkbox [disabled] [ref=e165]
+                  - cell [ref=e166]:
+                    - checkbox [disabled] [ref=e167]
+                  - cell [ref=e168]:
+                    - checkbox [disabled] [ref=e169]
+                - row "_45TV" [ref=e170]:
+                  - cell "_45TV" [ref=e171]
+                  - cell [ref=e172]:
+                    - checkbox [checked] [ref=e173]
+                  - cell [ref=e174]:
+                    - checkbox [checked] [ref=e175]
+                  - cell [ref=e176]:
+                    - checkbox [disabled] [ref=e177]
+                  - cell [ref=e178]:
+                    - checkbox [disabled] [ref=e179]
+                  - cell [ref=e180]:
+                    - checkbox [disabled] [ref=e181]
+                  - cell [ref=e182]:
+                    - checkbox [disabled] [ref=e183]
+                  - cell [ref=e184]:
+                    - checkbox [disabled] [ref=e185]
+                  - cell [ref=e186]:
+                    - checkbox [disabled] [ref=e187]
+                  - cell [ref=e188]:
+                    - checkbox [disabled] [ref=e189]
+                  - cell [ref=e190]:
+                    - checkbox [disabled] [ref=e191]
+                  - cell [ref=e192]:
+                    - checkbox [disabled] [ref=e193]
+                  - cell [ref=e194]:
+                    - checkbox [disabled] [ref=e195]
+                  - cell [ref=e196]:
+                    - checkbox [disabled] [ref=e197]
+                  - cell [ref=e198]:
+                    - checkbox [disabled] [ref=e199]
+                  - cell [ref=e200]:
+                    - checkbox [disabled] [ref=e201]
+                - row "_55" [ref=e202]:
+                  - cell "_55" [ref=e203]
+                  - cell [ref=e204]:
+                    - checkbox [ref=e205]
+                  - cell [ref=e206]:
+                    - checkbox [ref=e207]
+                  - cell [ref=e208]:
+                    - checkbox [disabled] [ref=e209]
+                  - cell [ref=e210]:
+                    - checkbox [disabled] [ref=e211]
+                  - cell [ref=e212]:
+                    - checkbox [disabled] [ref=e213]
+                  - cell [ref=e214]:
+                    - checkbox [disabled] [ref=e215]
+                  - cell [ref=e216]:
+                    - checkbox [disabled] [ref=e217]
+                  - cell [ref=e218]:
+                    - checkbox [disabled] [ref=e219]
+                  - cell [ref=e220]:
+                    - checkbox [disabled] [ref=e221]
+                  - cell [ref=e222]:
+                    - checkbox [disabled] [ref=e223]
+                  - cell [ref=e224]:
+                    - checkbox [disabled] [ref=e225]
+                  - cell [ref=e226]:
+                    - checkbox [disabled] [ref=e227]
+                  - cell [ref=e228]:
+                    - checkbox [disabled] [ref=e229]
+                  - cell [ref=e230]:
+                    - checkbox [disabled] [ref=e231]
+                  - cell [ref=e232]:
+                    - checkbox [disabled] [ref=e233]
+                - row "_55T" [ref=e234]:
+                  - cell "_55T" [ref=e235]
+                  - cell [ref=e236]:
+                    - checkbox [ref=e237]
+                  - cell [ref=e238]:
+                    - checkbox [ref=e239]
+                  - cell [ref=e240]:
+                    - checkbox [disabled] [ref=e241]
+                  - cell [ref=e242]:
+                    - checkbox [disabled] [ref=e243]
+                  - cell [ref=e244]:
+                    - checkbox [disabled] [ref=e245]
+                  - cell [ref=e246]:
+                    - checkbox [disabled] [ref=e247]
+                  - cell [ref=e248]:
+                    - checkbox [disabled] [ref=e249]
+                  - cell [ref=e250]:
+                    - checkbox [disabled] [ref=e251]
+                  - cell [ref=e252]:
+                    - checkbox [disabled] [ref=e253]
+                  - cell [ref=e254]:
+                    - checkbox [disabled] [ref=e255]
+                  - cell [ref=e256]:
+                    - checkbox [disabled] [ref=e257]
+                  - cell [ref=e258]:
+                    - checkbox [disabled] [ref=e259]
+                  - cell [ref=e260]:
+                    - checkbox [disabled] [ref=e261]
+                  - cell [ref=e262]:
+                    - checkbox [disabled] [ref=e263]
+                  - cell [ref=e264]:
+                    - checkbox [disabled] [ref=e265]
+                - row "_MM" [ref=e266]:
+                  - cell "_MM" [ref=e267]
+                  - cell [ref=e268]:
+                    - checkbox [disabled] [ref=e269]
+                  - cell [ref=e270]:
+                    - checkbox [disabled] [ref=e271]
+                  - cell [ref=e272]:
+                    - checkbox [disabled] [ref=e273]
+                  - cell [ref=e274]:
+                    - checkbox [disabled] [ref=e275]
+                  - cell [ref=e276]:
+                    - checkbox [disabled] [ref=e277]
+                  - cell [ref=e278]:
+                    - checkbox [disabled] [ref=e279]
+                  - cell [ref=e280]:
+                    - checkbox [disabled] [ref=e281]
+                  - cell [ref=e282]:
+                    - checkbox [disabled] [ref=e283]
+                  - cell [ref=e284]:
+                    - checkbox [disabled] [ref=e285]
+                  - cell [ref=e286]:
+                    - checkbox [disabled] [ref=e287]
+                  - cell [ref=e288]:
+                    - checkbox [disabled] [ref=e289]
+                  - cell [ref=e290]:
+                    - checkbox [disabled] [ref=e291]
+                  - cell [ref=e292]:
+                    - checkbox [disabled] [ref=e293]
+                  - cell [ref=e294]:
+                    - checkbox [disabled] [ref=e295]
+                  - cell [ref=e296]:
+                    - checkbox [disabled] [ref=e297]
+                - row "_SV" [ref=e298]:
+                  - cell "_SV" [ref=e299]
+                  - cell [ref=e300]:
+                    - checkbox [ref=e301]
+                  - cell [ref=e302]:
+                    - checkbox [ref=e303]
+                  - cell [ref=e304]:
+                    - checkbox [disabled] [ref=e305]
+                  - cell [ref=e306]:
+                    - checkbox [disabled] [ref=e307]
+                  - cell [ref=e308]:
+                    - checkbox [disabled] [ref=e309]
+                  - cell [ref=e310]:
+                    - checkbox [disabled] [ref=e311]
+                  - cell [ref=e312]:
+                    - checkbox [disabled] [ref=e313]
+                  - cell [ref=e314]:
+                    - checkbox [disabled] [ref=e315]
+                  - cell [ref=e316]:
+                    - checkbox [disabled] [ref=e317]
+                  - cell [ref=e318]:
+                    - checkbox [disabled] [ref=e319]
+                  - cell [ref=e320]:
+                    - checkbox [disabled] [ref=e321]
+                  - cell [ref=e322]:
+                    - checkbox [disabled] [ref=e323]
+                  - cell [ref=e324]:
+                    - checkbox [disabled] [ref=e325]
+                  - cell [ref=e326]:
+                    - checkbox [disabled] [ref=e327]
+                  - cell [ref=e328]:
+                    - checkbox [disabled] [ref=e329]
+                - row "_12TV" [ref=e330]:
+                  - cell "_12TV" [ref=e331]
+                  - cell [ref=e332]:
+                    - checkbox [ref=e333]
+                  - cell [ref=e334]:
+                    - checkbox [ref=e335]
+                  - cell [ref=e336]:
+                    - checkbox [disabled] [ref=e337]
+                  - cell [ref=e338]:
+                    - checkbox [disabled] [ref=e339]
+                  - cell [ref=e340]:
+                    - checkbox [disabled] [ref=e341]
+                  - cell [ref=e342]:
+                    - checkbox [disabled] [ref=e343]
+                  - cell [ref=e344]:
+                    - checkbox [disabled] [ref=e345]
+                  - cell [ref=e346]:
+                    - checkbox [disabled] [ref=e347]
+                  - cell [ref=e348]:
+                    - checkbox [disabled] [ref=e349]
+                  - cell [ref=e350]:
+                    - checkbox [disabled] [ref=e351]
+                  - cell [ref=e352]:
+                    - checkbox [disabled] [ref=e353]
+                  - cell [ref=e354]:
+                    - checkbox [disabled] [ref=e355]
+                  - cell [ref=e356]:
+                    - checkbox [disabled] [ref=e357]
+                  - cell [ref=e358]:
+                    - checkbox [disabled] [ref=e359]
+                  - cell [ref=e360]:
+                    - checkbox [disabled] [ref=e361]
+                - row "Additional Graphics 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e362]:
+                  - cell "Additional Graphics" [ref=e363]
+                  - cell "0" [ref=e364]
+                  - cell "0" [ref=e365]
+                  - cell "0" [ref=e366]
+                  - cell "0" [ref=e367]
+                  - cell "0" [ref=e368]
+                  - cell "0" [ref=e369]
+                  - cell "0" [ref=e370]
+                  - cell "0" [ref=e371]
+                  - cell "0" [ref=e372]
+                  - cell "0" [ref=e373]
+                  - cell "0" [ref=e374]
+                  - cell "0" [ref=e375]
+                  - cell "0" [ref=e376]
+                  - cell "0" [ref=e377]
+                  - cell "0" [ref=e378]
+          - generic [ref=e380]:
+            - heading "Graphic Example" [level=2] [ref=e381]
+            - generic [ref=e382]:
+              - generic [ref=e383]:
+                - text: _MM
+                - generic [ref=e385]: 
+                - img "_MM" [ref=e386] [cursor=pointer]
+              - generic [ref=e387]:
+                - text: _45V
+                - generic [ref=e389]: 
+                - img "_45V" [ref=e390] [cursor=pointer]
+              - generic [ref=e391]:
+                - text: _55T
+                - generic [ref=e393]: 
+                - img "_55T" [ref=e394] [cursor=pointer]
+            - separator [ref=e395]
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - text: _45TV
+                - generic [ref=e399]: 
+                - img "_45TV" [ref=e400] [cursor=pointer]
+              - generic [ref=e401]:
+                - text: _SV
+                - generic [ref=e403]: 
+                - img "_SV" [ref=e404] [cursor=pointer]
+              - generic [ref=e405]:
+                - text: _55
+                - generic [ref=e407]: 
+                - img "_55" [ref=e408] [cursor=pointer]
+            - separator [ref=e409]
+            - generic [ref=e410]:
+              - generic [ref=e411]:
+                - text: _12TV
+                - generic [ref=e413]: 
+                - img "_12TV" [ref=e414] [cursor=pointer]
+              - generic [ref=e415]:
+                - text: 3D Standard
+                - img "3D Standard Design" [ref=e416] [cursor=pointer]
+              - generic [ref=e417]:
+                - text: Virtual Riser
+                - img "Virtual Riser Style" [ref=e418] [cursor=pointer]
+      - generic [ref=e420]:
+        - table [ref=e422]:
+          - rowgroup [ref=e423]:
+            - row "Job Name* Test_Staging_1771479468686" [ref=e424]:
+              - cell "Job Name*" [ref=e425]:
+                - generic [ref=e426]: Job Name*
+              - cell [ref=e427]
+              - cell "Test_Staging_1771479468686" [ref=e428]:
+                - textbox [ref=e429]: Test_Staging_1771479468686
+              - cell [ref=e430]
+            - row "Add Graphic Team Name  Yes No" [ref=e431]:
+              - cell "Add Graphic Team Name " [ref=e432]:
+                - generic [ref=e433]:
+                  - text: Add Graphic Team Name
+                  - superscript [ref=e434]:
+                    - generic [ref=e435]: 
+              - cell [ref=e436]
+              - cell "Yes No" [ref=e437]:
+                - generic [ref=e438]:
+                  - generic [ref=e439] [cursor=pointer]:
+                    - radio "Yes" [ref=e440]
+                    - text: "Yes"
+                  - generic [ref=e441] [cursor=pointer]:
+                    - radio "No" [checked] [ref=e442]
+                    - text: "No"
+            - row "Background Template* View Designs Single Template for Organization Different Template for Each Team Custom Background" [ref=e443]:
+              - cell "Background Template* View Designs" [ref=e444]:
+                - generic [ref=e445]:
+                  - text: Background Template*
+                  - link "View Designs" [ref=e446] [cursor=pointer]:
+                    - /url: https://www.nextgenphotosolutions.com/team-individual-graphics
+              - cell [ref=e447]
+              - cell "Single Template for Organization Different Template for Each Team Custom Background" [ref=e448]:
+                - table [ref=e450]:
+                  - rowgroup [ref=e451]:
+                    - row "Single Template for Organization" [ref=e452]:
+                      - cell "Single Template for Organization" [ref=e453]:
+                        - radio [checked] [active] [ref=e454]
+                        - generic [ref=e455]: Single Template for Organization
+                    - row "Different Template for Each Team" [ref=e456]:
+                      - cell "Different Template for Each Team" [ref=e457]:
+                        - radio [ref=e458]
+                        - generic [ref=e459]: Different Template for Each Team
+                    - row "Custom Background" [ref=e460]:
+                      - cell "Custom Background" [ref=e461]:
+                        - radio [ref=e462]
+                        - generic [ref=e463]: Custom Background
+              - cell [ref=e464]
+            - row "Extracted images  Attach extracted images to access codes" [ref=e465]:
+              - cell "Extracted images " [ref=e466]:
+                - generic [ref=e467]:
+                  - text: Extracted images
+                  - superscript [ref=e468]:
+                    - generic [ref=e469]: 
+              - cell [ref=e470]
+              - cell "Attach extracted images to access codes" [ref=e471]:
+                - checkbox [ref=e472]
+                - text: Attach extracted images to access codes
+              - cell [ref=e473]
+            - text: 
+            - row "PNG Team Add On  * $1.00 X 1 (Total Number of Teams)" [ref=e474]:
+              - cell "PNG Team Add On  *" [ref=e475]:
+                - generic [ref=e476]:
+                  - text: PNG Team Add On
+                  - superscript [ref=e477]:
+                    - generic [ref=e478]: 
+                  - text: "*"
+              - cell [ref=e479]
+              - cell "$1.00 X 1 (Total Number of Teams)" [ref=e480]:
+                - checkbox [ref=e481]
+                - text: $1.00 X 1 (Total Number of Teams)
+              - cell [ref=e482]
+            - 'row "Unique color for each team in organization  * Yes (Custom Team Color: $1.00 x Number of Teams: 1)" [ref=e483]':
+              - cell "Unique color for each team in organization  *" [ref=e484]:
+                - generic [ref=e485]:
+                  - text: Unique color for each team in organization
+                  - superscript [ref=e486]:
+                    - generic [ref=e487]: 
+                  - text: "*"
+              - cell [ref=e488]
+              - 'cell "Yes (Custom Team Color: $1.00 x Number of Teams: 1)" [ref=e489]':
+                - radio [ref=e490]
+                - text: "Yes (Custom Team Color: $1.00 x Number of Teams: 1)"
+              - cell [ref=e491]
+            - row "Single color for entire organization  * Yes" [ref=e492]:
+              - cell "Single color for entire organization  *" [ref=e493]:
+                - generic [ref=e494]:
+                  - text: Single color for entire organization
+                  - superscript [ref=e495]:
+                    - generic [ref=e496]: 
+                  - text: "*"
+              - cell [ref=e497]
+              - cell "Yes" [ref=e498]:
+                - radio [checked] [ref=e499]
+                - text: "Yes"
+              - cell [ref=e500]
+            - row "Theme Color  E.g. \"the blue of their jersey\" or \"background can be the red from their logo\" or \"text can be the yellow of their jersey\", etc. 0/250 characters" [ref=e501]:
+              - cell "Theme Color  E.g. \"the blue of their jersey\" or \"background can be the red from their logo\" or \"text can be the yellow of their jersey\", etc." [ref=e502]:
+                - generic [ref=e503]:
+                  - text: Theme Color
+                  - superscript [ref=e504]:
+                    - generic [ref=e505]: 
+                  - generic [ref=e506]:
+                    - text: E.g. "the blue of their jersey"
+                    - text: or "background can be the red from their logo"
+                    - text: or "text can be the yellow of their jersey", etc.
+              - cell [ref=e507]
+              - cell "0/250 characters" [ref=e508]:
+                - textbox [ref=e509]
+                - generic [ref=e510]: 0/250 characters
+              - cell [ref=e511]
+            - row "Special Requests 0/250 characters" [ref=e512]:
+              - cell "Special Requests" [ref=e513]:
+                - generic [ref=e514]: Special Requests
+              - cell [ref=e515]
+              - cell "0/250 characters" [ref=e516]:
+                - textbox [ref=e517]
+                - generic [ref=e518]: 0/250 characters
+              - cell [ref=e519]
+            - row "Upload reference files You can upload multiple reference files Choose File" [ref=e520]:
+              - cell "Upload reference files You can upload multiple reference files" [ref=e521]:
+                - generic [ref=e522]: Upload reference files
+                - text: You can upload multiple reference files
+              - cell [ref=e523]
+              - cell "Choose File" [ref=e524]:
+                - button "Choose File" [ref=e526]
+              - cell [ref=e527]
+            - row "Upload logo You can upload logo files Choose File" [ref=e528]:
+              - cell "Upload logo You can upload logo files" [ref=e529]:
+                - generic [ref=e530]: Upload logo
+                - text: You can upload logo files
+              - cell [ref=e531]
+              - cell "Choose File" [ref=e532]:
+                - button "Choose File" [ref=e534]
+              - cell [ref=e535]
+            - text: 
+            - row "Total Number of Team Images 0 X $1.65 (Team Price) $0.00" [ref=e536]:
+              - cell "Total Number of Team Images" [ref=e537]:
+                - generic [ref=e538]: Total Number of Team Images
+              - cell [ref=e539]
+              - cell "0 X $1.65 (Team Price)" [ref=e540]:
+                - text: "0"
+                - generic [ref=e541]: X $1.65 (Team Price)
+              - cell "$0.00" [ref=e542]
+            - row "Total Number of individual images" [ref=e543]:
+              - cell "Total Number of individual images" [ref=e544]:
+                - generic [ref=e545]: Total Number of individual images
+              - cell [ref=e546]
+              - cell [ref=e547]
+              - cell [ref=e548]
+            - row [ref=e549]:
+              - cell [ref=e550]
+              - cell [ref=e551]
+              - cell [ref=e552]
+              - cell [ref=e553]
+            - row "Regular 2 X $1.80" [ref=e554]:
+              - cell [ref=e555]
+              - cell "Regular" [ref=e556]:
+                - img "Regular" [ref=e558]
+              - cell "2 X $1.80" [ref=e559]:
+                - generic [ref=e560]: "2"
+                - text: X $1.80
+              - cell [ref=e561]
+            - row [ref=e562]:
+              - cell [ref=e563]
+              - cell [ref=e564]
+              - cell [ref=e565]
+              - cell [ref=e566]
+            - row [ref=e567]:
+              - cell [ref=e568]
+              - cell [ref=e569]
+              - cell [ref=e570]
+              - cell [ref=e571]
+            - row "$ 3.60" [ref=e572]:
+              - cell [ref=e573]
+              - cell [ref=e574]
+              - cell [ref=e575]
+              - cell "$ 3.60" [ref=e576]
+            - row "Additional graphics 0 X $0.15 $0.00" [ref=e577]:
+              - cell "Additional graphics" [ref=e578]:
+                - generic [ref=e579]: Additional graphics
+              - cell [ref=e580]
+              - cell "0 X $0.15" [ref=e581]:
+                - text: "0"
+                - generic [ref=e582]: X $0.15
+              - cell "$0.00" [ref=e583]
+            - row [ref=e584]:
+              - cell [ref=e585]
+              - cell [ref=e586]
+              - cell [ref=e587]
+              - cell [ref=e588]
+            - row "Color Correction $0.20 X 4.00 (Total Number of Images)" [ref=e589]:
+              - cell "Color Correction" [ref=e590]:
+                - generic [ref=e591]: Color Correction
+              - cell [ref=e592]
+              - cell "$0.20 X 4.00 (Total Number of Images)" [ref=e593]:
+                - checkbox [ref=e594]
+                - text: $0.20 X 4.00 (Total Number of Images)
+              - cell [ref=e595]
+            - row "Subtotal $3.60" [ref=e596]:
+              - cell "Subtotal" [ref=e597]:
+                - generic [ref=e598]: Subtotal
+              - cell "$3.60" [ref=e599]
+            - row "Discount $0.00" [ref=e600]:
+              - cell "Discount" [ref=e601]:
+                - generic [ref=e602]: Discount
+              - cell "$0.00" [ref=e603]
+            - row "Total $3.60" [ref=e604]:
+              - cell "Total" [ref=e605]:
+                - generic [ref=e606]: Total
+              - cell "$3.60" [ref=e607]
+        - generic [ref=e612]:
+          - generic [ref=e614]: Discount Code
+          - textbox [ref=e616]
+          - button "Redeem" [ref=e618] [cursor=pointer]
+        - table [ref=e623]:
+          - rowgroup [ref=e624]:
+            - row "Select Payment Methods:" [ref=e625]:
+              - cell "Select Payment Methods:" [ref=e626]
+            - row "Use Saved Card details Enter Card Information Below" [ref=e627]:
+              - cell "Use Saved Card details Enter Card Information Below" [ref=e628]:
+                - table [ref=e630]:
+                  - rowgroup [ref=e631]:
+                    - row "Use Saved Card details" [ref=e632]:
+                      - cell "Use Saved Card details" [ref=e633]:
+                        - radio [ref=e634]
+                        - text: Use Saved Card details
+                    - row
+                    - row "Enter Card Information Below" [ref=e635]:
+                      - cell "Enter Card Information Below" [ref=e636]:
+                        - radio [ref=e637]
+                        - text: Enter Card Information Below
+                    - row
+        - button "Checkout" [ref=e639] [cursor=pointer]
+  - contentinfo [ref=e640]:
+    - generic [ref=e641]:
+      - text: Copyright © 2026
+      - link "Privacy Policy" [ref=e642] [cursor=pointer]:
+        - /url: /privacypolics/privacypolics
+      - button "Terms of Service" [ref=e643] [cursor=pointer]:
+        - generic [ref=e644]: Terms of Service
+  - generic [ref=e646]:
+    - text: 👋 Hey There! Want a quick walkthrough of the options on this page?
+    - link "Click Here" [ref=e647] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e648]: Click Here
+```

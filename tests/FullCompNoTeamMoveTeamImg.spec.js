@@ -12,7 +12,7 @@ const GENERATED_FILE = path.resolve(process.cwd(), 'generatedData.json');
 
 test.setTimeout(300000); // 5 min timeout
 
-test('Full Composite NO Team Move >> Place Order + FTP Upload + Confirm Image Transfer', async ({ page, request }) => {
+test('Full Composite - NO Team - Move Team Image >> Place Order + FTP Upload + Confirm Image Transfer', async ({ page, request }) => {
 
   // ============================================================
   // ========== METADATA ========================================

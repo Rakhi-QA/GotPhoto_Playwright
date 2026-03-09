@@ -1,0 +1,127 @@
+{
+  "summary": {
+    "totalPlayers": 9,
+    "totalTeamImages": 0,
+    "totalIndividualImages": 31,
+    "bundleCounts": {
+      "S": 2,
+      "R": 1,
+      "L": 2,
+      "XL": 1,
+      "UL": 1,
+      "No Images": 2
+    }
+  },
+  "players": [
+    {
+      "player": "Ana A",
+      "teamImage": "None",
+      "images": [
+        "E.jpg"
+      ],
+      "imageCount": 1,
+      "imageList": "image 1 (E.jpg)",
+      "bundleText": "S"
+    },
+    {
+      "player": "HENRY H",
+      "teamImage": "None",
+      "images": [],
+      "imageCount": 0,
+      "imageList": "None",
+      "bundleText": "No Images"
+    },
+    {
+      "player": "IRA S",
+      "teamImage": "None",
+      "images": [
+        "Q9.jpg",
+        "Q10.jpg"
+      ],
+      "imageCount": 2,
+      "imageList": "image 1 (Q9.jpg), image 2 (Q10.jpg)",
+      "bundleText": "R"
+    },
+    {
+      "player": "JACK KOA",
+      "teamImage": "None",
+      "images": [
+        "Q24.jpg",
+        "Q25.jpg",
+        "Q26.jpg",
+        "Q27.jpg",
+        "Q28.jpg",
+        "Q29.jpg"
+      ],
+      "imageCount": 6,
+      "imageList": "image 1 (Q24.jpg), image 2 (Q25.jpg), image 3 (Q26.jpg), image 4 (Q27.jpg), image 5 (Q28.jpg), image 6 (Q29.jpg)",
+      "bundleText": "XL"
+    },
+    {
+      "player": "OM S",
+      "teamImage": "None",
+      "images": [
+        "Q6.jpg"
+      ],
+      "imageCount": 1,
+      "imageList": "image 1 (Q6.jpg)",
+      "bundleText": "S"
+    },
+    {
+      "player": "PARTH G",
+      "teamImage": "None",
+      "images": [
+        "Q13.jpg",
+        "Q14.jpg",
+        "Q15.jpg"
+      ],
+      "imageCount": 3,
+      "imageList": "image 1 (Q13.jpg), image 2 (Q14.jpg), image 3 (Q15.jpg)",
+      "bundleText": "L"
+    },
+    {
+      "player": "rakesh pat",
+      "teamImage": "None",
+      "images": [
+        "C.jpg",
+        "D.jpg",
+        "E.jpg",
+        "F.jpg",
+        "G.jpg",
+        "H.jpg",
+        "I.jpg",
+        "J.jpg",
+        "K.jpg",
+        "L.jpg",
+        "M.jpg",
+        "N.jpg",
+        "O.jpg",
+        "P.jpg"
+      ],
+      "imageCount": 14,
+      "imageList": "image 1 (C.jpg), image 2 (D.jpg), image 3 (E.jpg), image 4 (F.jpg), image 5 (G.jpg), image 6 (H.jpg), image 7 (I.jpg), image 8 (J.jpg), image 9 (K.jpg), image 10 (L.jpg), image 11 (M.jpg), image 12 (N.jpg), image 13 (O.jpg), image 14 (P.jpg)",
+      "bundleText": "UL"
+    },
+    {
+      "player": "TOM D",
+      "teamImage": "None",
+      "images": [],
+      "imageCount": 0,
+      "imageList": "None",
+      "bundleText": "No Images"
+    },
+    {
+      "player": "UVI SD",
+      "teamImage": "None",
+      "images": [
+        "Q18.jpg",
+        "Q19.jpg",
+        "Q20.jpg",
+        "Q21.jpg"
+      ],
+      "imageCount": 4,
+      "imageList": "image 1 (Q18.jpg), image 2 (Q19.jpg), image 3 (Q20.jpg), image 4 (Q21.jpg)",
+      "bundleText": "L"
+    }
+  ]
+}

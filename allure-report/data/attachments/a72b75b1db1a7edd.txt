@@ -1,0 +1,8 @@
+🌐 Opening URL: https://staging.production.nextgenphotosolutions.com/orderstatus/activejobs
+✅ Page Loaded: Next Generation | Photographers
+📄 Current URL: https://staging.production.nextgenphotosolutions.com/login
+🔍 Looking for login form...
+✅ Email filled using selector: input[type="email"]
+✅ Password filled using selector: input[type="password"]
+🔍 Looking for login button...
+✅ Login button clicked using selector: button:has-text("Login")

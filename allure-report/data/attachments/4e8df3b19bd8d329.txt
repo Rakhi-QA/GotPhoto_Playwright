@@ -1,0 +1,15 @@
+➡️ Creating Job: Test_Staging_1772087001768
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2692",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2692&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11703737846&beta-value1940091373",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2692
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2692&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11703737846&beta-value1940091373
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2692&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11703737846&beta-value1940091373
+✅ Page Title: Next Generation | Photographers
+✔ Set Traditional via #ch_td (evaluate)
+✔ Clicked Confirm on first popup (selector: .bootbox .modal-footer button:has-text("Confirm"))

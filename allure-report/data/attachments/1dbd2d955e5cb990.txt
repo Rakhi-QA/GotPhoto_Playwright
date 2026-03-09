@@ -1,0 +1,18 @@
+⚠ Could not select background/template: page.selectOption: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('#bcktemplete')
+    - locator resolved to 3 elements. Proceeding with the first one: <select tabindex="7" id="bcktemplete" name="bcktemplete" class="form-control" onchange="funisfulllength(this.options[this.selectedIndex],'S'),funisbanner(this.options[this.selectedIndex],'S');">…</select>
+  - attempting select option action
+    2 × waiting for element to be visible and enabled
+      - did not find some options
+    - retrying select option action
+    - waiting 20ms
+    2 × waiting for element to be visible and enabled
+      - did not find some options
+    - retrying select option action
+      - waiting 100ms
+    75 × waiting for element to be visible and enabled
+       - did not find some options
+     - retrying select option action
+       - waiting 500ms
+

@@ -1,0 +1,34 @@
+API Response: {
+  code: 200,
+  nextgen_job_id: '2686',
+  checkout_url: 'https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2686&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value11821566359&beta-value1230886408',
+  message: 'Congratulations! The order has been created successfully.'
+}
+💾 Saved job link, job name, and job ID to .env
+✔ Uploaded: A.jpg
+✔ Uploaded: B.jpg
+✔ Uploaded: C.jpg
+✔ Uploaded: D.jpg
+✔ Uploaded: E.jpg
+✔ Uploaded: F.jpg
+✔ Uploaded: G.jpg
+✔ Uploaded: H.jpg
+✔ Uploaded: I.jpg
+✔ Uploaded: J.jpg
+✔ Uploaded: K.jpg
+✔ Uploaded: L.jpg
+✔ Uploaded: M.jpg
+✔ Uploaded: N.jpg
+✔ Uploaded: O.jpg
+✔ Uploaded: P.jpg
+✔ Uploaded: Q.jpg
+✔ Uploaded: R.jpg
+✔ Uploaded: S.jpg
+✔ Uploaded: T.jpg
+✔ Uploaded: U.jpg
+✔ Uploaded: V.jpg
+✔ Uploaded: W.jpg
+✔ Uploaded: X.jpg
+✔ Uploaded: Y.jpg
+✔ Uploaded: Z.jpg
+🎉 FTP Upload Completed

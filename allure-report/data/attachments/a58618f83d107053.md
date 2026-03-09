@@ -1,0 +1,379 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e8]:
+        - link "GotPhoto-Logo" [ref=e14] [cursor=pointer]:
+          - /url: https://www.gotphoto.com
+          - img "GotPhoto-Logo" [ref=e16]
+        - generic [ref=e18]:
+          - text: 
+          - navigation [ref=e21]:
+            - list [ref=e23]:
+              - listitem [ref=e24]:
+                - generic [ref=e25] [cursor=pointer]:
+                  - text: Features
+                  - generic [ref=e26]: 
+              - listitem [ref=e27]:
+                - link "Genres" [ref=e28] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/photography-genres/
+                  - text: Genres
+                  - generic [ref=e29]: 
+              - listitem [ref=e30]:
+                - link "Resources" [ref=e31] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/resources/
+                  - text: Resources
+                  - generic [ref=e32]: 
+              - listitem [ref=e33]:
+                - link "Pricing" [ref=e34] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/pricing/
+              - listitem [ref=e35]:
+                - generic [ref=e37]:
+                  - link "Get started for free" [ref=e42] [cursor=pointer]:
+                    - /url: https://www.gotphoto.com/sign-up/en-us
+                  - link " For Parents" [ref=e47] [cursor=pointer]:
+                    - /url: https://www.gotphoto.com/parents/
+                    - generic [ref=e48]: 
+                    - text: For Parents
+                  - link "Login" [ref=e53] [cursor=pointer]:
+                    - /url: https://app.gotphoto.com/login/login
+    - main [ref=e56]:
+      - article [ref=e57]:
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - img [ref=e63]
+            - generic [ref=e65]:
+              - generic [ref=e70]:
+                - heading "You’re a top photographer. Now build a top business." [level=1] [ref=e71]:
+                  - text: You’re a top photographer.
+                  - text: Now build a
+                  - generic [ref=e73]: top business.
+                - paragraph [ref=e75]: Sell more and save time - with the platform that handles your entire workflow
+              - link "Get started for free" [ref=e82] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/signup/
+              - generic [ref=e83]:
+                - button "Play Video about Dashboard interface of a volume photography software showing sales, orders, and customer statistics" [ref=e89] [cursor=pointer]:
+                  - generic [ref=e90]: 
+                - generic [ref=e92]:
+                  - img "Female photographer holding camera, showcasing volume photography software"
+          - generic [ref=e105]:
+            - region "Carousel" [ref=e106]:
+              - generic [ref=e107]:
+                - group [ref=e108]:
+                  - generic [ref=e112]:
+                    - img [ref=e115]
+                    - heading [level=3] [ref=e118]: Tagging
+                    - list [ref=e121]:
+                      - listitem [ref=e122]:
+                        - generic [ref=e124]: 
+                        - generic [ref=e125]: Full tagging suite
+                      - listitem [ref=e126]:
+                        - generic [ref=e128]: 
+                        - generic [ref=e129]: Mobile tagging app
+                      - listitem [ref=e130]:
+                        - generic [ref=e132]: 
+                        - generic [ref=e133]: Tagging for every scenario
+                - group [ref=e134]:
+                  - generic [ref=e138]:
+                    - img [ref=e141]
+                    - heading [level=3] [ref=e144]: Organize
+                    - list [ref=e147]:
+                      - listitem [ref=e148]:
+                        - generic [ref=e150]: 
+                        - generic [ref=e151]: Automatic subject sorting
+                      - listitem [ref=e152]:
+                        - generic [ref=e154]: 
+                        - generic [ref=e155]: Individual gallery creation
+                      - listitem [ref=e156]:
+                        - generic [ref=e158]: 
+                        - generic [ref=e159]: 100% paperless
+                - group [ref=e160]:
+                  - generic [ref=e164]:
+                    - img [ref=e167]
+                    - heading [level=3] [ref=e170]: Edit
+                    - list [ref=e173]:
+                      - listitem [ref=e174]:
+                        - generic [ref=e176]: 
+                        - generic [ref=e177]: AI-powered editing
+                      - listitem [ref=e178]:
+                        - generic [ref=e180]: 
+                        - generic [ref=e181]: Advanced background removal
+                      - listitem [ref=e182]:
+                        - generic [ref=e184]: 
+                        - generic [ref=e185]: Outsourced graphics creation
+                - group [ref=e186]:
+                  - generic [ref=e190]:
+                    - img [ref=e193]
+                    - heading [level=3] [ref=e196]: Market
+                    - list [ref=e199]:
+                      - listitem [ref=e200]:
+                        - generic [ref=e202]: 
+                        - generic [ref=e203]: Customizable marketing
+                      - listitem [ref=e204]:
+                        - generic [ref=e206]: 
+                        - generic [ref=e207]: Email templates
+                      - listitem [ref=e208]:
+                        - generic [ref=e210]: 
+                        - generic [ref=e211]: Tiered coupons
+                - group [ref=e212]
+                - group [ref=e216]:
+                  - generic [ref=e220]:
+                    - img [ref=e223]
+                    - heading [level=3] [ref=e226]: Tagging
+                    - list [ref=e229]:
+                      - listitem [ref=e230]:
+                        - generic [ref=e232]: 
+                        - generic [ref=e233]: Full tagging suite
+                      - listitem [ref=e234]:
+                        - generic [ref=e236]: 
+                        - generic [ref=e237]: Mobile tagging app
+                      - listitem [ref=e238]:
+                        - generic [ref=e240]: 
+                        - generic [ref=e241]: Tagging for every scenario
+                - group [ref=e242]:
+                  - generic [ref=e246]:
+                    - img [ref=e249]
+                    - heading [level=3] [ref=e252]: Organize
+                    - list [ref=e255]:
+                      - listitem [ref=e256]:
+                        - generic [ref=e258]: 
+                        - generic [ref=e259]: Automatic subject sorting
+                      - listitem [ref=e260]:
+                        - generic [ref=e262]: 
+                        - generic [ref=e263]: Individual gallery creation
+                      - listitem [ref=e264]:
+                        - generic [ref=e266]: 
+                        - generic [ref=e267]: 100% paperless
+                - group [ref=e268]:
+                  - generic [ref=e272]:
+                    - img [ref=e275]
+                    - heading [level=3] [ref=e278]: Edit
+                    - list [ref=e281]:
+                      - listitem [ref=e282]:
+                        - generic [ref=e284]: 
+                        - generic [ref=e285]: AI-powered editing
+                      - listitem [ref=e286]:
+                        - generic [ref=e288]: 
+                        - generic [ref=e289]: Advanced background removal
+                      - listitem [ref=e290]:
+                        - generic [ref=e292]: 
+                        - generic [ref=e293]: Outsourced graphics creation
+                - group "5 / 5" [ref=e294]:
+                  - generic [ref=e298]:
+                    - img "GotPhoto software screenshot showing the Market workflow interface for marketing tools and communication options." [ref=e301]
+                    - heading "Market" [level=3] [ref=e304]
+                    - list [ref=e307]:
+                      - listitem [ref=e308]:
+                        - generic [ref=e310]: 
+                        - generic [ref=e311]: Customizable marketing
+                      - listitem [ref=e312]:
+                        - generic [ref=e314]: 
+                        - generic [ref=e315]: Email templates
+                      - listitem [ref=e316]:
+                        - generic [ref=e318]: 
+                        - generic [ref=e319]: Tiered coupons
+                - group "1 / 5" [ref=e320]
+                - group "2 / 5" [ref=e324]:
+                  - generic [ref=e328]:
+                    - img "GotPhoto software screenshot showing the Capture workflow interface for photographing and managing images." [ref=e331]
+                    - heading "Tagging" [level=3] [ref=e334]
+                    - list [ref=e337]:
+                      - listitem [ref=e338]:
+                        - generic [ref=e340]: 
+                        - generic [ref=e341]: Full tagging suite
+                      - listitem [ref=e342]:
+                        - generic [ref=e344]: 
+                        - generic [ref=e345]: Mobile tagging app
+                      - listitem [ref=e346]:
+                        - generic [ref=e348]: 
+                        - generic [ref=e349]: Tagging for every scenario
+                - group [ref=e350]:
+                  - generic [ref=e354]:
+                    - img [ref=e357]
+                    - heading [level=3] [ref=e360]: Organize
+                    - list [ref=e363]:
+                      - listitem [ref=e364]:
+                        - generic [ref=e366]: 
+                        - generic [ref=e367]: Automatic subject sorting
+                      - listitem [ref=e368]:
+                        - generic [ref=e370]: 
+                        - generic [ref=e371]: Individual gallery creation
+                      - listitem [ref=e372]:
+                        - generic [ref=e374]: 
+                        - generic [ref=e375]: 100% paperless
+                - group [ref=e376]:
+                  - generic [ref=e380]:
+                    - img [ref=e383]
+                    - heading [level=3] [ref=e386]: Edit
+                    - list [ref=e389]:
+                      - listitem [ref=e390]:
+                        - generic [ref=e392]: 
+                        - generic [ref=e393]: AI-powered editing
+                      - listitem [ref=e394]:
+                        - generic [ref=e396]: 
+                        - generic [ref=e397]: Advanced background removal
+                      - listitem [ref=e398]:
+                        - generic [ref=e400]: 
+                        - generic [ref=e401]: Outsourced graphics creation
+            - button "Previous slide" [ref=e402] [cursor=pointer]:
+              - generic [ref=e403]: 
+            - button "Next slide" [ref=e404] [cursor=pointer]:
+              - generic [ref=e405]: 
+            - generic [ref=e406]:
+              - button "Go to slide 1" [ref=e407] [cursor=pointer]
+              - button "Go to slide 2" [ref=e408] [cursor=pointer]
+              - button "Go to slide 3" [ref=e409] [cursor=pointer]
+              - button "Go to slide 4" [ref=e410] [cursor=pointer]
+              - button "Go to slide 5" [ref=e411] [cursor=pointer]
+          - generic [ref=e449] [cursor=pointer]: Sports
+    - contentinfo:
+      - generic [ref=e466]:
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - link "GotPhoto logo" [ref=e471] [cursor=pointer]:
+              - /url: "#"
+              - img "GotPhoto logo" [ref=e472]
+            - paragraph [ref=e475]: GotPhoto is the all-in-one platform built to help high-volume photographers save time, increase revenue, and simplify their operations.
+            - generic [ref=e478]:
+              - link "Instagram " [ref=e480] [cursor=pointer]:
+                - /url: https://www.instagram.com/gotphoto_official/
+                - generic [ref=e481]: Instagram
+                - generic [ref=e482]: 
+              - link "Facebook " [ref=e484] [cursor=pointer]:
+                - /url: https://www.facebook.com/gotphoto.usa/
+                - generic [ref=e485]: Facebook
+                - generic [ref=e486]: 
+              - link "Youtube " [ref=e488] [cursor=pointer]:
+                - /url: https://www.youtube.com/@gotphoto
+                - generic [ref=e489]: Youtube
+                - generic [ref=e490]: 
+              - link "Linkedin " [ref=e492] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/fde-gotphoto/posts/?feedView=all
+                - generic [ref=e493]: Linkedin
+                - generic [ref=e494]: 
+            - generic [ref=e495]:
+              - paragraph [ref=e498]: © GotPhoto Inc
+              - link [ref=e501] [cursor=pointer]:
+                - /url: https://trustcenter.gotphoto.com/
+          - generic [ref=e502]:
+            - heading "Features" [level=5] [ref=e505]
+            - list [ref=e508]:
+              - listitem [ref=e509]:
+                - link "Core Features" [ref=e510] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/features/
+                  - generic [ref=e511]: Core Features
+              - listitem [ref=e512]:
+                - link "Tagging Methods" [ref=e513] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/capture-methods/
+                  - generic [ref=e514]: Tagging Methods
+              - listitem [ref=e515]:
+                - link "Virtual Graphics" [ref=e516] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/virtual-graphics/
+                  - generic [ref=e517]: Virtual Graphics
+              - listitem [ref=e518]:
+                - link "Photo Editing & Extractions" [ref=e519] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/photo-editing-and-extractions/
+                  - generic [ref=e520]: Photo Editing & Extractions
+              - listitem [ref=e521]:
+                - link "Composites" [ref=e522] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/composites/
+                  - generic [ref=e523]: Composites
+              - listitem [ref=e524]:
+                - link "Self-Fulfillment" [ref=e525] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/self-fulfillment/
+                  - generic [ref=e526]: Self-Fulfillment
+              - listitem [ref=e527]:
+                - link "Labs" [ref=e528] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/labs-partners/
+                  - generic [ref=e529]: Labs
+          - generic [ref=e530]:
+            - heading "Resources" [level=5] [ref=e533]
+            - list [ref=e536]:
+              - listitem [ref=e537]:
+                - link "Videos" [ref=e538] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/resources/#videos
+                  - generic [ref=e539]: Videos
+              - listitem [ref=e540]:
+                - link "Guides" [ref=e541] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/resources/#guides
+                  - generic [ref=e542]: Guides
+              - listitem [ref=e543]:
+                - link "Templates" [ref=e544] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/resources/#templates
+                  - generic [ref=e545]: Templates
+              - listitem [ref=e546]:
+                - link "Success Stories" [ref=e547] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/success-stories/
+                  - generic [ref=e548]: Success Stories
+              - listitem [ref=e549]:
+                - link "Blog" [ref=e550] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/blog-overview/
+                  - generic [ref=e551]: Blog
+              - listitem [ref=e552]:
+                - link "Events" [ref=e553] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/events/
+                  - generic [ref=e554]: Events
+          - generic [ref=e555]:
+            - heading "About" [level=5] [ref=e558]
+            - list [ref=e561]:
+              - listitem [ref=e562]:
+                - link "Pricing" [ref=e563] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/pricing/
+                  - generic [ref=e564]: Pricing
+              - listitem [ref=e565]:
+                - link "Data & Privacy" [ref=e566] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/privacy-data-handling/
+                  - generic [ref=e567]: Data & Privacy
+              - listitem [ref=e568]:
+                - link "System Status" [ref=e569] [cursor=pointer]:
+                  - /url: https://status.gotphoto.com/
+                  - generic [ref=e570]: System Status
+              - listitem [ref=e571]:
+                - link "Careers" [ref=e572] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/careers/
+                  - generic [ref=e573]: Careers
+              - listitem [ref=e574]:
+                - link "Recruiting Privacy Notice" [ref=e575] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/recruiting-privacy-notice/
+                  - generic [ref=e576]: Recruiting Privacy Notice
+              - listitem [ref=e577]:
+                - link "Releases" [ref=e578] [cursor=pointer]:
+                  - /url: https://www.gotphoto.com/releases/
+                  - generic [ref=e579]: Releases
+          - generic [ref=e580]:
+            - heading "Newsletter" [level=5] [ref=e583]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - iframe
+        - navigation [ref=e586]:
+          - list [ref=e588]:
+            - listitem [ref=e589]:
+              - link "T&Cs – US" [ref=e590] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/gtc-us/
+            - listitem [ref=e591]:
+              - link "T&Cs – Canada" [ref=e592] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/gtc-ca/
+            - listitem [ref=e593]:
+              - link "Data Processing Agreement – US" [ref=e594] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/data-processing-agreement/
+            - listitem [ref=e595]:
+              - link "Data Processing Agreement – Canada" [ref=e596] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/data-processing-agreement-ca/
+            - listitem [ref=e597]:
+              - link "Cookie Declaration" [ref=e598] [cursor=pointer]:
+                - /url: https://app.gotphoto.com/cookie_declaration?_gl=1*knr0dk*_gcl_au*MTQ4NjAwNjk0Ny4xNzI4Mjg1NDM5
+            - listitem [ref=e599]:
+              - link "Privacy Policy US" [ref=e600] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/data-privacy-policy-us/
+            - listitem [ref=e601]:
+              - link "Privacy Policy Canada" [ref=e602] [cursor=pointer]:
+                - /url: https://www.gotphoto.com/data-privacy-policy-ca/
+  - img [ref=e605] [cursor=pointer]
+  - iframe [ref=e608]:
+    
+  - generic [ref=e609]: desktop
+```

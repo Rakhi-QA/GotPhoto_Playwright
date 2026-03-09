@@ -1,57 +1,48 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
 export default defineConfig({
+
   testDir: './tests',
-  fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+
   timeout: 999000,
 
-    reporter: [
-  ['line'],
-  ['list'],
-  ['html'],
-  ['allure-playwright', {
-    outputFolder: 'allure-results',
-    detail: true,
-    suiteTitle: false
-  }],
-],
-    
+  fullyParallel: false,   // Run tests sequentially
+
+  workers: 1,             // Only one test at a time
+
+  forbidOnly: !!process.env.CI,
+
+  retries: process.env.CI ? 2 : 0,
+
+  reporter: [
+    ['line'],
+    ['list'],
+    ['html'],
+    ['allure-playwright', {
+      outputFolder: 'allure-results',
+      detail: true,
+      suiteTitle: false
+    }]
+  ],
 
   use: {
-    trace: 'on-first-retry',
-    headless: false, // Run in headed mode
+    headless: false,       // Open browser UI
+    slowMo: 2000,          // Slow execution (2 seconds delay)
+    trace: 'on-first-retry'
   },
 
   projects: [
     {
-      name: 'chromium',
+      name: 'chrome',
       use: {
         browserName: 'chromium',
+        channel: 'chrome',      // Run real Chrome
         launchOptions: {
-          args: ['--start-maximized'],
-        },
-      },
-    },
-    {
-      name: 'firefox',
-      use: {
-        browserName: 'firefox',
-      },
-    },
-    {
-      name: 'webkit',
-      use: {
-        browserName: 'webkit',
-        viewport: { width: 1920, height: 1080 },
-      },
-    },
-  ],
+          args: ['--start-maximized']
+        }
+      }
+    }
+  ]
 
 });

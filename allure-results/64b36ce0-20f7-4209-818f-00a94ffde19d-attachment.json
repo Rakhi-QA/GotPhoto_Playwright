@@ -1,0 +1,79 @@
+[
+  {
+    "graphicName": "_45V",
+    "selectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ],
+    "notSelectedFor": []
+  },
+  {
+    "graphicName": "_45TV",
+    "selectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ],
+    "notSelectedFor": []
+  },
+  {
+    "graphicName": "_55",
+    "selectedFor": [],
+    "notSelectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ]
+  },
+  {
+    "graphicName": "_55T",
+    "selectedFor": [],
+    "notSelectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ]
+  },
+  {
+    "graphicName": "_MM",
+    "selectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ],
+    "notSelectedFor": []
+  },
+  {
+    "graphicName": "_SV",
+    "selectedFor": [],
+    "notSelectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ]
+  },
+  {
+    "graphicName": "_12TV",
+    "selectedFor": [],
+    "notSelectedFor": [
+      "Image1",
+      "Image2",
+      "Image3",
+      "Image4",
+      "Image5"
+    ]
+  }
+]

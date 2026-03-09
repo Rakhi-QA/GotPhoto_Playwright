@@ -1,0 +1,68 @@
+========== PLAYER LIST WITH IMAGE COUNT ==========
+
+Total Players: 9
+
+Player #1: Ana A
+Team Image: D.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+----------------------------------------
+
+Player #2: HENRY H
+Team Image: Q3.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+----------------------------------------
+
+Player #3: IRA S
+Team Image: Q8.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+----------------------------------------
+
+Player #4: JACK KOA
+Team Image: Q23.jpg
+Individual Images Count: 4
+Image Names: Q26.jpg, Q27.jpg, Q28.jpg, Q29.jpg
+Total Images: 5
+----------------------------------------
+
+Player #5: OM S
+Team Image: Q5.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+----------------------------------------
+
+Player #6: PARTH G
+Team Image: Q12.jpg
+Individual Images Count: 1
+Image Names: Q15.jpg
+Total Images: 2
+----------------------------------------
+
+Player #7: rakesh pat
+Team Image: B.jpg
+Individual Images Count: 5
+Image Names: E.jpg, F.jpg, G.jpg, H.jpg, I.jpg
+Total Images: 6
+----------------------------------------
+
+Player #8: TOM D
+Team Image: None
+Individual Images Count: 0
+Image Names: None
+Total Images: 0
+----------------------------------------
+
+Player #9: UVI SD
+Team Image: Q17.jpg
+Individual Images Count: 2
+Image Names: Q20.jpg, Q21.jpg
+Total Images: 3
+----------------------------------------
+
+====================================================

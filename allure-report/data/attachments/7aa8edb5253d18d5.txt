@@ -1,0 +1,35 @@
+⚠ Could not click #cardinfo: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#cardinfo') to be visible
+    24 × locator resolved to hidden <input type="radio" id="cardinfo" name="existing" onclick="Toggle('showcardinfo');"/>
+
+⚠ Card number field not found: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#cardnumber1') to be visible
+    24 × locator resolved to hidden <input value="" type="text" id="cardnumber1" name="cardnumber1" class="form-control"/>
+
+⚠ Expiry month dropdown not found: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#month1') to be visible
+    17 × locator resolved to hidden <select id="month1" name="month1" class="form-control">…</select>
+    - waiting for" https://staging.production.nextgenphotosolutions.com/Gpservices/payforimages/3/3619/2026/260228/Traditional+/G/17459/2734/338/Test_Staging_1772278624971/17494/970463737/ch_tdp_ignore" navigation to finish...
+
+⚠ Expiry year dropdown not found: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#year1') to be visible
+    - waiting for" https://staging.production.nextgenphotosolutions.com/Gpservices/payforimages/3/3619/2026/260228/Traditional+/G/17459/2734/338/Test_Staging_1772278624971/17494/970463737/ch_tdp_ignore" navigation to finish...
+
+⚠ CVV field not found: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#cvv1') to be visible
+    - waiting for" https://www.gotphoto.com/" navigation to finish...
+    - navigated to "https://www.gotphoto.com/"
+
+⚠ Name fields not found: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#name_on_card_first') to be visible
+
+❌ Could not click the checkout button: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('#btnpaynow') to be visible
+

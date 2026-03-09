@@ -1,0 +1,113 @@
+🌐 Opening generated link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2627&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1836909806&beta-value1901582537
+📌 Job ID: undefined
+✅ Page Loaded: Next Generation | Photographers
+🔍 Looking for Traditional option...
+✅ Clicked Traditional image using selector: img[src*="Traditional Memorymate.jpg"]
+✅ Traditional option successfully selected
+🔍 Looking for Confirm button...
+⚠️ No modal detected, trying to find button directly...
+✅ Clicked Confirm button using selector: .bootbox .btn-success
+🔍 Looking for Ignore teams button...
+⚠️ No ignore modal detected, continuing...
+✅ Clicked Ignore teams button using selector: button:has-text("Ignore team images")
+🔍 Looking for Ignore teams button...
+⚠️ No ignore modal detected, continuing...
+✅ Clicked Ignore teams button (via evaluate)
+⚠️ Network idle timeout - continuing anyway
+✅ Player table detected - navigation successful
+✅ Ignore teams step completed
+✅ Ignore teams completed
+
+========== PLAYER LIST WITH IMAGE COUNT ==========
+
+=====================================================
+Player #1: Ana A
+Team Image: D.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+=====================================================
+
+=====================================================
+Player #2: HENRY H
+Team Image: Q3.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+=====================================================
+
+=====================================================
+Player #3: IRA S
+Team Image: Q8.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+=====================================================
+
+=====================================================
+Player #4: JACK KOA
+Team Image: Q23.jpg
+Individual Images Count: 4
+Image Names: Q26.jpg, Q27.jpg, Q28.jpg, Q29.jpg
+Total Images: 5
+=====================================================
+
+=====================================================
+Player #5: OM S
+Team Image: Q5.jpg
+Individual Images Count: 0
+Image Names: None
+Total Images: 1
+=====================================================
+
+=====================================================
+Player #6: PARTH G
+Team Image: Q12.jpg
+Individual Images Count: 1
+Image Names: Q15.jpg
+Total Images: 2
+=====================================================
+
+=====================================================
+Player #7: rakesh pat
+Team Image: B.jpg
+Individual Images Count: 5
+Image Names: E.jpg, F.jpg, G.jpg, H.jpg, I.jpg
+Total Images: 6
+=====================================================
+
+=====================================================
+Player #8: TOM D
+Team Image: None
+Individual Images Count: 0
+Image Names: None
+Total Images: 0
+=====================================================
+
+=====================================================
+Player #9: UVI SD
+Team Image: Q17.jpg
+Individual Images Count: 2
+Image Names: Q20.jpg, Q21.jpg
+Total Images: 3
+=====================================================
+
+
+✅ Total Players: 9
+📊 Summary: 8 team images, 12 individual images
+===================================================
+
+🔍 Looking for Background Template option...
+✅ Background Template section accessed
+🔍 Looking for Single Template for Organization option...
+✅ Selected Single Template for Organization using selector: #bgsinglecheck_s
+🔍 Looking for template dropdown...
+✅ Selected template: CheckBT2023_2 (value: 797)
+🔍 Looking for Upload Team Photos button...
+📁 Uploading image from: E:\Playwright_GotPhoto\test-images\A.jpg
+✅ File selected for upload
+⚠️ Upload initiated (check page for confirmation)
+
+✅ ========== TRADITIONAL ORDER FLOW COMPLETED ==========
+===================================================
+

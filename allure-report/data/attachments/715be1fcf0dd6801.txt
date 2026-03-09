@@ -1,0 +1,149 @@
+➡️ Creating Job: Test_Staging_1771846292315
+✅ API Response: {
+  "code": 200,
+  "nextgen_job_id": "2655",
+  "checkout_url": "https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2655&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1957167050&beta-value11012777755",
+  "message": "Congratulations! The order has been created successfully."
+}
+📌 Job ID: 2655
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2655&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1957167050&beta-value11012777755
+💾 Saved job link, job name, and job ID to .env
+✅ Saved generatedData.json to: E:\Playwright_GotPhoto\generatedData.json
+🌐 Navigating to: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2655&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1957167050&beta-value11012777755
+✅ Page Title: Next Generation | Photographers
+✔ Clicked Traditional Plus via selector: img[src*="Traditional Plus Memorymate.jpg"]
+✔ Clicked Confirm on first popup
+✔ Clicked Move Team Images
+
+========== BUNDLES PER PLAYER (from API payload) ==========
+
+Player: rakesh pat
+  Team Image: A.jpg
+  Individual: image1:B.jpg, image2:C.jpg, image3:D.jpg, image4:E.jpg
+  Image Count: 4 | Bundle: L | Total: 5
+-----------------------------------------------------
+Player: Ana A
+  Team Image: L.jpg
+  Individual: image1:M.jpg, image2:N.jpg
+  Image Count: 2 | Bundle: R | Total: 3
+-----------------------------------------------------
+Player: TOM D
+  Team Image: P.jpg
+  Individual: image1:O.jpg
+  Image Count: 1 | Bundle: S | Total: 2
+-----------------------------------------------------
+
+✅ Printed bundles for 3 players
+
+✔ Clicked Single Check background (#bgsinglecheck_s)
+✔ Selected template 611 (3rd Creative - Softball/Baseball)
+📤 Starting image upload process...
+✅ Clicked final active upload button (#upload_tp_filesBtn)
+🟢 Found 2 team dropdown(s)
+✅ Selected team "Winners" in first dropdown
+✅ Selected team "YANKEES" in second dropdown
+💾 Clicked on Save button
+📨 Upload message: 
+✔ Clicked Extracted Images (#extractedimages)
+✔ Selected 3/4 Crop (#cropimageshalf)
+
+========== PNG CROP OPTION ==========
+PNG Crop: 3/4 Crop (#cropimageshalf)
+=====================================
+
+
+========== ALTERNATE POSE GRAPHIC OPTIONS ==========
+
+Graphic: _45V
+  Selected For: Image1, Image2, Image3, Image4, Image5
+  Not Selected For: None
+-----------------------------------------------------
+Graphic: _45TV
+  Selected For: Image1, Image2, Image3, Image4, Image5
+  Not Selected For: None
+-----------------------------------------------------
+Graphic: _55
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5
+-----------------------------------------------------
+Graphic: _55T
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5
+-----------------------------------------------------
+Graphic: _MM
+  Selected For: Image1, Image2, Image3, Image4, Image5
+  Not Selected For: None
+-----------------------------------------------------
+Graphic: _SV
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5
+-----------------------------------------------------
+Graphic: _12TV
+  Selected For: None
+  Not Selected For: Image1, Image2, Image3, Image4, Image5
+-----------------------------------------------------
+
+✅ Total graphics: 7
+
+✔ Selected Team Color (#teamcolorY)
+✔ Clicked Color Correction (#ccservices)
+
+========== ORDER TOTALS ==========
+
+Total Number of Team Images: 0.00
+Total Number of Individual Images: 8.80
+Additional Graphics: 0.00
+Subtotal: 14.80
+Discount: $0.00
+Total: $14.80
+=====================================
+
+✅ Totals printed
+📂 Found 26 images for FTP upload: A.jpg, B.jpg, C.jpg, D.jpg, E.jpg, F.jpg, G.jpg, H.jpg, I.jpg, J.jpg, K.jpg, L.jpg, M.jpg, N.jpg, O.jpg, P.jpg, Q.jpg, R.jpg, S.jpg, T.jpg, U.jpg, V.jpg, W.jpg, X.jpg, Y.jpg, Z.jpg
+➡️ Connecting to FTP...
+📁 Creating directory: /gotphoto/input/Test_Staging_1771846292315/photos
+⬆️ Uploading images...
+✔ Uploaded: A.jpg
+✔ Uploaded: B.jpg
+✔ Uploaded: C.jpg
+✔ Uploaded: D.jpg
+✔ Uploaded: E.jpg
+✔ Uploaded: F.jpg
+✔ Uploaded: G.jpg
+✔ Uploaded: H.jpg
+✔ Uploaded: I.jpg
+✔ Uploaded: J.jpg
+✔ Uploaded: K.jpg
+✔ Uploaded: L.jpg
+✔ Uploaded: M.jpg
+✔ Uploaded: N.jpg
+✔ Uploaded: O.jpg
+✔ Uploaded: P.jpg
+✔ Uploaded: Q.jpg
+✔ Uploaded: R.jpg
+✔ Uploaded: S.jpg
+✔ Uploaded: T.jpg
+✔ Uploaded: U.jpg
+✔ Uploaded: V.jpg
+✔ Uploaded: W.jpg
+✔ Uploaded: X.jpg
+✔ Uploaded: Y.jpg
+✔ Uploaded: Z.jpg
+🎉 Upload complete! Total uploaded: 26
+🔒 FTP connection closed
+⏳ Waiting for upload confirmation...
+✅ Upload success message detected on page
+✔ Clicked 'Enter Card Information Below' (#cardinfo)
+✔ Entered card number
+✔ Selected expiry month 04
+✔ Selected expiry year 2026
+✔ Entered CVV
+✔ Entered cardholder name
+✔ Clicked Pay Now / Checkout (#btnpaynow)
+
+✅ ========== TEST COMPLETED SUCCESSFULLY ==========
+📌 Job ID: 2655
+🔗 Generated Link: https://staging.production.nextgenphotosolutions.com/Gpservices/login?back_url=checkout&jobno=2655&jobfor=cmFraGlxYUB0aXVjb25zdWx0aW5nLmNvbQ==&encrypt=MTIzNDU2&ngen_user=Y&value1957167050&beta-value11012777755
+📁 Job Name: Test_Staging_1771846292315
+===================================================
+

@@ -1,20 +1,43 @@
 // @ts-check
 import { test } from '@playwright/test';
 
-// Import all individual test specs
-//import'./TraditionalPlus_IgnoreImage.spec.js';
-import'./Traditional_Order_Complete.spec.js';
-//import './open_generated_link.spec.js';
-//import './TraditionalPlus_MoveImages_order.spec.js';
-//import './confirm_images_transferred_Input_to_Cam.spec.js';
+/**
+ * ============================================================
+ * GotPhoto Automation - Master Test Suite
+ * ------------------------------------------------------------
+ * This suite imports all service test specifications to ensure
+ * they are executed as part of the complete workflow.
+ *
+ * Execution Order (recommended via file naming):
+ * 01 - Full Composite
+ * 02 - Full Composite (Ignore Team Image)
+ * 03 - Full Composite (Move Team Image)
+ * 04 - Traditional Plus (Move Images Order)
+ * 05 - Traditional (Ignore Team)
+ * 06 - Traditional (Move Team Image)
+ * 07 - Traditional Plus (Ignore Image)
+ * 08 - Traditional Plus (Move Team Image)
+ *
+ * Note:
+ * Ensure `workers: 1` and `fullyParallel: false` in
+ * playwright.config.js for sequential execution.
+ * ============================================================
+ */
 
-// Optional: wrap them in a describe block for better report grouping
-test.describe('GotPhot Complete Test Suite', () => {
-  test('Run All Services', async () => {
-    console.log('All service test cases imported and will run one by one.');
+// Import all individual test specs
+import './Fullcomposite.spec.js';
+import './FullCompNoTeamIgnoreTeamImage.spec.js';
+import './FullCompNoTeamMoveTeamImg.spec.js';
+//import './TraditionalPlus_MoveImages_order.spec.js';
+import './TraditionalIgnoreTeam.spec.js';
+import './TraditionalMoveTeamImage.spec.js';
+import './TraditionalPlus_IgnoreImage.spec.js';
+import './TraditionalPlus_MoveTeamImage.spec.js';
+
+test.describe.serial('GotPhoto Complete Service Test Suite', () => {
+
+  test('Initialize GotPhoto Test Suite', async () => {
+    console.log('Starting execution of all GotPhoto service test cases in sequence...');
   });
+
 });
-// Auto-update on 2025-10-28 11:20:33Z
-// Auto-update on 2025-11-12 10:10:59Z
-// Auto-update on 2026-01-22 06:27:13Z
-// Auto-update on 2026-02-16 10:13:53Z

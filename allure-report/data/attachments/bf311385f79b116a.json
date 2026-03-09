@@ -1,0 +1,98 @@
+{
+  "totalPlayers": 9,
+  "players": [
+    {
+      "playerNumber": 1,
+      "playerName": "Ana A",
+      "teamImage": "D.jpg",
+      "individualImageCount": 0,
+      "imageNames": [],
+      "totalImages": 1
+    },
+    {
+      "playerNumber": 2,
+      "playerName": "HENRY H",
+      "teamImage": "Q3.jpg",
+      "individualImageCount": 0,
+      "imageNames": [],
+      "totalImages": 1
+    },
+    {
+      "playerNumber": 3,
+      "playerName": "IRA S",
+      "teamImage": "Q8.jpg",
+      "individualImageCount": 0,
+      "imageNames": [],
+      "totalImages": 1
+    },
+    {
+      "playerNumber": 4,
+      "playerName": "JACK KOA",
+      "teamImage": "Q23.jpg",
+      "individualImageCount": 4,
+      "imageNames": [
+        "Q26.jpg",
+        "Q27.jpg",
+        "Q28.jpg",
+        "Q29.jpg"
+      ],
+      "totalImages": 5
+    },
+    {
+      "playerNumber": 5,
+      "playerName": "OM S",
+      "teamImage": "Q5.jpg",
+      "individualImageCount": 0,
+      "imageNames": [],
+      "totalImages": 1
+    },
+    {
+      "playerNumber": 6,
+      "playerName": "PARTH G",
+      "teamImage": "Q12.jpg",
+      "individualImageCount": 1,
+      "imageNames": [
+        "Q15.jpg"
+      ],
+      "totalImages": 2
+    },
+    {
+      "playerNumber": 7,
+      "playerName": "rakesh pat",
+      "teamImage": "B.jpg",
+      "individualImageCount": 5,
+      "imageNames": [
+        "E.jpg",
+        "F.jpg",
+        "G.jpg",
+        "H.jpg",
+        "I.jpg"
+      ],
+      "totalImages": 6
+    },
+    {
+      "playerNumber": 8,
+      "playerName": "TOM D",
+      "teamImage": "None",
+      "individualImageCount": 0,
+      "imageNames": [],
+      "totalImages": 0
+    },
+    {
+      "playerNumber": 9,
+      "playerName": "UVI SD",
+      "teamImage": "Q17.jpg",
+      "individualImageCount": 2,
+      "imageNames": [
+        "Q20.jpg",
+        "Q21.jpg"
+      ],
+      "totalImages": 3
+    }
+  ],
+  "summary": {
+    "totalTeamImages": 8,
+    "totalIndividualImages": 12,
+    "totalAllImages": 20
+  }
+}

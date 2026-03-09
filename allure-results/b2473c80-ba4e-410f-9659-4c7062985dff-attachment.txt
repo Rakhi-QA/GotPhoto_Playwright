@@ -1,0 +1,6 @@
+⚠ Could not select background/template: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('#bcktemplete') to be visible
+    3 × locator resolved to hidden <select tabindex="7" id="bcktemplete" name="bcktemplete" class="form-control" onchange="funisfulllength(this.options[this.selectedIndex],'S'),funisbanner(this.options[this.selectedIndex],'S');">…</select>
+    29 × locator resolved to 3 elements. Proceeding with the first one: <select tabindex="7" id="bcktemplete" name="bcktemplete" class="form-control" onchange="funisfulllength(this.options[this.selectedIndex],'S'),funisbanner(this.options[this.selectedIndex],'S');">…</select>
+
