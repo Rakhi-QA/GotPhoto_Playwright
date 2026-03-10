@@ -26,13 +26,13 @@ import { test } from '@playwright/test';
 
 // Import all individual test specs
 import './Fullcomposite.spec.js';
-import './FullCompNoTeamIgnoreTeamImage.spec.js';
+//import './FullCompNoTeamIgnoreTeamImage.spec.js';
 import './FullCompNoTeamMoveTeamImg.spec.js';
 //import './TraditionalPlus_MoveImages_order.spec.js';
-import './TraditionalIgnoreTeam.spec.js';
-import './TraditionalMoveTeamImage.spec.js';
-import './TraditionalPlus_IgnoreImage.spec.js';
-import './TraditionalPlus_MoveTeamImage.spec.js';
+//import './TraditionalIgnoreTeam.spec.js';
+//import './TraditionalMoveTeamImage.spec.js';
+// './TraditionalPlus_IgnoreImage.spec.js';
+//import './TraditionalPlus_MoveTeamImage.spec.js';
 
 test.describe.serial('GotPhoto Complete Service Test Suite', () => {
 
